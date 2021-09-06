@@ -1,0 +1,179 @@
+/* Fonts Start*/
+@font-face { 
+    font-family: 'Canela Bold';
+    src: url(../fonts/canela_bold.otf) format("opentype");
+    font-weight: bold;
+} 
+@font-face {
+    font-family: 'Canela Roman';
+    src: url(../fonts/canela_roman.otf) format("opentype");
+}
+@font-face {
+    font-family: 'Canela Light';
+    src: url(../fonts/canela_light.otf) format("opentype");
+}
+@font-face {
+    font-family: 'Druk Wide Bold';
+    src: url(../fonts/Druk_Wide_Bold.otf) format("opentype");
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Druk Wide Medium';
+    src: url(../fonts/Druk\ Wide\ Medium.otf) format("opentype");
+}
+@font-face {
+    font-family: 'Plain Baltica';
+    src: url(../fonts/baltica_plain.otf) format("opentype");
+}
+/* Fonts End */
+
+/* Header Start */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #DEDEDE;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+header .header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    
+}
+header .menu li a {
+    color: #797979;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 25px;
+    transition: all;
+    transition-duration: 0.3s;
+}
+header .menu li a:hover {
+    color: #000;
+}
+header #logo a {
+    font-family: 'Druk Wide Bold';
+    color: #000;
+    font-size: 25px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+header #logo a img {
+    display: block;
+    margin-right: 5px;
+}
+header #logo a i.line-logo {
+    height: 30px;
+    width: 1px;
+    background-color: #000;
+    margin-right: 5px;
+}
+/* Header End */
+
+/* Showcase Start */
+#video-main {
+    width: 100%;
+    height: auto;
+    max-height: 90vh;
+    object-fit: cover;
+}
+.video-wrapper #video-main {
+    position: relative;
+}
+.video-wrapper .play-vid {
+    display: none;
+}
+.video-wrapper i {
+    color: #E0E1CD;
+    font-size: 25px;
+}
+.video-wrapper .video-control {
+    background-color: #000;
+    border: 2px solid #E0E1CD;
+    cursor: pointer;
+    padding: 18px 20px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 150px;
+    right: 100px;
+}
+.showcase-text-wrapper {
+    position: absolute;
+    bottom: 220px;
+    left: 40px;
+    max-width: 500px;
+    font-family: 'Druk Wide Bold';
+}
+.showcase-text-wrapper p {
+    font-size: 44px;
+}
+.showcase-text-wrapper h2 {
+    font-size: 18px;
+    font-family: 'Plain Baltica';
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.showcase-text-wrapper p:first-child {
+    color: #000;
+    font-family: 'Plain Baltica';
+    font-size: 50px;
+    font-style: italic;
+
+}
+.showcase-text-wrapper a {
+    font-family: 'Plain Baltica';
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    transition: all;
+    transition-duration: 0.3s;
+}
+.showcase-text-wrapper a:hover {
+    opacity: 0.75;
+}
+/* Showcase End */
+
+/* Products Main Start */
+.products-main {
+    background-color: #fff;
+    margin-top: 50px;
+}
+.product-main-title {
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+}
+.product-main-title h2 span {
+    font-family: 'Plain Baltica';
+    font-size: 40px;
+    font-style: italic;
+    letter-spacing: -2px;
+}
+.product-main-title h2 {
+    font-family: 'Druk Wide Medium';
+    font-weight: 400;
+    font-size: 40px;
+}
+.product-main-title p {
+    font-family: 'Plain Baltica';
+    font-size: 17px;
+    line-height: 23px;
+}
+.product-main-line {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.product-main-line img {
+    width: 100%;
+}
+/* Products Main End */
