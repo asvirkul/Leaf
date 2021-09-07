@@ -147,6 +147,7 @@ header #logo a i.line-logo {
     background-color: #fff;
     margin-top: 50px;
     position: relative;
+    padding-bottom: 200px;
 }
 .product-main-title {
     max-width: 550px;
@@ -171,12 +172,20 @@ header #logo a i.line-logo {
 }
 .product-main-line {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
     margin-top: 250px;
 }
 .product-main-line .bg-img {
     position: absolute;
+}
+.product-main-line .bg-img.first {
+    left: 0;
+    bottom: 0;
+}
+.product-main-line .bg-img.second {
+    right: 0;
+    bottom: 0;
 }
 .product-main-line article {
     box-sizing: border-box;
@@ -228,11 +237,17 @@ header #logo a i.line-logo {
     text-decoration: none;
     color: #737D2F;
     border: 1px solid #737D2F;
-    font-family: 'Plain';
+    font-family: 'Plain Baltica';
     padding: 5px 20px;
     font-weight: 500;
     display: inline-block; 
     border-radius: 5px;
+    transition: all;
+    transition-duration: 0.3s;
+}
+.product-main-line article .product-text-main a:hover {
+    background-color: #737D2F;
+    color: #fff;
 }
 .product-main-line article:first-child .product-text-main a {
     top: 72px;
@@ -253,3 +268,48 @@ header #logo a i.line-logo {
     align-items: center;
 }
 /* Products Main End */
+
+/* Products Sale Start */
+.product-sale-wrapper {
+    background-color: #F8F7F3;
+    padding-top: 60px;
+}
+.sale-product-main img {
+    width: 100%;
+}
+.product-sale-text {
+    width: 60%;
+    box-sizing: border-box;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product-sale-img img {
+    border-radius: 0 40px 40px 0;
+}
+.product-sale-img {
+    width: 40%;
+    box-sizing: border-box;
+    border-radius: 60px;
+}
+.sale-product-main {
+    display: block;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 40px;
+}
+.product-sale-text h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.product-sale-text p {
+    font-size: 35px;
+}
+.title {
+    font-family: 'Druk Wide Medium';
+    color: #000;
+}
+/* Products Sale End */
