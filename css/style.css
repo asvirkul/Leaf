@@ -171,50 +171,85 @@ header #logo a i.line-logo {
 }
 .product-main-line {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
-    margin-top: 300px;
+    margin-top: 250px;
 }
 .product-main-line .bg-img {
     position: absolute;
 }
-.product-main-line img:first-child {
-    top: 0;
-    left: 0;
-}
-.product-main-line img:last-child {
-    top: 0;
-    right: 0;
-}
 .product-main-line article {
-    width: 50%;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: #F8F7F3;
     position: relative;
-}
-.product-main-line article:first-of-type img {
-    top: 0;
-    right: 0;
-    z-index: 20;
-}
-.product-main-line article:last-of-type img {
-    top: 0;
-    left: 0;
+
 }
 .product-main-line article:first-of-type .img-main-line {
     position: absolute;
-    right: 0;
+    right: -180px;
     top: -200px;
 
 }
 .product-main-line article:last-of-type .img-main-line {
     position: absolute;
+    top: -200px;
+    left: -200px;
 }
 /* .product-main-line .product-article-main {
     background-color: #F8F7F3;
     padding: 30px 45px 30px 200px;
 } */
+.product-main-line article:first-of-type {
+    border-radius: 30px 0 0 30px;
+}
+.product-main-line article:last-of-type {
+    border-radius: 0px 30px 30px 0;
+}
+.product-main-line article .product-text-main h3 {
+    font-family: 'Druk Wide Medium';
+    font-size: 17px;
+    font-weight: 400px;
+    margin-bottom: 20px;
+}
+.product-main-line article .product-text-main p {
+    font-family: 'Plain Baltica';
+    font-style: italic;
+    font-size: 17px;
+    font-weight: 100;
+}
+.product-main-line article .product-text-main p span {
+    margin-right: 10px;
+}
+.product-main-line article .product-text-main a {
+    z-index: 9;
+    text-decoration: none;
+    color: #737D2F;
+    border: 1px solid #737D2F;
+    font-family: 'Plain';
+    padding: 5px 20px;
+    font-weight: 500;
+    display: inline-block; 
+    border-radius: 5px;
+}
+.product-main-line article:first-child .product-text-main a {
+    top: 72px;
+}
+.product-main-line article:first-of-type .product-text-main {
+    padding: 35px 160px 35px 45px
+}
+.product-main-line article:first-child div a {
+    position: absolute;
+}
+.product-main-line article:last-of-type .product-text-main {
+    padding: 30px 45px 30px 100px;
+}
+.product-text-main div {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+}
 /* Products Main End */
