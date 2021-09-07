@@ -173,7 +173,7 @@ header #logo a i.line-logo {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin-top: 200px;
+    margin-top: 300px;
 }
 .product-main-line .bg-img {
     position: absolute;
@@ -188,21 +188,33 @@ header #logo a i.line-logo {
 }
 .product-main-line article {
     width: 50%;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
+    background-color: #F8F7F3;
     position: relative;
-    box-sizing: border-box;
-}
-.product-main-line article img {
-    position: absolute;
 }
 .product-main-line article:first-of-type img {
     top: 0;
     right: 0;
+    z-index: 20;
 }
 .product-main-line article:last-of-type img {
     top: 0;
     left: 0;
 }
+.product-main-line article:first-of-type .img-main-line {
+    position: absolute;
+    right: 0;
+    top: -200px;
+
+}
+.product-main-line article:last-of-type .img-main-line {
+    position: absolute;
+}
+/* .product-main-line .product-article-main {
+    background-color: #F8F7F3;
+    padding: 30px 45px 30px 200px;
+} */
 /* Products Main End */
