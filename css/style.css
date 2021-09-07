@@ -146,6 +146,7 @@ header #logo a i.line-logo {
 .products-main {
     background-color: #fff;
     margin-top: 50px;
+    position: relative;
 }
 .product-main-title {
     max-width: 550px;
@@ -170,10 +171,38 @@ header #logo a i.line-logo {
 }
 .product-main-line {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
+    margin-top: 200px;
 }
-.product-main-line img {
-    width: 100%;
+.product-main-line .bg-img {
+    position: absolute;
+}
+.product-main-line img:first-child {
+    top: 0;
+    left: 0;
+}
+.product-main-line img:last-child {
+    top: 0;
+    right: 0;
+}
+.product-main-line article {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+    box-sizing: border-box;
+}
+.product-main-line article img {
+    position: absolute;
+}
+.product-main-line article:first-of-type img {
+    top: 0;
+    right: 0;
+}
+.product-main-line article:last-of-type img {
+    top: 0;
+    left: 0;
 }
 /* Products Main End */
