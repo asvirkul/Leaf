@@ -147,7 +147,7 @@ header #logo a i.line-logo {
     background-color: #fff;
     margin-top: 50px;
     position: relative;
-    padding-bottom: 200px;
+    padding-bottom: 71px;
 }
 .product-main-title {
     max-width: 550px;
@@ -249,6 +249,10 @@ header #logo a i.line-logo {
     background-color: #737D2F;
     color: #fff;
 }
+body > section.products-main > div.product-main-line.container > article:nth-child(2) > div.product-text-main > a {
+    top: 73px;
+    position: absolute;
+}
 .product-main-line article:first-child .product-text-main a {
     top: 72px;
 }
@@ -257,6 +261,7 @@ header #logo a i.line-logo {
 }
 .product-main-line article:first-child div a {
     position: absolute;
+    z-index: 19;
 }
 .product-main-line article:last-of-type .product-text-main {
     padding: 30px 45px 30px 100px;
@@ -287,6 +292,8 @@ header #logo a i.line-logo {
 }
 .product-sale-img img {
     border-radius: 0 40px 40px 0;
+    transition: all;
+    transition-duration: 0.5s;
 }
 .product-sale-img {
     width: 40%;
@@ -300,16 +307,48 @@ header #logo a i.line-logo {
     justify-content: center;
     flex-direction: row;
     border-radius: 40px;
+    position: relative;
+    transition: all;
+    transition-duration: 0.5s;
 }
 .product-sale-text h3 {
-    font-size: 40px;
+    font-size: 35px;
     margin-bottom: 10px;
 }
 .product-sale-text p {
-    font-size: 35px;
+    font-size: 30px;
+}
+.product-sale-text p span{
+    text-decoration: line-through;
+    color: #676767;
+    text-decoration-color: #FC5E33;
+    margin-left: 10px;
 }
 .title {
     font-family: 'Druk Wide Medium';
     color: #000;
 }
+.sale-descript {
+    color: #000;
+    font-family: 'Plain Baltica';
+    font-style: italic;
+    font-size: 18px;
+    letter-spacing: -1px;
+}
+.product-sale-text img {
+    position: absolute;
+    width: auto;
+    right: 37%;
+    top: 20%;
+    transform: rotate(40deg);
+    z-index: 2;
+}
+.product-sale-img span {
+    display: block;
+    overflow: hidden;
+}
+.sale-product-main:hover .product-sale-img img {
+    transform: scale(1.1);
+}
+
 /* Products Sale End */

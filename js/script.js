@@ -18,4 +18,15 @@ jQuery(document).ready(function($) {
     } 
 ) 
 
+    var sale = $('.sale-product-main');
+    sale.hover(function () {
+        $(this).animate({
+            top: '-10px'
+        }, 10)
+    }, function() {
+        $(this).animate({
+            top: '0px'
+        }, 10);
+    });
+
 }); //ready
