@@ -18,7 +18,7 @@ jQuery(document).ready(function($) {
     } 
 ) 
 
-    var sale = $('.sale-product-main');
+    var sale = $('.sale-anim');
     sale.hover(function () {
         $(this).animate({
             top: '-10px'
