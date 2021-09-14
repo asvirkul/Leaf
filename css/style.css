@@ -441,3 +441,30 @@ a.kit-item:hover .kit-img img {
     color: #fff;
 }
 /* Products Twig End */
+
+/* Slider Start */
+.swiper-slide img {
+    width: 100%;
+}
+.slider-img-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.slider-img {
+    width: 40%;
+    box-sizing: border-box;
+    position: relative;
+}
+.slider-bkg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: unset !important;
+}
+.slider-text {
+    width: 40%;
+    box-sizing: border-box;
+}
+/* Slider End */

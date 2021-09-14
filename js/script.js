@@ -17,7 +17,6 @@ jQuery(document).ready(function($) {
             myVideo.pause(); 
     } 
 ) 
-
     var sale = $('.sale-anim');
     sale.hover(function () {
         $(this).animate({
@@ -28,5 +27,29 @@ jQuery(document).ready(function($) {
             top: '0px'
         }, 10);
     });
+
+    /* Slider Start */
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: false,
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+      /* Slider End */
 
 }); //ready
