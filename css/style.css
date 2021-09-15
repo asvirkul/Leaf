@@ -277,7 +277,7 @@ body > section.products-main > div.product-main-line.container > article:nth-chi
 /* Products Sale Start */
 .product-sale-wrapper {
     background-color: #F8F7F3;
-    padding: 60px 0;
+    padding: 80px 0;
 }
 .sale-product-main img {
     width: 100%;
@@ -450,6 +450,8 @@ a.kit-item:hover .kit-img img {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    padding-top: 130px;
+    padding-bottom: 80px;
 }
 .slider-img {
     width: 40%;
@@ -458,13 +460,74 @@ a.kit-item:hover .kit-img img {
 }
 .slider-bkg {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 56%;
+    left: 30%;
     transform: translate(-50%, -50%);
+    z-index: -1;
     width: unset !important;
+}
+.slider-pic-wrapper img {
+    border-radius: 40px;
+    width: auto;
+}
+.slider-pic-wrapper {
+    width: 50%;
+    margin: auto;
 }
 .slider-text {
     width: 40%;
     box-sizing: border-box;
+}
+.main-title {
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    font-family: 'Druk Wide Bold';
+    font-size: 20px;
+}
+.swiper-slide p.review-text {
+    font-family: 'Canela Roman';
+    font-style: italic;
+    font-size: 30px;
+    margin: 50px 0;
+    line-height: 38px;
+}
+.review-author {
+    margin-bottom: 10px;
+}
+.review-author, .review-company {
+    font-family: 'Plain Baltica';
+    font-size: 16px;
+    color: #676767;
+    font-weight: 100;
+}
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+    position: absolute;
+    bottom: 11.3%;
+    left: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #E0E1CD;
+    max-width: fit-content;
+    margin: auto;
+    padding: 7px 5px;
+    border-radius: 20px;
+}
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {
+    background-color: #DFE4C7 !important;
+    border: 7px solid #626E21 !important;
+    padding: 3px !important;
+}
+.swiper-pagination-bullet {
+    background-color: #626E21;
+}
+.swiper-pagination-horizontal.swiper-pagination-bullets > .swiper-pagination-bullet {
+    background-color: #626E21;
+    margin: 0 10px;
+}
+.swiper-pagination-bullet {
+    background: unset;
+    opacity: unset;
 }
 /* Slider End */

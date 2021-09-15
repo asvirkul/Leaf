@@ -32,7 +32,8 @@ jQuery(document).ready(function($) {
     const swiper = new Swiper('.swiper', {
         // Optional parameters
         direction: 'horizontal',
-        loop: false,
+        loop: true, 
+        autoplay: true,
       
         // If we need pagination
         pagination: {
@@ -49,6 +50,11 @@ jQuery(document).ready(function($) {
         scrollbar: {
           el: '.swiper-scrollbar',
         },
+
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        }
       });
       /* Slider End */
 
