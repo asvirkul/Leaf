@@ -1,4 +1,12 @@
 /* Fonts Start*/
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Light.ttf) format("truetype");
+}
+@font-face {
+    font-family: 'Lora Palmer';
+    src: url(../fonts/Lora-Medium.ttf) format('truetype');
+}
 @font-face { 
     font-family: 'Canela Bold';
     src: url(../fonts/canela_bold.otf) format("opentype");
@@ -531,3 +539,123 @@ a.kit-item:hover .kit-img img {
     opacity: unset;
 }
 /* Slider End */
+
+/* Instagram Start */
+.insta-wrapper {
+    background-color: #F8F7F3;
+    padding: 80px;
+}
+.insta-photos img {
+    width: 100%;
+}
+.insta-title {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.insta-title h5 {
+    font-family: 'Plain Baltica';
+    font-style: italic;
+    font-size: 27px;
+}
+.insta-title h5 span {
+    font-size: 30px;
+    margin-top: 5px;
+    display: block;
+    font-style: normal;
+}
+.insta-title .insta-link p {
+    font-size: 20px;
+    font-family: 'Plain Baltica';
+}
+.insta-title .insta-link a {
+    margin-top: 20px;
+    display: block;
+    border: 1px solid #626E21;
+    padding: 20px 40px;
+    border-radius: 8px;
+    color: #626E21;
+    font-family: 'Plain Baltica';
+    font-size: 16px;
+    text-transform: capitalize;
+    transition: all;
+    transition-duration: 0.5s;
+}
+.insta-title .insta-link a:hover {
+    background-color: #626E21;
+    color: #fff;
+}
+.insta-photos.row > .material-placeholder:first-child {
+    background: red;
+}
+/* Instgran End */
+
+/* Footer Start */
+footer {
+    background-color: #626E21;
+}
+.footer-content {
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+footer .email-footer h6 {
+    color: #e1e0cc;
+    font-size: 34px;
+}
+footer .email-footer h6 span {
+    font-family: 'Plain Baltica';
+    font-style: italic;
+    font-weight: 100;
+    font-size: 27px;
+}
+footer .email-footer form {
+    position: relative;
+    display: inline-block;
+    max-width: fit-content;
+    margin-top: 30px;
+}
+footer .email-footer form input {
+    border: 1px solid #E0E1CD !important;
+    border-radius: 8px !important;
+    padding: 5px 20px !important;
+    width: 370px !important;
+    font-family: 'Plain Baltica';
+    color: #E0E1CD;
+    font-size: 14px;
+}
+footer .email-footer form input::placeholder {
+    top: 4px;
+    position: absolute;
+    font-size: 13px;
+    font-family: 'Roboto';
+    text-transform: capitalize;
+}
+footer .email-footer form button {
+    border: none;
+    color: #626E21;
+    background-color: #E0E1CD;
+    font-family: 'Plain Baltica';
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+footer .footer-menu .menu li a {
+    color: #E0E1CD;
+    margin: 15px 0;
+    font-size: 17px;
+    display: block;
+}
+footer .copy {
+    clear: both;
+}
+footer .copy p {
+    color: #E0E1CD;
+    font-family: 'Lora Palmer';
+    font-size: 13px;
+}
+ /* Footer End */

@@ -58,4 +58,6 @@ jQuery(document).ready(function($) {
       });
       /* Slider End */
 
+      $('.materialboxed').materialbox();
+
 }); //ready
