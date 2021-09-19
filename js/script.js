@@ -60,4 +60,52 @@ jQuery(document).ready(function($) {
 
       $('.materialboxed').materialbox();
 
+      var hHeader = $('header').height();
+    $(window).scroll(function () {
+        var scroll = getCurrentScroll();
+        if (scroll >= hHeader) {
+            $('header').addClass('bg-scroll');
+            $('header').css({
+                'background': '#fff'
+            })
+            $('#logo-pic').attr('src', 'images/razor.png')
+            $('header .menu li a').css({
+                'color': '#797979'
+            })
+            $('.sidenav-trigger').css({
+                'color': '#797979'
+            })
+            $('header i').css({
+                'color': '#000',
+            })
+            $('header .line-logo').css({
+                'background': '#000'
+            })
+        }
+        else {
+            $('header').removeClass('bg-scroll');
+            $('#logo-pic').attr('src', 'images/razor-white.png')
+            $('header .menu li a').css({
+                'color': '#fff'
+            })
+            $('.sidenav-trigger').css({
+                'color': '#fff'
+            })
+            $('header').css({
+                'background': 'transparent',
+                'border': 'none'
+            })
+            $('header i').css({
+                'color': 'white',
+            })
+            $('header .line-logo').css({
+                'background': 'white'
+            })
+        }
+    });
+    function getCurrentScroll() {
+        return window.pageYOffset || document.documentElement.scrollTop;
+    } 
+    //header
+
 }); //ready

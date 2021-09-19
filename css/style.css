@@ -76,6 +76,8 @@ header #logo a {
 header #logo a img {
     display: block;
     margin-right: 5px;
+    transition: all;
+    transition-duration: 0.3s;
 }
 header #logo a i.line-logo {
     height: 30px;
@@ -598,7 +600,8 @@ footer {
 }
 .footer-content {
     padding-top: 80px;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
+    margin-bottom: 0;
 }
 footer .email-footer h6 {
     color: #e1e0cc;
