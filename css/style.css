@@ -44,6 +44,8 @@ header {
     top: 0;
     left: 0;
     z-index: 10;
+    transition: all;
+    transition-duration: 0.5s;
 }
 header .header-content {
     display: flex;
@@ -94,7 +96,7 @@ header #logo a i.line-logo {
     max-height: 90vh;
     object-fit: cover;
 }
-.video-wrapper #video-main {
+.video-wrapper {
     position: relative;
 }
 .video-wrapper .play-vid {
@@ -111,7 +113,7 @@ header #logo a i.line-logo {
     padding: 18px 20px;
     border-radius: 50%;
     position: absolute;
-    bottom: 150px;
+    bottom: 50px;
     right: 100px;
 }
 .showcase-text-wrapper {
@@ -662,3 +664,31 @@ footer .copy p {
     font-size: 13px;
 }
  /* Footer End */
+
+ /* Media Start */
+    @media all and (max-width: 1450px) {
+        .products-main .bg-img {
+            display: none; 
+        }
+        .background-left {
+            background-image: url(../images/leafmain1.png);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            bottom: 0;
+            left: 0;
+        }   
+        .background-right {
+            background-image: url(../images/leafmain2.png);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 700px;
+            height: 650px;
+        }
+    }
+ /* Media End */
