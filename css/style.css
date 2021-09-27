@@ -161,6 +161,26 @@ header #logo a i.line-logo {
     position: relative;
     padding-bottom: 71px;
 }
+.background-left {
+    background-image: url(../images/leafmain1.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    bottom: 0;
+    left: 0;
+} 
+.background-right {
+    background-image: url(../images/leafmain2.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 700px;
+    height: 650px;
+}
 .product-main-title {
     max-width: 550px;
     width: 100%;
@@ -206,6 +226,7 @@ header #logo a i.line-logo {
     justify-content: space-between;
     background-color: #F8F7F3;
     position: relative;
+    z-index: 3;
 
 }
 .product-main-line article:first-of-type .img-main-line {
@@ -256,6 +277,7 @@ header #logo a i.line-logo {
     border-radius: 5px;
     transition: all;
     transition-duration: 0.3s;
+    min-width: max-content;
 }
 .product-main-line article .product-text-main a:hover {
     background-color: #737D2F;
@@ -269,7 +291,7 @@ body > section.products-main > div.product-main-line.container > article:nth-chi
     top: 72px;
 }
 .product-main-line article:first-of-type .product-text-main {
-    padding: 35px 160px 35px 45px
+    padding: 35px 160px 35px 45px;
 }
 .product-main-line article:first-child div a {
     position: absolute;
@@ -301,6 +323,7 @@ body > section.products-main > div.product-main-line.container > article:nth-chi
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .product-sale-img img {
     border-radius: 0 40px 40px 0;
@@ -321,6 +344,7 @@ body > section.products-main > div.product-main-line.container > article:nth-chi
     position: relative;
     transition: all;
     transition-duration: 0.5s;
+    flex-wrap: wrap;
 }
 .product-sale-text h3 {
     font-size: 35px;
@@ -377,6 +401,7 @@ body > section.products-main > div.product-main-line.container > article:nth-chi
     justify-content: space-between;
     align-items: stretch;
     margin-top: 30px;
+    flex-wrap: wrap;
 }
 .kit-item {
     display: inline-block;
@@ -447,6 +472,7 @@ a.kit-item:hover .kit-img img {
     font-family: 'Plain Baltica';
     transition: all;
     transition-duration: 0.5s;
+    min-width: max-content;
 }
 .kit-wrapper article a:hover {
     background-color: #626E21;
@@ -464,11 +490,17 @@ a.kit-item:hover .kit-img img {
     flex-direction: row;
     padding-top: 130px;
     padding-bottom: 80px;
+    flex-wrap: wrap;
 }
 .slider-img {
     width: 40%;
     box-sizing: border-box;
     position: relative;
+    background-image: url(../images/leafbag.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    padding: 40px 0;
 }
 .slider-bkg {
     position: absolute;
@@ -480,12 +512,13 @@ a.kit-item:hover .kit-img img {
 }
 .slider-pic-wrapper img {
     border-radius: 40px;
-    width: auto;
+    width: 100%;
 }
 .slider-pic-wrapper {
-    width: 50%;
+    width: 70%;
     margin: auto;
 }
+
 .slider-text {
     width: 40%;
     box-sizing: border-box;
@@ -521,10 +554,10 @@ a.kit-item:hover .kit-img img {
     display: flex;
     justify-content: center;
     border: 1px solid #E0E1CD;
-    max-width: fit-content;
     margin: auto;
     padding: 7px 5px;
     border-radius: 20px;
+    max-width: min-content;
 }
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {
     background-color: #DFE4C7 !important;
@@ -667,28 +700,180 @@ footer .copy p {
 
  /* Media Start */
     @media all and (max-width: 1450px) {
-        .products-main .bg-img {
-            display: none; 
+        .product-main-line article {
+            width: 45%;
+            box-sizing: border-box;
+        }
+        .product-main-line article:last-of-type .img-main-line {
+            position: absolute;
+            top: -200px;
+            left: -170px
+        }
+        .product-main-line article:first-of-type .img-main-line {
+            position: absolute;
+            top: -200px;
+            right: -150px;
+        }
+        .product-main-line article {
+            background: unset;
+        }
+        .product-main-line article:last-of-type .product-text-main {
+            background: #F8F7F3;
+            border-radius: 0px 30px 30px 70px;
+            width: 100%;
+        }
+        .product-main-line article:first-of-type .product-text-main {
+            background: #F8F7F3;
+            width: 93%;
+            border-top-right-radius: 40px;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+        }
+        .product-main-line article:last-of-type {
+            padding-left: 20px;
+        }
+    }
+    @media all and (max-width: 1250px) {
+        .product-main-line.container {
+            width: 90%;
+        }
+        .products-main {
+            padding-bottom: 64px;
+        }
+        .all-sales-wrapper.container {
+            width: 90%;
+        }
+        .footer-content.container.row {
+            width: 90%;
+        }
+    }
+    @media all and (max-width: 1000px) {
+        .product-main-line article:first-of-type .img-main-line {
+            position: absolute;
+            top: -200px;
+            right: 100px;
+        }
+        .slider-img, .slider-text {
+            width: 70%;
+        }
+        .main-title {
+            position: absolute;
+            top: 5%;
+            left: 31%;
+        }
+        .kit-wrapper > a {
+            width: 48%;
+            margin-bottom: 40px;
+        }
+        .kit-wrapper > article {
+            width: 100%;
+        }
+        .sale-product-main {
+            flex-direction: column-reverse;
+        }
+        .product-sale-text {
+            width: 100%;
+        }
+        .product-sale-img span {
+            border-radius: 30px 30px 0 0;
+        }
+        .product-sale-text h3 {
+            font-size: 30px;
+        }
+        .product-sale-text p {
+            font-size: 28px;
+        }
+        .product-sale-text p {
+            font-size: 28px;
+        }
+        .product-sale-img {
+            width: 100%;
+        }
+        .all-sales-wrapper.container {
+            width: 95%;
+        }
+        .products-main {
+            padding: 52px 0;
+        }
+        .product-text-main {
+            z-index: 5;
+            width: 100%  !important;
+            border-radius: 30px !important;
+            padding: 30px !important;
+        }
+        .product-main-line article {
+            width: 50%;
+        }
+        .product-main-line article:last-of-type .img-main-line {
+            position: absolute;
+            top: -220px;
+            left: -50px;
+        }
+        .product-main-line article:first-of-type .img-main-line {
+            position: absolute;
+            top: -220px;
+            right: 20px
+        }
+    }
+    @media all and (max-width: 768px) {
+        .product-main-line {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
         }
         .background-left {
-            background-image: url(../images/leafmain1.png);
-            background-repeat: no-repeat;
-            background-position: 0 0;
+                top: 60%;
+        }
+        .product-main-title h2 span {
+            font-size: 30px;
+        }
+        .product-main-title h2 {
+            font-size: 30px;
+        }
+        .product-main-title p {
+            font-size: 16px;
+        }
+        .product-main-line article {
+            margin: 200px 0 auto auto;
+            width: 95%;
+        }
+        .product-text-main {
+            border-radius: 30px 0 0 30px !important;
+        }
+        .product-main-line.container {
+            width: 100%;
+        }
+        .product-main-line article:last-of-type .img-main-line {
             position: absolute;
-            width: 300px;
-            height: 300px;
-            bottom: 0;
-            left: 0;
-        }   
+            top: -300px;
+        }
+        .product-main-line article:first-of-type .img-main-line {
+            position: absolute;
+            top: -310px;
+            right: 10%;
+        }
+        .product-main-line article:last-of-type {
+            padding: unset;
+            margin-top: 400px;
+        }
         .background-right {
-            background-image: url(../images/leafmain2.png);
-            background-repeat: no-repeat;
-            background-position: 0 0;
+            top: 10%;
+        }
+        .background-mobile {
+            width: 400px;
+            height: 401px;
+            background-image: url(../images/bg-mobile.png);
             position: absolute;
+            background-repeat: no-repeat;
+            background-size: cover;
             right: 0;
-            bottom: 0;
-            width: 700px;
-            height: 650px;
+            top: 225px;
+        }
+    }
+    @media all and (max-width: 410px) {
+        .background-mobile {
+            top: 250px;
         }
     }
  /* Media End */
