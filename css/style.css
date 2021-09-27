@@ -629,6 +629,12 @@ a.kit-item:hover .kit-img img {
 }
 /* Instgran End */
 
+/* Mobile Menu */
+.sidenav-trigger {
+    display: none;
+}
+/* Mobile Menu */
+
 /* Footer Start */
 footer {
     background-color: #626E21;
@@ -746,12 +752,52 @@ footer .copy p {
         .footer-content.container.row {
             width: 90%;
         }
+        .showcase-text-wrapper {
+            bottom: 100px;
+        }
     }
     @media all and (max-width: 1000px) {
         .product-main-line article:first-of-type .img-main-line {
             position: absolute;
             top: -200px;
             right: 100px;
+        }
+        .showcase-text-wrapper p {
+            font-size: 35px !important;
+        }
+        .insta-link {
+            text-align: left;
+            width: 100%;
+        }
+        .insta-link a {
+            display: inline-block;
+            text-align: center;
+        }
+        .kit-text p.right {
+            clear: both;
+            float: none !important;
+        }
+        .insta-photos.row .material-placeholder > div {
+            padding: 10px;
+        }
+        .insta-title {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            text-align: left;
+            width: 100%;
+        }
+        .insta-title h5 {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .kit-text .title {
+            clear: both;
+            float: none !important;
+        }
+        .kit-descript { 
+            font-size: 16px !important;
         }
         .slider-img, .slider-text {
             width: 70%;
@@ -821,6 +867,9 @@ footer .copy p {
             justify-content: center;
             flex-direction: column;
             align-items: center;
+        }
+        .sidenav-trigger {
+            display: block;
         }
         .background-left {
                 top: 60%;
