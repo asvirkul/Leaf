@@ -765,6 +765,9 @@ footer .copy p {
             top: -200px;
             right: 100px;
         }
+        #video-main {
+            height: 90vh;
+        }
         div.email-footer.col.s12.l6 > h6 > br {
             display: none;
         }
@@ -802,7 +805,7 @@ footer .copy p {
             float: none !important;
         }
         .insta-photos.row .material-placeholder > div {
-            padding: 10px;
+            margin: 10px 0;
         }
         .insta-title {
             display: flex;
@@ -893,24 +896,6 @@ footer .copy p {
             width: 85%;
         }
     }
-    @media all and (max-width: 675px) {
-        .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
-            position: static;
-        }
-        .slider-title {
-            margin: 40px 0;
-        }
-        .slider-pic-wrapper {
-            width: 70%;
-        }
-        .main-title {
-            font-size: 20px;
-        }
-        .swiper-slide p.review-text {
-            font-size: 25px !important;
-            line-height: normal;
-        }
-    }
     @media all and (max-width: 768px) {
         .product-main-line {
             display: flex;
@@ -918,8 +903,47 @@ footer .copy p {
             flex-direction: column;
             align-items: center;
         }
+        .mobile-bag {
+            display: block !important;
+        }
+        .mobile-bag .menu li a {
+            margin: auto;
+        }
+        .mobile-bag .menu {
+            display: block;
+        }
+        .mobile-bag a {
+            display: block;
+        }
+        .menu-right {
+            display: none;
+        }
+        header .menu, header .menu-left {
+            display: none;
+        }
+        header .header-content {
+            justify-content: space-between;
+            flex-direction: row-reverse;
+        }
+        .product-sale-text h3, .product-sale-text p {
+            font-size: 20px;
+        }
+        .product-sale-text {
+            padding: 30px;
+        }
+        .showcase-text-wrapper p {
+            font-size: 28px !important;
+        }
+        .showcase-text-wrapper h2 {
+            font-size: 18px;
+        }
         .sidenav-trigger {
             display: block;
+        }
+        .video-wrapper .video-control {
+            right: 20px;
+            bottom: 20px;
+            padding: 16px 18px;
         }
         .background-left {
                 top: 60%;
@@ -970,10 +994,45 @@ footer .copy p {
             top: 225px;
         }
     }
-    
+    @media all and (max-width: 675px) {
+        .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+            position: static;
+        }
+        .insta-wrapper {
+            padding: 20px;
+        }
+        .slider-title {
+            margin: 40px 0;
+        }
+        .slider-pic-wrapper {
+            width: 70%;
+        }
+        .main-title {
+            font-size: 20px;
+        }
+        .swiper-slide p.review-text {
+            font-size: 25px !important;
+            line-height: normal;
+        }
+        .kit-wrapper > a {
+            width: 95%;
+        }
+    }
     @media all and (max-width: 410px) {
         .background-mobile {
             top: 250px;
+        }
+        .showcase-text-wrapper {
+            bottom: 100px;
+            left: 0px;
+            padding: 0 20px;
+        }
+        .showcase-text-wrapper a {
+            display: block;
+            text-align: center;
+        }
+        #video-main {
+            height: 100vh;
         }
         .main-title {
             font-size: 18px;
@@ -984,6 +1043,9 @@ footer .copy p {
         .slider-img, .slider-text {
             width: unset;
             padding: 0 20px;
+        }
+        .review-author, .review-company {
+            text-align: center;
         }
     }
  /* Media End */
