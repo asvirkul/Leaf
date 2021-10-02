@@ -492,6 +492,9 @@ a.kit-item:hover .kit-img img {
     padding-bottom: 80px;
     flex-wrap: wrap;
 }
+.slider-title {
+    margin-top: 130px;
+}
 .slider-img {
     width: 40%;
     box-sizing: border-box;
@@ -499,7 +502,7 @@ a.kit-item:hover .kit-img img {
     background-image: url(../images/leafbag.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: cover;
+    background-size: contain;
     padding: 40px 0;
 }
 .slider-bkg {
@@ -515,7 +518,7 @@ a.kit-item:hover .kit-img img {
     width: 100%;
 }
 .slider-pic-wrapper {
-    width: 70%;
+    width: 55%;
     margin: auto;
 }
 
@@ -525,7 +528,7 @@ a.kit-item:hover .kit-img img {
 }
 .main-title {
     position: absolute;
-    top: 14%;
+    top: 22%;
     left: 50%;
     font-family: 'Druk Wide Bold';
     font-size: 20px;
@@ -762,6 +765,27 @@ footer .copy p {
             top: -200px;
             right: 100px;
         }
+        div.email-footer.col.s12.l6 > h6 > br {
+            display: none;
+        }
+        .slider-img-wrapper {
+            padding-top: 30px;
+        }
+         body > footer > div > div.email-footer.col.s12.l6 > form > input {
+            width: 95% !important;
+            margin: auto
+        } 
+        footer .email-footer form {
+            width: 100%;
+            display: block;
+            max-width: unset;
+            margin-bottom: 80px;
+        }
+        .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+            bottom: 380px !important;
+            left: 15%;    
+            position: absolute;
+        }
         .showcase-text-wrapper p {
             font-size: 35px !important;
         }
@@ -803,9 +827,9 @@ footer .copy p {
             width: 70%;
         }
         .main-title {
-            position: absolute;
-            top: 5%;
-            left: 31%;
+            position: static;
+            text-align: center;
+            padding-top: 80px;
         }
         .kit-wrapper > a {
             width: 48%;
@@ -859,6 +883,32 @@ footer .copy p {
             position: absolute;
             top: -220px;
             right: 20px
+        }
+    }
+    @media all and (max-width: 800px) {
+        .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+            bottom: 410px !important;
+        }
+        .slider-img, .slider-text {
+            width: 85%;
+        }
+    }
+    @media all and (max-width: 675px) {
+        .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+            position: static;
+        }
+        .slider-title {
+            margin: 40px 0;
+        }
+        .slider-pic-wrapper {
+            width: 70%;
+        }
+        .main-title {
+            font-size: 20px;
+        }
+        .swiper-slide p.review-text {
+            font-size: 25px !important;
+            line-height: normal;
         }
     }
     @media all and (max-width: 768px) {
@@ -920,9 +970,20 @@ footer .copy p {
             top: 225px;
         }
     }
+    
     @media all and (max-width: 410px) {
         .background-mobile {
             top: 250px;
+        }
+        .main-title {
+            font-size: 18px;
+        }
+        .swiper-slide p.review-text {
+            font-size: 22px !important;
+        }
+        .slider-img, .slider-text {
+            width: unset;
+            padding: 0 20px;
         }
     }
  /* Media End */
