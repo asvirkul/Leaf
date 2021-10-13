@@ -35,6 +35,18 @@
 }
 /* Fonts End */
 
+/* Scrollbar */
+body { 
+    scrollbar-face-color:red ; 
+    scrollbar-shadow-color: #ffffff;
+    scrollbar-highlight-color: #ffffff;
+    scrollbar-3dlight-color: #5997CA;
+    scrollbar-darkshadow-color: #5997CA; 
+    scrollbar-track-color: #F6F6F6;
+    scrollbar-arrow-color: #F6F6F6; 
+} 
+/* Scrollbar */
+
 /* Header Start */
 header {
     background-color: #fff;
@@ -46,6 +58,7 @@ header {
     z-index: 10;
     transition: all;
     transition-duration: 0.5s;
+    border-bottom: 1px solid #DEDEDE;
 }
 header .header-content {
     display: flex;
@@ -412,6 +425,7 @@ body > section.products-main > div.product-main-line.container > article:nth-chi
     transition: all;
     transition-duration: 0.5s;
     position: relative;
+    margin: 0 auto;
 }
 a.kit-item:hover .kit-img img {
     transform: scale(1.1);
@@ -633,8 +647,51 @@ a.kit-item:hover .kit-img img {
 /* Instgran End */
 
 /* Mobile Menu */
+.sidenav .menu {
+    display: block !important;
+    margin-top: 20px;
+} 
+
+.sidenav {
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#slide-out {
+    width: 80vw;
+}
+.mobile-account {
+    color: #747E31;
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Plain Baltica';
+    border: 1px solid #606B13;
+    padding: 17px 0 !important;
+    margin-bottom: 20px;
+    font-size: 17px;
+    transition: all;
+    transition-duration: 0.5s;
+}
 .sidenav-trigger {
     display: none;
+}
+.mobile-account:hover {
+    background: #606B13;
+    color: #fff;
+}
+.sidenav .menu li {
+    border-bottom: 1px solid #DEDEDE;
+}
+.sidenav .menu li a {
+    font-family: 'Plain Baltica';
+    color: #676767;
+    font-size: 17px;
+}
+.sidenav-overlay {
+    z-index: 10;
 }
 /* Mobile Menu */
 
@@ -706,6 +763,82 @@ footer .copy p {
     font-size: 13px;
 }
  /* Footer End */
+
+/* About Page Start */
+
+/* Modern Design Start */
+.modern-design-wrapper .modern-img img {
+    width: 100%;
+}
+.modern-title {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 170px;
+}
+.modern-title h1 {
+    font-size: 40px;
+    margin-top: -20px;
+}
+.modern-title h1 span {
+    font-family: 'Plain Baltica';
+    font-style: italic;
+}
+/* Modern Design End */
+
+/* Instructions Start */
+.instruction-wrapper {
+    max-width: 1400px;
+    margin: 0 0 0 auto;
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    padding: 100px 0;
+}
+.instruction-wrapper img {
+    width: 100%;
+}
+.instruction-text {
+    width: 30%;
+}
+.instruction-text h2 {
+    font-size: 34px;
+}
+.instruction-text h2 span {
+    font-family: 'Plain Baltica';
+    font-style: italic;
+    letter-spacing: -2px;
+}
+.instruction-text p {
+    font-size: 16px;
+    font-family: 'Plain Baltica';
+    line-height: 25px;
+    padding: 15px 0;
+}
+.instruction-text a {
+    font-family: 'Plain Baltica';
+    font-size: 16px;
+    padding: 20px 40px;
+    border: 1px solid #606B13;
+    color: #606B13; 
+    border-radius: 7px;
+    text-transform: capitalize;
+    display: inline-block;
+}
+.instruction-img-wrapper {
+    width: 40%;
+    margin-left: 200px;
+}
+.instruction-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+/* Instructions End */
+
+/* About Page End */
 
  /* Media Start */
     @media all and (max-width: 1450px) {
@@ -903,6 +1036,22 @@ footer .copy p {
             flex-direction: column;
             align-items: center;
         }
+        .sidenav-trigger {
+            display: block;
+        }
+        footer .email-footer h6 {
+            font-size: 22px;
+        }
+        footer .email-footer form button {
+            top: 6px;
+            right: 17px;
+        }
+        body > footer > div > div.email-footer.col.s12.l6 > form > input {
+            width: 90% !important;
+        }
+        nav .sidenav-trigger {
+            margin: 0;
+        }
         .mobile-bag {
             display: block !important;
         }
@@ -993,10 +1142,42 @@ footer .copy p {
             right: 0;
             top: 225px;
         }
+        .kit-wrapper > article {
+            width: 95%;
+            margin: 10px auto;
+            padding: 30px;
+        }
+        .sale-product-main {
+            width: 95%;
+            margin: 30px auto;
+        }
+
     }
     @media all and (max-width: 675px) {
         .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
             position: static;
+        }
+        
+        .product-sale-img img {
+            border-radius: 0;
+        }
+        .kit-wrapper article p {
+            font-size: 15px;
+        }
+        .product-main-title {
+            padding: 0 10px;
+        }
+        .product-main-title h2, .product-main-title h2 span {
+            font-size: 25px !important;
+        }
+        .product-main-title p {
+            font-size: 15px;
+        }
+        .footer-menu ul li a {
+            font-size: 15px !important;
+        }
+        .footer-menu {
+            margin-bottom: 40px;
         }
         .insta-wrapper {
             padding: 20px;
@@ -1005,7 +1186,7 @@ footer .copy p {
             margin: 40px 0;
         }
         .slider-pic-wrapper {
-            width: 70%;
+            width: 80%;
         }
         .main-title {
             font-size: 20px;
@@ -1016,6 +1197,22 @@ footer .copy p {
         }
         .kit-wrapper > a {
             width: 95%;
+            margin: 30px auto;
+        }
+        .kit-item {
+            margin: 30px 0;
+        }
+        .kit-wrapper article h3 {
+            font-size: 19px;
+        }
+        .insta-title .insta-link p {
+            font-size: 16px;
+        }
+        .insta-title h5, .insta-title h5 span {
+            font-size: 23px;
+        }
+        .insta-photos.row .material-placeholder > div {
+            padding: 0;
         }
     }
     @media all and (max-width: 410px) {
@@ -1027,6 +1224,9 @@ footer .copy p {
             left: 0px;
             padding: 0 20px;
         }
+        .product-main-line article:last-of-type .img-main-line {
+            left: -100px;
+        }
         .showcase-text-wrapper a {
             display: block;
             text-align: center;
@@ -1035,10 +1235,10 @@ footer .copy p {
             height: 100vh;
         }
         .main-title {
-            font-size: 18px;
+            font-size: 16px;
         }
         .swiper-slide p.review-text {
-            font-size: 22px !important;
+            font-size: 20px !important;
         }
         .slider-img, .slider-text {
             width: unset;

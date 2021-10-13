@@ -108,4 +108,8 @@ jQuery(document).ready(function($) {
     } 
     //header
 
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+      });
+
 }); //ready
