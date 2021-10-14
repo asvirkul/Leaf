@@ -498,6 +498,9 @@ a.kit-item:hover .kit-img img {
 .swiper-slide img {
     width: 100%;
 }
+.slider-wrapper {
+    position: relative;
+}
 .slider-img-wrapper {
     display: flex;
     justify-content: center;
@@ -791,7 +794,7 @@ footer .copy p {
     max-width: 1400px;
     margin: 0 0 0 auto;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     flex-direction: row;
     align-items: center;
     position: relative;
@@ -826,6 +829,12 @@ footer .copy p {
     border-radius: 7px;
     text-transform: capitalize;
     display: inline-block;
+    transition: all;
+    transition-duration: 0.5s;
+}
+.instruction-text a:hover {
+    background: #606B13;
+    color: #fff;
 }
 .instruction-img-wrapper {
     width: 40%;
@@ -837,6 +846,30 @@ footer .copy p {
     right: 0;
 }
 /* Instructions End */
+
+/* Slider Start */
+.about-slider-wrapper img {
+    width: 100%;
+    object-fit: contain;
+}
+/* .about-slider-wrapper .swiper-wrapper .swiper-slide:last-child {
+    width: 80% !important;
+} */
+.about-slider-wrapper .swiper-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.about-slider-wrapper .swiper-wrapper .swiper-slide:nth-child(odd) {
+    width: 100% !important;
+}
+.about-slider-wrapper .swiper-wrapper .swiper-slide:nth-child(even) {
+    width: 60% !important;
+}
+.about-slider-wrapper {
+    position: relative;
+    background-color: rgb(248,247,243);
+}
+/* Slider End */
 
 /* About Page End */
 

@@ -27,9 +27,10 @@ jQuery(document).ready(function($) {
             top: '0px'
         }, 10);
     });
+    // Video End
 
     /* Slider Start */
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('.swiper-main', {
         // Optional parameters
         direction: 'horizontal',
         loop: true, 
@@ -55,7 +56,30 @@ jQuery(document).ready(function($) {
         fadeEffect: {
             crossFade: true
         }
-      });
+      })
+      const swiperAbout = new Swiper('.swiper', {
+        slidesPerView: "auto",
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true, 
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        }
+      })
+
       /* Slider End */
 
       $('.materialboxed').materialbox();
