@@ -777,7 +777,7 @@ footer .copy p {
     max-width: 750px;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 170px;
+    margin-bottom: 100px;
 }
 .modern-title h1 {
     font-size: 40px;
@@ -1248,6 +1248,37 @@ footer .copy p {
             position: absolute;
             top: -200px;
             right: 100px;
+        }
+        .instruction-wrapper .instruction-text {
+            width: 50%;
+            box-sizing: border-box;
+        }
+        .instruction-wrapper .instruction-img-wrapper img {
+            width: 100%;
+        }
+        .instruction-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 30px 60px 30px    ;
+        }
+        .instruction-text h2 {
+            font-size: 30px;
+        }
+        .safety-wrapper .safety-text h3 {
+            font-size: 27px;
+        }
+        .safety-wrapper .safety-text p, .safety-wrapper .safety-text a {
+            font-size: 16px;
+        }
+        .eco-item .eco-text  
+        .safety-wrapper .safety-text a {
+            display: block;
+            text-align: center;
+        }
+        .instruction-wrapper .instruction-img {
+            width: 50%;
+            box-sizing: border-box;
         }
         .plastic-banner-wrapper {
             padding: 0 30px;
