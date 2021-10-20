@@ -55,7 +55,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 20;
     transition: all;
     transition-duration: 0.5s;
     border-bottom: 1px solid #DEDEDE;
@@ -850,26 +850,306 @@ footer .copy p {
 /* Slider Start */
 .about-slider-wrapper img {
     width: 100%;
-    object-fit: contain;
+    border-radius: 40px;
 }
-/* .about-slider-wrapper .swiper-wrapper .swiper-slide:last-child {
-    width: 80% !important;
-} */
-.about-slider-wrapper .swiper-wrapper {
+.slick-wrapper {
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    overflow: hidden;
+    margin-bottom: 100px;
 }
-.about-slider-wrapper .swiper-wrapper .swiper-slide:nth-child(odd) {
-    width: 100% !important;
+.slick-dots li {
+    background: #606B13;
+    color: #000;
+    border-radius: 50%;
+    padding: 0;
+    width: 10px;
+    height: 10px;
 }
-.about-slider-wrapper .swiper-wrapper .swiper-slide:nth-child(even) {
-    width: 60% !important;
+.slick-dots li button {
+    display: none;
+}
+.slick-dots {
+    bottom: 0px;
+    left: 0;
+    border: 1px solid #E1E0CC;
+    display: flex !important; 
+    max-width: fit-content;
+    left: 47%;
+    align-items: center;
+    padding: 10px 15px !important;
+    border-radius: 30px;
+}
+.slider-item {
+    width: 5%;
+    margin: 0 20px;
+}
+.slider-item h2 {
+    font-size: 20px;
+    padding: 15px 0 5px 0;
+}
+.slider-item p {
+    font-family: 'Plain Baltica';
+    line-height: 22px;
+    font-size: 16px;
+    color: #000;
+}
+.slider-about-text {
+    max-width: 100%;
+    padding-bottom: 30px;
+}
+.slick-dots .slick-active {
+    background: #DFE3C5;
+    border: 7px solid rgb(96,107,19);
+    padding: 5px;
+}
+.slick-wrapper {
+    padding: 40px 0;
 }
 .about-slider-wrapper {
     position: relative;
     background-color: rgb(248,247,243);
+    padding-bottom: 30px;
 }
 /* Slider End */
+
+/* Plasctic Banner Start */
+.plastic-banner-wrapper {
+    background-color: #606b13;
+    position: relative;
+    text-align: center;
+    max-width: 1300px;
+    margin: 100px auto;
+    padding: 125px 0;
+    border-radius: 30px;
+}
+.plastic-banner-wrapper .banner-text {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.plastic-banner-wrapper .banner-text {
+    color: #F8F7F3;
+}
+.plastic-banner-wrapper .banner-text h3 {
+    font-size: 34px;
+    color: #F8F7F3;
+    line-height: 28px;
+}
+.text {
+    font-family: 'Plain Baltica';
+}
+.text-i {
+    font-family: 'Plain Baltica';
+    font-style: italic;
+}
+.plastic-banner-wrapper .banner-text p {
+    font-family: 'Plain Baltica';
+    line-height: 26px;
+    font-size: 17px;
+}
+.plastic-banner-wrapper .banner-text h3 span {
+    font-family: 'Plain Baltica';
+    font-style: italic;
+    margin-top: 10px;
+    display: block;
+    margin-bottom: 30px;
+}
+.plastic-banner-wrapper img {
+    position: absolute;
+}
+#three-razor {
+    bottom: 0;
+    left: 0;
+}
+#two-razor {
+    top: 0;
+    right: 0;
+}
+#one-razor {
+    right: 120px;
+}
+/* Plasctic Banner End */
+
+/* Safety Razor Start */
+.safety-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.safety-text {
+    width: 28%;
+    margin: auto auto auto 100px;
+}
+.safety-wrapper .safety-text h3 {
+    font-size: 34px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+.safety-wrapper .safety-text p {
+    margin: 15px 0;
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+.safety-wrapper .safety-text a {
+    border: 1px solid rgb(96,107,19);
+    border-radius: 7px;
+    font-size: 18px;
+    font-family: 'Plain Baltica';
+    text-transform: capitalize;
+    color: rgb(96,107,19);
+    padding: 20px 40px;
+    transition: all;
+    transition-duration: 0.5s;
+    display: inline-block;
+}
+.safety-wrapper .safety-text a:hover {
+    background: rgb(96,107,19);
+    color: #fff;
+}
+/* Safety Razor End */
+
+/* Ecology Slider Start */
+.eco-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 0 30px auto;
+}
+.eco-wrapper img {
+    width: 100%;
+}
+.eco-item {
+    width: 12%;
+    padding: 100px 0;
+}
+.slick-active {
+    opacity:1!important;
+    transition:opacity 1s ease-in;
+}
+.eco-item .eco-text {
+    width: 30%;
+    box-sizing: border-box;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 450px;
+}
+.eco-text h4 {
+    font-size: 23px;
+    margin: 0;
+    line-height: 32px;
+}
+.eco-text p {
+    font-size: 34px;
+    font-style: italic;
+    margin-bottom: 120px;
+    letter-spacing: -1px;
+    padding: 0 10px;
+}
+.eco-img span {
+    overflow: hidden;
+}
+.eco-wrapper .slick-dots {
+    left: 0;
+    bottom: 15%;
+}
+.eco-img span:first-child {
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.eco-item .eco-img {
+    width: 70%;
+    box-sizing: border-box;
+    float: right;
+    max-height: 450px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.eco-item .eco-img img {
+    display: inline;
+
+}
+.eco-item .eco-img span:first-child {
+    width: 250%;
+}
+.eco-item .eco-img span:last-child {
+    overflow: hidden;
+}
+.eco-item .eco-img span:last-child img {
+    width: 160%;
+}
+/* Ecology Slider End */
+
+/* Tiles Gallery Start */
+.tiles-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    position: relative;
+}
+.tiles-wrapper img {
+    width: 100%;
+    display: block;
+}
+.tiles-wrapper .col {
+    padding: 0;
+}
+.tile-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #E1E0CC !important;
+    z-index: 15;
+    width: 75%;
+}
+.tile-text h5 {
+    font-size: 34px;
+    color: #E1E0CC !important;
+}
+.tile-left, .tile-right {
+    position: relative;
+}
+.tiles-wrapper span {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0.3;
+}
+.tile-right h5 {
+    font-style: italic;
+    letter-spacing: -1px;
+    margin-top: 40px;
+}
+.tile-text a {
+    background-color: #E1E0CC;
+    color: #606B13;
+    padding: 20px 60px;
+    border-radius: 7px;
+    margin-top: 30px;
+    display: inline-block;
+    font-family: 'Plain Baltica';
+    font-weight: bold;
+    font-size: 17px;
+    transition: all;
+    transition-duration: 0.5s;
+}
+.tile-text a:hover {
+    background-color: #cbc9a9;
+}
+/* Tiles Gallery End */
 
 /* About Page End */
 
