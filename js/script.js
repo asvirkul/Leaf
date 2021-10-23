@@ -66,21 +66,39 @@ jQuery(document).ready(function($) {
         arrows: false,
         responsive: [
             {
+            breakpoint: 1000,
+            settings: {
+                arrows: false,
+                centerMode: false,
+                centerPadding: '40px',
+                slidesToShow: 3,
+                variableWidth: false,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            },
+            {
             breakpoint: 768,
             settings: {
                 arrows: false,
-                centerMode: true,
+                centerMode: false,
                 centerPadding: '40px',
-                slidesToShow: 3
+                slidesToShow: 3,
+                variableWidth: false,
+                slidesToShow: 1,
+                slidesToScroll: 1
             }
             },
             {
             breakpoint: 480,
             settings: {
                 arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 1
+                centerMode: false,
+                centerPadding: '20px',
+                slidesToShow: 3,
+                variableWidth: false,
+                slidesToShow: 1,
+                slidesToScroll: 1
             }
             }
         ]

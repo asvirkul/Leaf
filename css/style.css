@@ -871,12 +871,12 @@ footer .copy p {
     display: none;
 }
 .slick-dots {
-    bottom: 0px;
-    left: 0;
+    bottom: -20px;
     border: 1px solid #E1E0CC;
     display: flex !important; 
     max-width: fit-content;
-    left: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     align-items: center;
     padding: 10px 15px !important;
     border-radius: 30px;
@@ -1023,8 +1023,7 @@ footer .copy p {
 .eco-wrapper {
     overflow: hidden;
     position: relative;
-    width: 100%;
-    max-width: 1400px;
+    width: 98%;
     margin: 0 0 30px auto;
 }
 .eco-wrapper img {
@@ -1249,6 +1248,44 @@ footer .copy p {
             top: -200px;
             right: 100px;
         }
+        .eco-img {
+            width: 100% !important;
+            margin: 0 auto;
+            max-height: 400px !important;
+        }
+        div.eco-img > span:nth-child(1) > img {
+            height: 130%;
+        }
+        .eco-wrapper .slick-dots {
+            bottom: 1%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }  
+        .eco-text .title {
+            font-size: 20px;
+        }
+        .eco-text p {
+            font-size: 25px;
+        }
+        .eco-wrapper {
+            margin-bottom: 0 !important;
+        }     
+        .eco-text {
+            width: 100% !important;
+            display: flex;
+            justify-content: flex-start !important;
+            flex-direction: column;
+            min-height: unset !important;
+        }
+        .eco-text p {
+            padding: 0;
+            margin-bottom: 20px;
+        }
+        .eco-item {
+            display: flex !important;
+            justify-content: center;
+            flex-direction: column;
+        }
         .instruction-wrapper .instruction-text {
             width: 50%;
             box-sizing: border-box;
@@ -1437,6 +1474,71 @@ footer .copy p {
             flex-direction: column;
             align-items: center;
         }
+        .banner-text .title {
+            font-size: 28px !important;
+        }
+        .modern-title h1 {
+            font-size: 29px !important;
+            padding: 10px 20px;
+        }
+        .instruction-wrapper {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+        }
+        .instruction-img {
+            position: static;
+            width: 70% !important;
+            margin: 0 0 0 auto;
+        }
+        .instruction-text {
+            width: 70% !important;
+            font-size: 20px !important;
+        }
+        .instruction-text h2 {
+            font-size: 25px;
+        }
+        .instruction-text a {
+            display: block;
+            text-align: center;
+        }
+        .instruction-img-wrapper {
+            width: 100%;
+            margin-left: 0 !important; 
+        }
+        .banner-text p {
+            font-size: 16px !important;
+        }
+        .safety-wrapper {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .safety-wrapper .safety-text a {
+            display: block;
+            text-align: center;
+        }
+        .safety-wrapper .safety-img {
+            width: 100%;
+            margin-top: 50px;
+        }
+        .tile-text .title {
+            font-size: 23px;
+        }
+        #three-razor {
+            left: -180px;
+        }
+        #two-razor {
+            right: -100px;
+        }
+        .tile-text a {
+            font-size: 16px;
+        }
+        .safety-wrapper .safety-img img {
+            width: 70%;
+        }
+        .safety-text {
+            width: 80% !important;
+        }
         .sidenav-trigger {
             display: block;
         }
@@ -1583,6 +1685,12 @@ footer .copy p {
         .insta-wrapper {
             padding: 20px;
         }
+        #two-razor {
+            right: -190px;
+        }
+        #three-razor {
+            left: -200px;
+        }
         .slider-title {
             margin: 40px 0;
         }
@@ -1614,6 +1722,24 @@ footer .copy p {
         }
         .insta-photos.row .material-placeholder > div {
             padding: 0;
+        }
+    }
+    @media all and (max-width: 500px) {
+        #three-razor {
+            left: -260px !important;
+        }
+        #one-razor {
+            right: -30px;
+        }
+        #two-razor {
+            right: -260px;
+        }
+        .banner-text .title {
+            font-size: 25px !important;
+            line-height: 24px !important;
+        }
+        .plastic-banner-wrapper {
+            padding: 0 10px !important;
         }
     }
     @media all and (max-width: 410px) {
