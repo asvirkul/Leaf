@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 
-
+    
 
     /* Animation Header Start */
     var hHeader = $('header').height();
@@ -53,7 +53,53 @@ jQuery(document).ready(function($) {
     /* Animation Header End */
 
 
+      /* Slidenav close */
+      $('#closenav').click(function(){
+        $('.sidenav').sidenav('close');
+      });
+      /* Slidenav close */
+    
+    /* Video Start */
+    var myVideo = document.getElementById("video-main"); 
+    $('.video-wrapper .play-vid').hide();
+    $('.video-control').click(function () {
+    if ( $('.video-wrapper .play-vid').is(':hidden') ) {
+        $('.video-wrapper .pause-vid').hide();
+        $('.video-wrapper .play-vid').show();
+    }
+    else {
+        $('.video-wrapper .play-vid').hide();
+        $('.video-wrapper .pause-vid').show();
+    }
+        if (myVideo.paused) 
+            myVideo.play(); 
+        else 
+            myVideo.pause(); 
+    } 
+    ) 
+    /* Video End */
 
+    /* Animation Sale Start */
+    var sale = $('.sale-anim');
+    sale.hover(function () {
+        $(this).animate({
+            top: '-10px'
+        }, 10)
+    }, function() {
+        $(this).animate({
+            top: '0px'
+        }, 10);
+    });
+    /* Animation Sale End */
+
+    $('.materialboxed').materialbox();
+
+    
+
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+      });
+      // Sidenav End
 
     /* Slick Start */
     $('.slick-wrapper').slick({
@@ -113,53 +159,4 @@ jQuery(document).ready(function($) {
         cssEase: 'ease-in-out'
       });
     /* Slick End */
-
-      /* Slidenav close */
-      $('#closenav').click(function(){
-        $('.sidenav').sidenav('close');
-      });
-      /* Slidenav close */
-    
-    /* Video Start */
-    var myVideo = document.getElementById("video-main"); 
-    $('.video-wrapper .play-vid').hide();
-    $('.video-control').click(function () {
-    if ( $('.video-wrapper .play-vid').is(':hidden') ) {
-        $('.video-wrapper .pause-vid').hide();
-        $('.video-wrapper .play-vid').show();
-    }
-    else {
-        $('.video-wrapper .play-vid').hide();
-        $('.video-wrapper .pause-vid').show();
-    }
-        if (myVideo.paused) 
-            myVideo.play(); 
-        else 
-            myVideo.pause(); 
-    } 
-    ) 
-    /* Video End */
-
-    /* Animation Sale Start */
-    var sale = $('.sale-anim');
-    sale.hover(function () {
-        $(this).animate({
-            top: '-10px'
-        }, 10)
-    }, function() {
-        $(this).animate({
-            top: '0px'
-        }, 10);
-    });
-    /* Animation Sale End */
-
-    $('.materialboxed').materialbox();
-
-    
-
-    $(document).ready(function(){
-        $('.sidenav').sidenav();
-      });
-      // Sidenav End
-
 }); //ready

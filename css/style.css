@@ -79,7 +79,7 @@ header .menu li a {
 header .menu li a:hover {
     color: #000;
 }
-header #logo a {
+header #logo a, .sidenav #logo a {
     font-family: 'Druk Wide Bold';
     color: #000;
     font-size: 25px;
@@ -88,13 +88,13 @@ header #logo a {
     justify-content: center;
     flex-direction: row;
 }
-header #logo a img {
+header #logo a img, .sidenav #logo a img {
     display: block;
     margin-right: 5px;
     transition: all;
     transition-duration: 0.3s;
 }
-header #logo a i.line-logo {
+header #logo a i.line-logo, .sidenav #logo a i.line-logo {
     height: 30px;
     width: 1px;
     background-color: #000;
@@ -652,13 +652,18 @@ a.kit-item:hover .kit-img img {
 /* Mobile Menu */
 .sidenav .menu {
     display: block !important;
-    margin-top: 50px;
+    margin-top: 70px;
     position: relative;
 } 
-#closenav {
+.sidenav .logo {
     position: absolute;
-    left: 10%;
-    transform: translate(-10%, 10%);
+    display: flex;
+    justify-content: space-between;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 100%;
+    padding: 0 28px;
+    align-items: center;
 }
 #closenav a i {
     display: inline-block;
@@ -672,7 +677,7 @@ a.kit-item:hover .kit-img img {
     justify-content: space-between;
 }
 #slide-out {
-    width: 80vw;
+    width: 100vw;
 }
 .mobile-account {
     color: #747E31;
@@ -704,7 +709,10 @@ a.kit-item:hover .kit-img img {
     font-size: 17px;
 }
 .sidenav-overlay {
-    z-index: 10;
+    z-index: 21;
+}
+#closenav {
+    display: inline-block;
 }
 /* Mobile Menu */
 
@@ -884,7 +892,7 @@ footer .copy p {
     bottom: -20px;
     border: 1px solid #E1E0CC;
     display: flex !important; 
-    max-width: fit-content;
+    max-width: max-content !important;
     left: 50%;
     transform: translate(-50%, -50%);
     align-items: center;
@@ -1270,6 +1278,7 @@ footer .copy p {
             bottom: 1%;
             left: 50%;
             transform: translate(-50%, -50%);
+            max-width: min-content;
         }  
         .eco-text .title {
             font-size: 20px;
@@ -1484,6 +1493,16 @@ footer .copy p {
             flex-direction: column;
             align-items: center;
         }
+
+        .slider-img-wrapper {
+            padding-bottom: 0;
+        }
+        .insta-photos > div {
+            padding: 10px auto;
+        }
+        .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+            margin-bottom: 50px;
+        }
         .banner-text .title {
             font-size: 28px !important;
         }
@@ -1670,6 +1689,7 @@ footer .copy p {
         .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
             position: static;
         }
+
         .modern-title h1 {
             font-size: 25px !important;
         }
@@ -1691,6 +1711,9 @@ footer .copy p {
         }
         .tile-text a {
             margin-top: 10px;
+            display: block;
+            padding: 20px 0;
+            font-size: 15px;
         }
         .kit-wrapper article p {
             font-size: 15px;
@@ -1805,6 +1828,9 @@ footer .copy p {
     @media all and (max-width: 410px) {
         .background-mobile {
             top: 250px;
+        }
+        .tile-text h5 {
+            font-size: 20px !important;
         }
         .showcase-text-wrapper {
             bottom: 100px;
