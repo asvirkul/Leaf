@@ -652,9 +652,19 @@ a.kit-item:hover .kit-img img {
 /* Mobile Menu */
 .sidenav .menu {
     display: block !important;
-    margin-top: 20px;
+    margin-top: 50px;
+    position: relative;
 } 
-
+#closenav {
+    position: absolute;
+    left: 10%;
+    transform: translate(-10%, 10%);
+}
+#closenav a i {
+    display: inline-block;
+    font-size: 40px;
+    color: #000;
+}
 .sidenav {
     z-index: 200;
     display: flex;
@@ -1660,9 +1670,27 @@ footer .copy p {
         .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
             position: static;
         }
-        
+        .modern-title h1 {
+            font-size: 25px !important;
+        }
         .product-sale-img img {
             border-radius: 0;
+        }
+        .plastic-banner-wrapper .banner-text {
+            width: 90%;
+        }
+        #three-razor {
+            left: -260px !important;
+            bottom: -262px;
+        }
+        .tile-text h5 {
+            font-size: 23px !important;
+        }
+        .eco-item .eco-img span:first-child {
+            width: 90%;
+        }
+        .tile-text a {
+            margin-top: 10px;
         }
         .kit-wrapper article p {
             font-size: 15px;
@@ -1726,7 +1754,39 @@ footer .copy p {
     }
     @media all and (max-width: 500px) {
         #three-razor {
-            left: -260px !important;
+            left: -300px !important;
+        }
+        .eco-text p {
+            font-size: 23px;
+        }
+        .instruction-text a {
+            padding: 20px 0;
+        }
+        
+        .eco-text h4 {
+            line-height: 23px;
+            margin-bottom: 10px;
+        }
+        .modern-title h1 {
+            font-size: 22px !important;
+        }
+        .instruction-text h2 {
+            font-size: 22px;
+        }
+        .plastic-banner-wrapper .banner-text h3 {
+            font-size: 22px !important;
+        }
+        .banner-text p {
+            font-size: 15px;
+        }
+        .banner-text .title {
+            line-height: 18px !important;
+        }
+        .safety-wrapper .safety-text h3 {
+            font-size: 22px;
+        }
+        .tile-text h5 {
+            font-size: 22px !important;
         }
         #one-razor {
             right: -30px;

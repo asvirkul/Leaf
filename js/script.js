@@ -114,6 +114,12 @@ jQuery(document).ready(function($) {
       });
     /* Slick End */
 
+      /* Slidenav close */
+      $('#closenav').click(function(){
+        $('.sidenav').sidenav('close');
+      });
+      /* Slidenav close */
+    
     /* Video Start */
     var myVideo = document.getElementById("video-main"); 
     $('.video-wrapper .play-vid').hide();
