@@ -785,7 +785,7 @@ footer .copy p {
 }
  /* Footer End */
 
-/* About Page Start */
+/* About Razor Page Start */
 
 /* Modern Design Start */
 .modern-design-wrapper .modern-img img {
@@ -1080,7 +1080,7 @@ footer .copy p {
     overflow: hidden;
 }
 .eco-wrapper .slick-dots {
-    left: 0;
+    left: 4%;
     bottom: 15%;
 }
 .eco-img span:first-child {
@@ -1177,7 +1177,28 @@ footer .copy p {
 }
 /* Tiles Gallery End */
 
-/* About Page End */
+/* About Razors Page End */
+
+/* About Us Page Start */
+
+/* About Us Picture Start */
+.us-img-wrapper img {
+    width: 100%;
+}
+/* About Us Picture End */
+
+/* About Us Title Start */
+.us-title h1 {
+    font-size: 40px;
+}
+.us-title {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+/* About Us Title End */
+
+/* About Us Page Start */
 
  /* Media Start */
     @media all and (max-width: 1450px) {
