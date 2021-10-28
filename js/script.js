@@ -1,49 +1,48 @@
 jQuery(document).ready(function($) {
 
-    
-
     /* Animation Header Start */
-    var hHeader = $('header').height();
+    var hHeader = $('.main').height();
     $(window).scroll(function () {
         var scroll = getCurrentScroll();
         if (scroll >= hHeader) {
-            $('header').addClass('bg-scroll');
-            $('header').css({
+            $('.main').addClass('bg-scroll');
+            $('.main').css({
                 'background': '#fff',
                 'border-bottom': '1px solid #DEDEDE'
             })
-            $('#logo-pic').attr('src', 'images/razor.png')
-            $('header .menu li a').css({
+            $('.main #logo-pic').attr('src', 'images/razor.png')
+            $('.main .menu li a').css({
                 'color': '#797979'
             })
             $('.sidenav-trigger').css({
                 'color': '#797979'
             })
-            $('header i').css({
+            $('.main i').css({
                 'color': '#000',
             })
-            $('header .line-logo').css({
+            $('.main .line-logo').css({
                 'background': '#000'
             })
         }
         else {
-            $('header').removeClass('bg-scroll');
-            $('#logo-pic').attr('src', 'images/razor-white.png')
-            $('header .menu li a').css({
+            $('.main').removeClass('bg-scroll');
+            $('.main #logo-pic').attr('src', 'images/razor-white.png')
+            $('.main .menu li a').css({
                 'color': '#fff'
             })
             $('.sidenav-trigger').css({
                 'color': '#fff'
             })
-            $('header').css({
+            $('.main').css({
                 'background': 'transparent',
                 'border': 'none'
             })
-            $('header i').css({
-                'color': 'white',
+            $('.main i').css({
+                'color': 'white'
             })
-            $('header .line-logo').css({
-                'background': 'white'
+            $('.main .line-logo').css({
+                'background': '#fff',
+                'color': 'white'
             })
         }
     });
@@ -51,7 +50,25 @@ jQuery(document).ready(function($) {
         return window.pageYOffset || document.documentElement.scrollTop;
     } 
     /* Animation Header End */
-
+    
+    /* Scrollspy  */
+    $('.scrollspy-shop-wrapper a:first-child').addClass('active')
+    $('.scrollspy-shop-wrapper a').click(function(e) {
+        e.preventDefault();
+        $(".scrollspy-shop-wrapper a").removeClass('active');
+        $(this).addClass('active');
+    });
+    var posTabs = $('.scrollspy-shop-wrapper').offset().top;
+    $(window).scroll(function() {
+        var scrollWindow = $(window).scrollTop();
+        if (scrollWindow > posTabs) {
+            $('.scrollspy-shop-wrapper').addClass('fixed')
+        }
+        else {
+            $('.scrollspy-shop-wrapper').removeClass('fixed')
+        }
+    });
+    /* Scrollspy  */
 
       /* Slidenav close */
       $('#closenav').click(function(){
@@ -90,11 +107,21 @@ jQuery(document).ready(function($) {
             top: '0px'
         }, 10);
     });
+    var hideText = $('.options-hidden').height() + 20;
+    $('.options-hidden', this).css('margin-bottom', - + hideText )
+    $('.razors-shop-wrapper .row-kit-items .kit-item').hover(function() {
+        $('.options-hidden', this).css('margin-bottom', "0px")
+    }, function() {
+        $('.options-hidden').css("margin-bottom", - + hideText);
+    });
+
     /* Animation Sale End */
 
     $('.materialboxed').materialbox();
 
     
+
+    $( "#tabs" ).tabs();
 
     $(document).ready(function(){
         $('.sidenav').sidenav();

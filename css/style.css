@@ -444,6 +444,8 @@ a.kit-item:hover .kit-img img {
 }
 .kit-text {
     padding: 20px 25px;
+    transition: all;
+    transition-duration: 0.5s;
 }
 .kit-text h3 {
     font-size: 17px;
@@ -1329,6 +1331,139 @@ footer .copy p {
 /* Mark End */
 
 /* About Us Page Start */
+
+/* Shop Page Start */
+
+/* Shop Img Start */
+.shop-img-wrapper .shop-img img {
+    width: 100%;
+    display: block;
+}
+.shop-img-wrapper {
+    position: relative; 
+}
+.shop-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 500px;
+    margin: 0 auto;
+}
+/* Shop Img End */
+
+/* Shop Scrollspy Start */
+.scrollspy-shop-wrapper a, .scrollspy-shop-wrapper .active {
+    font-size: 22px;
+    color: #000;    
+    transition: all;
+    transition-duration: 0.5s;
+    border-bottom: 2px solid transparent;
+    display: inline-block;
+    margin: auto;   
+    padding: 10px 0 !important;
+    height: unset !important;
+}
+.line {
+    height: 25px;
+    width: 1px;
+    background-color: #DEDEDE;
+    display: block;
+}
+.all-shop-wrapper {
+    background-color: #F8F7F3;
+}
+.scrollspy-shop-wrapper {
+    align-items: center;
+    display: flex;  
+    background-color: #F8F7F3;
+}
+.all-shop-wrapper .row {
+    margin-bottom: 0;
+}
+.table-of-contents a.active {
+    border-bottom: 2px solid #64702B;
+    border-left: none;
+}
+.table-of-contents a:hover {
+    border-left: none;
+    color: #000;
+    padding: 0px;   
+}
+.row-kit-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    flex-direction: row;
+}
+.razors-shop-wrapper .row-kit-items {
+    padding-bottom: 100px;
+}
+.row-kit-items .sale-bg:nth-child(odd) {
+    margin: 0;
+}
+.fixed {
+    position: fixed;
+    max-width: 1350px;
+    width: 100%;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    margin: 0 auto;
+    z-index: 50;
+}
+.sale-bg {
+    padding-bottom: 60px;
+    overflow: hidden;
+}
+.sale-bg.item a {
+    width: 100%;
+    display: block;
+}
+.sale-bg.item {
+    width: 49%;
+    box-sizing: border-box;
+    margin: auto;
+}
+.table-of-contents a.active {
+    padding: 0;
+    color: #626E21;
+}
+.scrollspy-shop-wrapper .row .col {
+    padding: 0;
+}
+.kits-title {
+    padding: 40px 0 60px 0;
+}
+.kits-title h2 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+.kits-title p {
+    font-size: 22px;
+}
+.razors-shop-wrapper .kits-title {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 26px;
+}
+.razors-shop-wrapper .row-kit-items .kit-text {
+    background-color: #fff;
+    position: absolute;
+    z-index: 19;
+    bottom: 0px;
+    overflow: hidden;
+}
+.options-hidden {
+    transition: all;
+    transition-duration: 0.5s;
+}
+.razors-shop-wrapper .kit-descript {
+    margin-bottom: 20px;
+}
+/* Shop Scrollspy End */
+
+/* Shop Page End */
 
  /* Media Start */
     @media all and (max-width: 1450px) {
