@@ -107,21 +107,25 @@ jQuery(document).ready(function($) {
             top: '0px'
         }, 10);
     });
-    var hideText = $('.options-hidden').height() + 20;
-    $('.options-hidden', this).css('margin-bottom', - + hideText )
-    $('.razors-shop-wrapper .row-kit-items .kit-item').hover(function() {
+     var hideText = $('.options-hidden').innerHeight();
+    $('.options-hidden', this).css("margin-bottom", - + hideText);
+    $('.options-hidden').css('margin-bottom', '-' + hideText + 'px');
+     $('.razors-shop-wrapper .row-kit-items .kit-item').hover(function() {
         $('.options-hidden', this).css('margin-bottom', "0px")
     }, function() {
-        $('.options-hidden').css("margin-bottom", - + hideText);
-    });
+        $('.options-hidden', this).css("margin-bottom", - + hideText);
+    });  
 
     /* Animation Sale End */
 
+    /* Checkbox */
+    $( ".options-hidden input" ).on( "click", function() {
+        $(".razors-shop-wrapper .kit-descript").html( "red");
+        $(".razors-shop-wrapper .kit-img img").attr('src', 'images/kit2.jpg');
+      });
+    /* Checkbox */
+
     $('.materialboxed').materialbox();
-
-    
-
-    $( "#tabs" ).tabs();
 
     $(document).ready(function(){
         $('.sidenav').sidenav();
