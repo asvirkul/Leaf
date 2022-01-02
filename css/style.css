@@ -465,6 +465,33 @@ a.kit-item:hover .kit-img img {
     font-weight: thin;
     display: block;
 }
+[type="checkbox"] + span:not(.lever) {
+    height: 20px;
+}
+#tabs > div.kit-text > div > form {
+    display: flex;
+    justify-content: space-between  ;
+    align-items: center;
+    padding: 10px 0;
+}
+#tabs > div.kit-text > div > form input[type="button"] {
+    z-index: 9;
+    text-decoration: none;
+    background-color: #737D2F;
+    color: #fff;
+    border: 1px solid #737D2F;
+    font-family: 'Plain Baltica';
+    padding: 5px 10px;
+    font-weight: 500;
+    display: inline-block; 
+    border-radius: 5px;
+    transition: all;
+    transition-duration: 0.3s;
+    min-width: max-content;
+    cursor: pointer;
+    font-size: 13px;
+}
+
 .kit-wrapper article {
     padding: 50px;
 }
@@ -1336,9 +1363,11 @@ footer .copy p {
 /* Shop Page Start */
 
 /* Shop Img Start */
-.shop-img-wrapper .shop-img img {
-    width: 100%;
+.shop-img-wrapper .shop-img  {
     display: block;
+    height: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 .shop-img-wrapper {
     position: relative; 
@@ -1382,6 +1411,10 @@ footer .copy p {
 .all-shop-wrapper .row {
     margin-bottom: 0;
 }
+.all-shop-content.container {
+    max-width: 1400px !important;
+    width: 80%;
+}
 .table-of-contents a.active {
     border-bottom: 2px solid #64702B;
     border-left: none;
@@ -1403,6 +1436,9 @@ footer .copy p {
 .razors-shop-wrapper .row-kit-items {
     padding-bottom: 100px;
 }
+body > section.all-shop-wrapper > div > div.razors-shop-wrapper > div.row-kit-items {
+    padding-bottom: 0;
+}
 .row-kit-items .sale-bg:nth-child(odd) {
     margin: 0;
 }
@@ -1418,6 +1454,15 @@ footer .copy p {
 }
 .razors-shop-wrapper .kit-img {
     position: relative;
+}
+body > section.all-shop-wrapper > div > div.razors-shop-wrapper > div.row-kit-items > .sale-bg {
+    padding-bottom: 40px;
+}
+body > section.all-shop-wrapper > div > div.razors-shop-wrapper > .sale-product-main {
+    margin-bottom: 40px;
+}
+.accessories-wrapper .row-kit-items {
+    padding-top: 20px;
 }
 .sale-bg {
     padding-bottom: 60px;
@@ -1501,6 +1546,84 @@ footer .copy p {
 
 /* Shop Page End */
 
+/* Instructions Page Start */
+
+/* Instructions Tabs Start */
+.instructions-title, .tabs-img, .tabs-switch {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.instructions-title {
+    margin: 50px auto;
+    margin-top: 100px;
+}
+.instructions-wrapper img {
+    width: 100%;
+}
+.instructions-title h1 {
+    font-size: 50px;
+}
+div.instructions-title.center-align > p {
+    font-size: 35px !important;
+    letter-spacing: -2px;
+    font-style: bold;
+}
+.instructions-wrapper .tabs-img {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    overflow: hidden;
+}
+.instructions-wrapper .wide-line {
+    width: 75vw;
+    height: 0.5px;
+    background-color: #dedede;
+    margin: auto;
+}
+.tabs-all-links-wrapper {
+    background-color: #fff;
+}
+.tabs-all-links-wrapper div[id^="tabs"] {
+    background-color: #F6F5F0;
+
+}
+.tabs-all-links-wrapper div[id^="tabs"] article {
+    max-width: 1000px;
+    margin: auto;
+}
+.tabs-img > div {
+    position: relative;
+    bottom: -20px;
+    z-index: -1;
+}
+#tabs {
+    border: 1px solid #dedede;
+    padding: 8px 8px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 550px;
+    margin: 20px auto 20px auto;
+    border-radius: 15px;
+}
+#tabs a {
+    padding: 15px 80px;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 16px;
+}
+#tabs a:not(.inactive) {
+    background-color: #626E21;
+}
+#tabs a.inactive {
+    color: #626E21;;
+}
+/* Instructions Tabs End */
+
+/* Instructions Page End */
+
  /* Media Start */
     @media all and (max-width: 1450px) {
         .product-main-line article {
@@ -1583,10 +1706,43 @@ footer .copy p {
         }
     }
     @media all and (max-width: 1000px) {
+        .all-shop-content.container #tabs .kit-text .title,  .all-shop-content.container #tabs .kit-text p.right {
+            font-size: 15px !important;
+        }
         .product-main-line article:first-of-type .img-main-line {
             position: absolute;
             top: -200px;
             right: 100px;
+        }
+        .razors-shop-wrapper .row-kit-items .kit-text {
+            position: static;
+        }
+        .options-hidden {
+            margin-bottom: 0 !important;
+        }
+        #tabs > div.kit-text > div > form > p:nth-child(2) {
+            text-align: center;
+        }
+        #tabs > div.kit-text > div > form > p:nth-child(2) input {
+            background-color: #fff;
+            color: #737D2F;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .all-shop-content.container .razors-shop-wrapper .kit-img img, .razors-shop-wrapper .kit-img {
+            border-bottom-left-radius: 0 !important;
+            border-bottom-right-radius: 0 !important;
+        }
+        #tabs > div.kit-text > div > form {
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+        }
+        #tabs > div.kit-text > div > form > p {
+            width: 100%;
+        }
+        .all-shop-content.container {
+            width: 90%;
         }
         .eco-img {
             width: 100% !important;
@@ -1798,7 +1954,9 @@ footer .copy p {
             top: -220px;
             right: 20px
         }
-        
+        .sale-bg {
+            padding-bottom: 0 !important;
+        }
     }
     @media all and (max-width: 800px) {
         .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
@@ -1807,6 +1965,15 @@ footer .copy p {
         .slider-img, .slider-text {
             width: 85%;
         }
+        .shop-text .title {
+            font-size: 2.7rem !important;
+        }
+        .kits-title h2 {
+            font-size: 30px;
+        }
+        .kits-title p {
+            font-size: 30pxs;
+        }
     }
     @media all and (max-width: 768px) {
         .product-main-line {
@@ -1814,6 +1981,9 @@ footer .copy p {
             justify-content: center;
             flex-direction: column;
             align-items: center;
+        }
+        header:not(.main) .sidenav-trigger {
+            color: #000 !important; 
         }
         .about-us-wrapper, .together-wrapper, .pocket-wrapper {
             padding: 0 40px;
@@ -2044,7 +2214,15 @@ footer .copy p {
         .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
             position: static;
         }
-
+        body > section.all-shop-wrapper > div > div.kits-wrapper.row > div.row-kit-items .sale-bg.item {
+            width: 100%;
+        }
+        body > section.all-shop-wrapper > div > div.razors-shop-wrapper .sale-bg.item {
+            width: 100%;
+        }
+        .all-shop-content.container {
+            width: 95%;
+        }
         .modern-title h1 {
             font-size: 25px !important;
         }
@@ -2133,6 +2311,18 @@ footer .copy p {
     @media all and (max-width: 500px) {
         #three-razor {
             left: -300px !important;
+        }
+        .shop-text .title {
+            font-size: 30px !important;
+        }
+        body > section.all-shop-wrapper > div > div.scrollspy-shop-wrapper.row.section.table-of-contents.center > a {
+            font-size: 16px;
+        }
+        .kits-title h2 {
+            font-size: 25px;
+        }
+        .kits-title p {
+            font-size: 20px;
         }
         .eco-text p {
             font-size: 23px;

@@ -1,4 +1,26 @@
 jQuery(document).ready(function($) {
+        $('.sidenav').sidenav();
+        $('#closenav').click(function(){
+            $('.sidenav').sidenav('close');
+          });
+    $('.materialboxed').materialbox();
+    var myVideo = document.getElementById("video-main"); 
+    $('.video-wrapper .play-vid').hide();
+    $('.video-control').click(function () {
+    if ( $('.video-wrapper .play-vid').is(':hidden') ) {
+        $('.video-wrapper .pause-vid').hide();
+        $('.video-wrapper .play-vid').show();
+    }
+    else {
+        $('.video-wrapper .play-vid').hide();
+        $('.video-wrapper .pause-vid').show();
+    }
+        if (myVideo.paused) 
+            myVideo.play(); 
+        else 
+            myVideo.pause(); 
+    } 
+    ) 
 
     /* Animation Header Start */
     var hHeader = $('.main').height();
@@ -51,6 +73,27 @@ jQuery(document).ready(function($) {
     } 
     /* Animation Header End */
     
+    /* Tabs */
+    $('#tabs li a:not(:first)').addClass('inactive');
+    $('.hide-tabs').hide();
+    $('.hide-tabs:first').show();
+    $('#tabs a').click(function(){
+        var t = $(this).attr('href');
+        $('#tabs a').addClass('inactive');        
+        $(this).removeClass('inactive');
+        $('.hide-tabs').hide();
+        $(t).fadeIn('slow');
+        return false;
+    })
+
+if($(this).hasClass('inactive')){ //this is the start of our condition 
+    $('#tabs li a').addClass('inactive');         
+    $(this).removeClass('inactive');
+    $('.container').hide();
+    $(t).fadeIn('slow');    
+}
+    /* Tabs */
+
     /* Scrollspy  */
     $('.scrollspy-shop-wrapper a:first-child').addClass('active')
     $('.scrollspy-shop-wrapper a').click(function(e) {
@@ -69,67 +112,55 @@ jQuery(document).ready(function($) {
         }
     });
     /* Scrollspy  */
-
+ 
       /* Slidenav close */
-      $('#closenav').click(function(){
-        $('.sidenav').sidenav('close');
-      });
+      
       /* Slidenav close */
     
     /* Video Start */
-    var myVideo = document.getElementById("video-main"); 
-    $('.video-wrapper .play-vid').hide();
-    $('.video-control').click(function () {
-    if ( $('.video-wrapper .play-vid').is(':hidden') ) {
-        $('.video-wrapper .pause-vid').hide();
-        $('.video-wrapper .play-vid').show();
-    }
-    else {
-        $('.video-wrapper .play-vid').hide();
-        $('.video-wrapper .pause-vid').show();
-    }
-        if (myVideo.paused) 
-            myVideo.play(); 
-        else 
-            myVideo.pause(); 
-    } 
-    ) 
+    
     /* Video End */
-
+    $('.scrollspy').scrollSpy();
     /* Animation Sale Start */
     var sale = $('.sale-anim');
     sale.hover(function () {
+        $(this).addClass('activeAnim');
         $(this).animate({
             top: '-10px'
         }, 10)
     }, function() {
+        $(this).removeClass('activeAnim');
         $(this).animate({
             top: '0px'
         }, 10);
     });
-     var hideText = $('.options-hidden').innerHeight();
-    $('.options-hidden', this).css("margin-bottom", - + hideText);
-    $('.options-hidden').css('margin-bottom', '-' + hideText + 'px');
-     $('.razors-shop-wrapper .row-kit-items .kit-item').hover(function() {
-        $('.options-hidden', this).css('margin-bottom', "0px")
+    var acces = $(".accessories-wrapper .kit-item");
+    acces.hover(function() {
+        $(this).addClass('activeItem');
     }, function() {
+        $(this).removeClass('activeItem');
+    })
+         var hideText = $('.options-hidden').innerHeight();
         $('.options-hidden', this).css("margin-bottom", - + hideText);
-    });  
+        $('.options-hidden').css('margin-bottom', '-' + hideText + 'px');
+        $('.razors-shop-wrapper .row-kit-items .kit-item').hover(function() {
+            $('.options-hidden', this).css('margin-bottom', "0px")
+        }, function() {
+            $('.options-hidden', this).css("margin-bottom", - + hideText);
+        });   
 
     /* Animation Sale End */
 
     /* Checkbox */
     $( ".options-hidden input" ).on( "click", function() {
-        $(".razors-shop-wrapper .kit-descript").html( "red");
-        $(".razors-shop-wrapper .kit-img img").attr('src', 'images/kit2.jpg');
+        $(".activeAnim .kit-descript, .activeItem .kit-descript").html( "red");
+        $(".activeAnim .kit-img img, .activeItem .kit-img img").attr('src', 'images/kit2.jpg');
       });
     /* Checkbox */
 
-    $('.materialboxed').materialbox();
+    
 
-    $(document).ready(function(){
-        $('.sidenav').sidenav();
-      });
+    
       // Sidenav End
 
     /* Slick Start */

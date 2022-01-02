@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Reset -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- Materrialize Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize -->
+    <link rel="stylesheet" href="css/materialize.css">
+    <!-- Style-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Start -->
+    <header>
+        <nav class="header-content">
+            <div class="menu-left">
+                <ul class="menu">
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Learn</a></li>
+                </ul>
+            </div>
+            <div class="mobile-bag hide-on-med-and-up">
+                <ul class="menu">
+                    <li><a href="#">Bag (0)</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <p id="logo"><a href="index.html"><img id="logo-pic" src="images/razor.png" alt="razor logo"><i class="line-logo"></i><i>LEAF</i></a></p>
+            </div>
+            <div class="menu-right">
+                <ul class="menu">
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Bag (0)</a></li>
+                </ul>
+            </div>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </nav><!-- header-content -->
+    </header>
+    <!-- Header End -->
+
+    <!-- Instructions Start -->
+    <section class="instructions-wrapper">
+        <div class="tabs-content-wrapper">
+            <div class="instructions-title center-align">
+                <h1 class="title">Shave with us</h1>
+                <p class="text italic">Today I'm using:</p>
+            </div>
+            <div class="tabs-main-wrapper">
+                <div class="tabs-img">
+                    <div class="img-left">
+                        <img src="images/shave-cut-left.png" alt="">
+                    </div>
+                    <div class="img-right">
+                        <img src="images/shave-cut-right.png" alt="">
+                    </div>
+                </div>
+                <div class="wide-line"></div>
+                <div class="tabs-all-links-wrapper">
+                    <ul id="tabs">
+                        <a href="#tabs-1" class="inactive">The Leaf Razor</a>
+                        <a href="#tabs-2">The Twig Razor</a>
+                    </ul>
+                        <div id="tabs-1" class="instructions-wrapper hide-tabs">
+                            <article class="row">
+                                <div class="img-insruct col s12 m5">
+                                    <img src="images/instruction.jpg" alt="">
+                                </div>
+                                <div class="instruct-text col s12 m7">
+                                    <h2><span>01 /</span>Per Skin</h2>
+                                    <ul class="mark-list">
+                                        <li>Wash and gently exfoliate to remove dirt and impurities that may cause irritation.</li>
+                                        <li>Start with softened hairs and open pores—we recommend immediately after showering.</li>
+                                        <li>Lather using a good shave soap (we love a good bar soap), ensuring skin and hair are coated.</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                        <div id="tabs-2" class="hide-tabs">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deserunt non expedita aut unde, nemo sapiente laudantium dolore explicabo, dignissimos accusamus. Quod reiciendis voluptates illum maxime veniam magnam ratione enim? 2
+                        </div>
+            </div>
+        </div><!-- tabs-content-wrapper -->
+    </section><!-- instruction-wrapper -->
+    <!-- Instructions End -->
+
+   <!-- Footer Start -->
+   <footer>
+    <div class="footer-content container row">
+        <div class="email-footer col s12 l6">
+            <h6 class="title"   >Our emails are <br> plastic-free too... <br> <span>unsubscribe any time.</span></h6>
+            <form>
+                <input placeholder="email" type="email" class="input-footer">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="footer-menu col s6 xl3">
+            <ul class="menu">
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="about.html">About Our Razors</a></li>
+                <li><a href="#">Instructions, Tips & Cleaning</a></li>
+                <li><a href="#">Blade Recycling</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-menu col s6 xl3">
+            <ul class="menu">
+                <li><a href="#">Get In Touch</a></li>
+                <li><a href="#">Wholesale Ordering</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Refund Policy</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">Patents</a></li>
+            </ul>
+        </div>
+        <div class="copy">
+            <p>&copy; 2021 Leaf Shave Company, LLC.</p>
+        </div>
+    </div><!-- footer-content -->
+</footer>
+<!-- Footer End -->
+
+<!-- Mobile -->
+<ul id="slide-out" class="sidenav">
+    <div class="logo">
+        <div id="closenav">
+            <a href="#"><i class="material-icons">close</i></a>
+        </div>
+        <p id="logo">
+            <a href="index.html">
+                </i><i>LEAF</i>
+            </a>
+        </p>
+    </div>
+    <ul class="menu">
+        <li><a href="#">Shop</a></li>
+        <li><a href="instructions.html">Our Story</a></li>
+        <li><a href="#">About Our Razors</a></li>
+        <li><a href="#">Instructions & Cleaning</a></li>
+    </ul>
+    <a href="#" class="mobile-account">Account</a>
+</ul>
+<!-- Mobile -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
