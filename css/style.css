@@ -1559,20 +1559,50 @@ body > section.all-shop-wrapper > div > div.razors-shop-wrapper > .sale-product-
 }
 .instructions-wrapper img {
     width: 100%;
+    padding: 0 !important;
 }
 .instructions-title h1 {
     font-size: 50px;
+}
+.tabs-all-links-wrapper .row .col {
+    padding: 0 0; 
+}
+ .instruct-text {
+    padding: 70px !important;
 }
 div.instructions-title.center-align > p {
     font-size: 35px !important;
     letter-spacing: -2px;
     font-style: bold;
 }
+.instructions-wrapper .instruct-text  h2 span {
+    font-family: 'Druk Wide Bold';
+    font-size: 34px;
+    margin-right: 10px;
+}
+.instructions-wrapper .instruct-text  h2 {
+    font-family: 'Plain Baltica';
+    font-style: italic;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
 .instructions-wrapper .tabs-img {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     overflow: hidden;
+}
+.instructions-wrapper ul:not(.browser-default) > li {
+    list-style-type: disc;
+}
+.mark-list li {
+    font-family: "Plain Baltica";
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 24px;
+}
+.instructions-wrapper .mark-list {
+    list-style-type: circle;
 }
 .instructions-wrapper .wide-line {
     width: 75vw;
@@ -1585,11 +1615,26 @@ div.instructions-title.center-align > p {
 }
 .tabs-all-links-wrapper div[id^="tabs"] {
     background-color: #F6F5F0;
-
+    padding: 50px 0;
+}
+.tabs-all-links-wrapper div[id^="tabs"] article img {
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
 }
 .tabs-all-links-wrapper div[id^="tabs"] article {
     max-width: 1000px;
     margin: auto;
+    background: #fff;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.tabs-all-links-wrapper div[id^="tabs"] article {
+    margin-bottom: 50px;
 }
 .tabs-img > div {
     position: relative;
@@ -1621,6 +1666,33 @@ div.instructions-title.center-align > p {
     color: #626E21;;
 }
 /* Instructions Tabs End */
+
+/* Instructions  Slider Start */
+.slider-instructions-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.slider-instructions-wrapper img {
+    width: 100%;
+}
+.instr-slider-img img {
+    border-radius: 40px;
+}
+.slider-instruct-title {
+    text-align: center;
+    max-width: 550px;
+    margin: 50px auto 20px auto;
+}
+.slider-instruct-title h3 {
+    font-family: 'Druk Wide Medium';
+    font-size: 34px;
+}
+.slider-instruct-title p {
+    font-family: 'Plain Baltica';
+    font-size: 32px;
+    font-style: italic;
+}
+/* Instructions  Slider End */
 
 /* Instructions Page End */
 

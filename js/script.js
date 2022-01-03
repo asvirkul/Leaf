@@ -1,4 +1,71 @@
 jQuery(document).ready(function($) {
+    $('.slick-wrapper').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        variableWidth: true,
+        dots: true,
+        arrows: false,
+        responsive: [
+            {
+            breakpoint: 1000,
+            settings: {
+                arrows: false,
+                centerMode: false,
+                centerPadding: '40px',
+                slidesToShow: 3,
+                variableWidth: false,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            },
+            {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: false,
+                centerPadding: '40px',
+                slidesToShow: 3,
+                variableWidth: false,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerMode: false,
+                centerPadding: '20px',
+                slidesToShow: 3,
+                variableWidth: false,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            }
+        ]
+      });
+      $('.eco-wrapper').slick({
+        dots: true,
+        arrows: false,
+        dots: true,
+        fade: true,
+        speed: 400,
+        infinite: true,
+        cssEase: 'ease-in-out'
+      });
+    /* Slick End */
+    /* Slick Instruction Start */
+    $('.slick-instr-wrapper').slick({
+        dots: true,
+        arrows: false,
+        dots: true,
+        speed: 400,
+        infinite: true,
+        cssEase: 'ease-in-out'
+    });
+    /* Slick Instruction End */
         $('.sidenav').sidenav();
         $('#closenav').click(function(){
             $('.sidenav').sidenav('close');
@@ -164,61 +231,5 @@ if($(this).hasClass('inactive')){ //this is the start of our condition
       // Sidenav End
 
     /* Slick Start */
-    $('.slick-wrapper').slick({
-        centerMode: true,
-        centerPadding: '60px',
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        variableWidth: true,
-        dots: true,
-        arrows: false,
-        responsive: [
-            {
-            breakpoint: 1000,
-            settings: {
-                arrows: false,
-                centerMode: false,
-                centerPadding: '40px',
-                slidesToShow: 3,
-                variableWidth: false,
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-            },
-            {
-            breakpoint: 768,
-            settings: {
-                arrows: false,
-                centerMode: false,
-                centerPadding: '40px',
-                slidesToShow: 3,
-                variableWidth: false,
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-            },
-            {
-            breakpoint: 480,
-            settings: {
-                arrows: false,
-                centerMode: false,
-                centerPadding: '20px',
-                slidesToShow: 3,
-                variableWidth: false,
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-            }
-        ]
-      });
-      $('.eco-wrapper').slick({
-        dots: true,
-        arrows: false,
-        dots: true,
-        fade: true,
-        speed: 400,
-        infinite: true,
-        cssEase: 'ease-in-out'
-      });
-    /* Slick End */
+   
 }); //ready
