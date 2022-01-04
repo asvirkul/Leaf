@@ -1674,6 +1674,10 @@ div.instructions-title.center-align > p {
     margin: 0 auto;
     position: relative;
 }
+.instructions-wrapper {
+    overflow: hidden;
+    position: relative;
+}
 .slider-instructions-wrapper img {
     width: 100%;
 }
@@ -1705,16 +1709,22 @@ body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initiali
     width: 100% !important;
 } 
 .slider-text-instr {
-    font-size: 17px;
+    font-size: 16px;
     max-width: 850px;
     margin: auto;
     text-align: center;
+}
+.slider-text-instr p {
+    font-family: 'Plain Baltica';
+}
+.tiles-wrapper.instr {
+    margin-top: 200px;
 }
 .imagesnew_dotted  {
     max-width: 850px;
     margin: auto;
     position: absolute;
-    bottom: 60px;
+    bottom: 25px;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -1743,6 +1753,21 @@ body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initiali
     transition-duration: 0.5s;
 }
 /* Instructions  Slider End */
+
+/* Animation Img Start */
+.animation-height img {
+    width: auto;
+}
+#left-scroll img, #right-scroll img {
+    position: absolute;
+}
+#left-scroll {
+    left: 0;
+}
+#right-scroll {
+    right: 0;
+}
+/* Animation Img End */
 
 /* Instructions Page End */
 
