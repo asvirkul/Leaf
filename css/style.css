@@ -1575,6 +1575,7 @@ div.instructions-title.center-align > p {
     letter-spacing: -2px;
     font-style: bold;
 }
+
 .instructions-wrapper .instruct-text  h2 span {
     font-family: 'Druk Wide Bold';
     font-size: 34px;
@@ -1671,12 +1672,59 @@ div.instructions-title.center-align > p {
 .slider-instructions-wrapper {
     max-width: 1000px;
     margin: 0 auto;
+    position: relative;
 }
 .slider-instructions-wrapper img {
     width: 100%;
 }
+.instr-slider-img {
+    margin-bottom: 80px;
+}
 .instr-slider-img img {
     border-radius: 40px;
+}
+body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initialized.slick-slider > div > div {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.imagesnew_dotted p {
+    cursor: pointer;
+    text-align: center;
+    display: block;
+}
+body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initialized.slick-slider > div > div > p {
+    padding: 10px 0;
+    font-family: 'Plain Baltica';
+    font-size: 18px;
+    border-bottom: 1px solid #DEDEDE;
+    width: 100% !important;
+}
+.imagesnew_dotted .slick-track {
+    width: 100% !important;
+} 
+.slider-text-instr {
+    font-size: 17px;
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+.imagesnew_dotted  {
+    max-width: 850px;
+    margin: auto;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initialized.slick-slider > div > div > p.slick-current {
+    border-bottom: 1px solid #737D2F;
+    color: #737D2F;
+}
+body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initialized.slick-slider > div > div > p:not(.slick-current) {
+    color: #DFDFDF;
 }
 .slider-instruct-title {
     text-align: center;
@@ -1691,6 +1739,8 @@ div.instructions-title.center-align > p {
     font-family: 'Plain Baltica';
     font-size: 32px;
     font-style: italic;
+    transition: all;
+    transition-duration: 0.5s;
 }
 /* Instructions  Slider End */
 

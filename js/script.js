@@ -58,12 +58,17 @@ jQuery(document).ready(function($) {
     /* Slick End */
     /* Slick Instruction Start */
     $('.slick-instr-wrapper').slick({
-        dots: true,
         arrows: false,
-        dots: true,
         speed: 400,
         infinite: true,
-        cssEase: 'ease-in-out'
+        cssEase: 'ease-in-out',
+        asNavFor: '.imagesnew_dotted',
+        draggable: false
+    });
+    $('.imagesnew_dotted').slick({ // настройка навигации
+        slidesToShow: 3, // указываем что нужно показывать 3 навигационных изображения
+        asNavFor: '.slick-instr-wrapper', // указываем что это навигация для блока выше
+        focusOnSelect: true // указываем что бы слайделось по клику
     });
     /* Slick Instruction End */
         $('.sidenav').sidenav();
@@ -153,7 +158,7 @@ jQuery(document).ready(function($) {
         return false;
     })
 
-if($(this).hasClass('inactive')){ //this is the start of our condition 
+if($(this).hasClass('inactive')){  
     $('#tabs li a').addClass('inactive');         
     $(this).removeClass('inactive');
     $('.container').hide();
@@ -178,16 +183,10 @@ if($(this).hasClass('inactive')){ //this is the start of our condition
             $('.scrollspy-shop-wrapper').removeClass('fixed')
         }
     });
-    /* Scrollspy  */
- 
-      /* Slidenav close */
-      
-      /* Slidenav close */
-    
-    /* Video Start */
-    
-    /* Video End */
+    /* Scrollspy  */ 
+
     $('.scrollspy').scrollSpy();
+
     /* Animation Sale Start */
     var sale = $('.sale-anim');
     sale.hover(function () {
@@ -228,8 +227,5 @@ if($(this).hasClass('inactive')){ //this is the start of our condition
     
 
     
-      // Sidenav End
-
-    /* Slick Start */
    
 }); //ready
