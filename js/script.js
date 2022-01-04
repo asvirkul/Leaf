@@ -4,24 +4,42 @@ jQuery(document).ready(function($) {
     var heightInstruct = heightBlocks.height();
     var leftWidth = $('#left-scroll img').width();
     var rightWidth = $('#right-scroll img').width();
-    $('#left-scroll img').css("left", -leftWidth);
-    $('#right-scroll img').css("right", -rightWidth);
     $(window).scroll(function(){
-        if ($(window).scrollTop() >= 0) {
-        $('#left-scroll img').animate({'left':'0px'},500);
-        $('#right-scroll img').animate({'right':'0px'},500);  
+        if ($(window).scrollTop() >= heightInstruct) {
+        $('#left-scroll img').css("left", -leftWidth);
+        $('#right-scroll img').css("right", -rightWidth);
         }
         else {
-            $('#left-scroll img').css("left", -leftWidth);
-            $('#right-scroll img').css("right", -rightWidth);
+        $('#left-scroll img').css("left", "0px")
+        $('#right-scroll img').css("right", "0px") 
         } 
     }); 
     /* Instruction Animation End */
+    /* Mobile Sidenav Start */
         $('.sidenav').sidenav();
         $('#closenav').click(function(){
             $('.sidenav').sidenav('close');
           });
+    /* Mobile Sidebar End */
+    /* Materialize Gallery Start */
     $('.materialboxed').materialbox();
+    /* Materialize Gallery End */
+    /* Razors Up Start */
+    $('#tabs a').click(function(e) {
+        $("#tabs a").removeClass('active');
+        $(this).addClass('active');
+    })
+    $('.img-left').addClass('up');
+    $('#tabs a:first-child').click(function() {
+        $(".tabs-img div").removeClass('up');
+        $('.img-left').addClass('up');
+    })
+    $('#tabs a:last-child').click(function() {
+        $(".tabs-img div").removeClass('up');
+        $('.img-right').addClass('up');
+
+    })
+    /* Razors Up End */
     /* Video Start */
         var myVideo = document.getElementById("video-main"); 
         $('.video-wrapper .play-vid').hide();

@@ -1639,8 +1639,13 @@ div.instructions-title.center-align > p {
 }
 .tabs-img > div {
     position: relative;
-    bottom: -20px;
+    bottom: -80px;
     z-index: -1;
+    transition: all;
+    transition-duration: 0.5s;
+}
+.tabs-img .up {
+    bottom: -20px;
 }
 #tabs {
     border: 1px solid #dedede;
@@ -1760,12 +1765,16 @@ body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initiali
 }
 #left-scroll img, #right-scroll img {
     position: absolute;
+    transition: all;
+    transition-duration: 0.5s;
 }
-#left-scroll {
+#left-scroll img {
     left: 0;
+    top: 100px;
 }
-#right-scroll {
+#right-scroll img {
     right: 0;
+    top: 100px;
 }
 /* Animation Img End */
 
