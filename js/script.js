@@ -43,20 +43,53 @@ jQuery(document).ready(function($) {
     $('.materialboxed').materialbox();
     /* Materialize Gallery End */
     /* Razors Up Start */
-    $('.tabs-all-link-wrapper #tabs a').click(function() {
-        $(".tabs-all-link-wrapper #tabs a").removeClass('active');
+    $('.instructions-wrapper #tabs a').click(function() {
+        $(".instructions-wrapper #tabs a").removeClass('active');
+        $(this).addClass('active');
+    })
+    $('header .mobile-tabs a').click(function() {
+        $("header .mobile-tabs a").removeClass('active');
         $(this).addClass('active');
     })
     $('.img-left').addClass('up');
-    $('#tabs a:first-child').click(function() {
+    $('.instructions-wrapper  #tabs a:first-child').click(function() {
+        $(".tabs-img div").removeClass('up');
+        $('.img-left').addClass('up');
+        $('header .mobile-tabs a:last-child').removeClass('active');
+        $('header .mobile-tabs a:last-child').addClass('inactive');
+        $('header .mobile-tabs a:first-child').addClass('active');
+        $('header .mobile-tabs a:first-child').removeClass('inactive');
+    })
+    $('.instructions-wrapper #tabs a:last-child').click(function() {
+        $(".tabs-img div").removeClass('up');
+        $('.img-right').addClass('up');
+        $('header .mobile-tabs a:first-child').removeClass('active');
+        $('header .mobile-tabs a:first-child').addClass('inactive');
+        $('header .mobile-tabs a:last-child').addClass('active'); 
+        $('header .mobile-tabs a:last-child').removeClass('inactive');
+    })
+    /* *****************/
+    $('header .mobile-tabs a:first-child').click(function() {
         $(".tabs-img div").removeClass('up');
         $('.img-left').addClass('up');
     })
-    $('#tabs a:last-child').click(function() {
+    $('header .mobile-tabs a:last-child').click(function() {
         $(".tabs-img div").removeClass('up');
         $('.img-right').addClass('up');
+        $(".instructions-wrapper #tabs a:last-child").addClass('active');
+        $(".instructions-wrapper #tabs a:last-child").removeClass('inactive');
+        $(".instructions-wrapper #tabs a:first-child").addClass('inactive');
 
     })
+    $('header .mobile-tabs a:first-child').click(function() {
+        $(".tabs-img div").removeClass('up');
+        $('.img-left').addClass('up');
+        $(".instructions-wrapper #tabs a:first-child").addClass('active');
+        $(".instructions-wrapper #tabs a:first-child").removeClass('inactive');
+        $(".instructions-wrapper #tabs a:last-child").addClass('inactive');
+
+    })
+
     /* Razors Up End */
     /* Video Start */
         var myVideo = document.getElementById("video-main"); 
@@ -202,20 +235,31 @@ jQuery(document).ready(function($) {
     /* Slick Instruction End */
 
     /* Tabs */
-    $('#tabs li a:not(:first)').addClass('inactive');
-    $('.hide-tabs').hide();
-    $('.hide-tabs:first').show();
-    $('#tabs a').click(function(){
+    $('.instructions-wrapper #tabs li a:not(:first)').addClass('inactive');
+    $('.instructions-wrapper .hide-tabs').hide();
+    $('.instructions-wrapper .hide-tabs:first').show();
+    $('.instructions-wrapper #tabs a').click(function(){
         var t = $(this).attr('href');
-        $('#tabs a').addClass('inactive');        
+        $('.instructions-wrapper #tabs a').addClass('inactive');        
         $(this).removeClass('inactive');
-        $('.hide-tabs').hide();
+        $('.instructions-wrapper .hide-tabs').hide();
+        $(t).fadeIn('slow');
+        return false;
+    })
+    $('header .mobile-tabs a:not(:first)').addClass('inactive');
+    $('.instructions-wrapper .hide-tabs').hide();
+    $('.instructions-wrapper .hide-tabs:first').show();
+    $('header .mobile-tabs a').click(function(){
+        var t = $(this).attr('href');
+        $('header .mobile-tabs a').addClass('inactive');        
+        $(this).removeClass('inactive');
+        $('.instructions-wrapper .hide-tabs').hide();
         $(t).fadeIn('slow');
         return false;
     })
 
 if($(this).hasClass('inactive')){  
-    $('#tabs li a').addClass('inactive');         
+    $('.instructions-wrapper #tabs li a').addClass('inactive');         
     $(this).removeClass('inactive');
     $('.container').hide();
     $(t).fadeIn('slow');    
