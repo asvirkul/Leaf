@@ -15,6 +15,24 @@ jQuery(document).ready(function($) {
         } 
     }); 
     /* Instruction Animation End */
+
+    /* Header instruction Animation Start */
+    $('.mobile-tabs').hide();
+    $('.shave-us').hide();
+    $(window).scroll(function() {
+        if ($(window).scrollTop() >= 600){  
+            $('.shave-us').fadeIn();
+            $('.instruction-header .logo, .instruction-header .menu-left li:not(.shave-us), .instruction-header .menu-right .menu').fadeOut();
+            $('.mobile-tabs').fadeIn();
+          }
+        else {
+            $('.shave-us').fadeOut();
+            $('.instruction-header .logo, .instruction-header .menu-left li:not(.shave-us), .instruction-header .menu-right .menu').fadeIn();
+            $('.mobile-tabs').fadeOut();
+        } 
+        });
+    /* Header instruction Animation End */
+
     /* Mobile Sidenav Start */
         $('.sidenav').sidenav();
         $('#closenav').click(function(){
@@ -25,8 +43,8 @@ jQuery(document).ready(function($) {
     $('.materialboxed').materialbox();
     /* Materialize Gallery End */
     /* Razors Up Start */
-    $('#tabs a').click(function(e) {
-        $("#tabs a").removeClass('active');
+    $('.tabs-all-link-wrapper #tabs a').click(function() {
+        $(".tabs-all-link-wrapper #tabs a").removeClass('active');
         $(this).addClass('active');
     })
     $('.img-left').addClass('up');

@@ -59,6 +59,7 @@ header {
     transition: all;
     transition-duration: 0.5s;
     border-bottom: 1px solid #DEDEDE;
+    height: 56px;
 }
 header .header-content {
     display: flex;
@@ -66,7 +67,7 @@ header .header-content {
     justify-content: space-between;
     align-items: center;
     padding: 0 15px;
-    
+    position: relative;
 }
 header .menu li a {
     color: #797979;
@@ -1665,6 +1666,7 @@ div.instructions-title.center-align > p {
     border-radius: 10px;
     font-size: 16px;
 }
+
 #tabs a:not(.inactive) {
     background-color: #626E21;
 }
@@ -1777,6 +1779,29 @@ body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initiali
     top: 100px;
 }
 /* Animation Img End */
+
+/* Header Animation Instruction Start */
+.instruction-header .shave-us {
+    font-family: 'Druk Wide Bold';
+    color: #000;
+    font-size: 25px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+.mobile-tabs a {
+    padding: 5px 20px !important;
+    font-size: 15px;
+}
+.mobile-tabs {
+    margin : auto !important; 
+    position: absolute;
+    right: 15px;
+    top: 7px;
+    width: unset !important;
+    padding: 5px 5px !important;
+}
+/* Header Animation Instruction End */
 
 /* Instructions Page End */
 
