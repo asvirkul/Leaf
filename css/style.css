@@ -1617,7 +1617,7 @@ div.instructions-title.center-align > p {
 }
 .tabs-all-links-wrapper div[id^="tabs"] {
     background-color: #F6F5F0;
-    padding: 50px 0;
+    padding: 50px 20px;
 }
 .tabs-all-links-wrapper div[id^="tabs"] article img {
     border-top-left-radius: 40px;
@@ -1648,7 +1648,7 @@ div.instructions-title.center-align > p {
 .tabs-img .up {
     bottom: -20px;
 }
-#tabs {
+.instructions-wrapper #tabs {
     border: 1px solid #dedede;
     padding: 8px 8px;
     box-sizing: border-box;
@@ -1680,6 +1680,15 @@ div.instructions-title.center-align > p {
     max-width: 1000px;
     margin: 0 auto;
     position: relative;
+}
+.line-slider {
+    display: none;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+.mobile-instr {
+    display: none;
 }
 .instructions-wrapper {
     overflow: hidden;
@@ -1800,6 +1809,9 @@ body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initiali
     top: 7px;
     width: unset !important;
     padding: 5px 5px !important;
+    display: flex;
+    border: 1px solid #DEDEDE;
+    border-radius: 15px;
 }
 /* Header Animation Instruction End */
 
@@ -1862,6 +1874,9 @@ body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initiali
         .eco-item .eco-img span:first-child {
             width: 70%;
         }
+        .animation-height {
+            display: none; 
+        }
     }
     @media all and (max-width: 1150px) {
         .eco-wrapper img {
@@ -1887,6 +1902,10 @@ body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initiali
         }
     }
     @media all and (max-width: 1000px) {
+        .slider-instructions-wrapper .slick-slider {
+            width: 90%;
+            margin: 0 auto;
+        }
         .all-shop-content.container #tabs .kit-text .title,  .all-shop-content.container #tabs .kit-text p.right {
             font-size: 15px !important;
         }
@@ -2139,6 +2158,32 @@ body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initiali
             padding-bottom: 0 !important;
         }
     }
+    @media all and (max-width: 900px) {
+        .tabs-all-links-wrapper div[id^="tabs"] article {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+        }
+        .instruct-text {
+            width: 100% !important; 
+        }
+        .img-insruct {
+            width: 100% !important;
+        }
+        .img-insruct img:first-child {
+            display: none;
+        }
+        .img-insruct .mobile-instr {
+            display: block;
+        }
+        .tabs-all-links-wrapper div[id^="tabs"] article img {
+            border-top-left-radius: unset;
+            border-bottom-left-radius: unset;
+            border-top-right-radius: 40px;
+            border-top-left-radius: 40px;
+        }
+
+    }
     @media all and (max-width: 800px) {
         .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
             bottom: 410px !important;
@@ -2162,6 +2207,24 @@ body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initiali
             justify-content: center;
             flex-direction: column;
             align-items: center;
+        }
+        .instructions-title h1 {
+            font-size: 42px;
+        }
+        div.instructions-title.center-align > p {
+            font-size: 30px !important;
+        }
+        .slider-instruct-title p {
+            font-size: 29px;
+        }
+        .slider-instruct-title h3 {
+            font-size: 32px;
+        }
+        .instructions-wrapper .wide-line {
+            width: 90vw;
+        }
+        .tiles-wrapper.instr {
+            margin-top: 100px;
         }
         header:not(.main) .sidenav-trigger {
             color: #000 !important; 
