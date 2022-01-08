@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
             $(t).fadeIn('slow');
             return false;
         })
-        $('header .mobile-tabs a:not(:first)').addClass('inactive');
+        
         $('.instructions-wrapper .hide-tabs').hide();
         $('.instructions-wrapper .hide-tabs:first').show();
         $('header .mobile-tabs a').click(function(){
@@ -30,6 +30,7 @@ jQuery(document).ready(function($) {
             $(t).fadeIn('slow');    
         }
     /* Tabs */
+
     /* Mobile Sidenav Start */
         $('.sidenav').sidenav();
         $('#closenav').click(function(){
@@ -52,15 +53,15 @@ jQuery(document).ready(function($) {
         } 
         });
     /* Header instruction Animation End */
-    /* Instruction Animation Start */
-        var heightBlocks = $('#tabs, .tabs-img, .instructions-title');
-        var heightInstruct = heightBlocks.height();
+        /* Instruction Animation Start */
+
         var leftWidth = $('#left-scroll img').width();
         var rightWidth = $('#right-scroll img').width();
         $(window).scroll(function(){
-        if ($(window).scrollTop() >= heightInstruct) {
+        if ($(window).scrollTop() >= 600) {
             $('#left-scroll img').css("left", -leftWidth);
             $('#right-scroll img').css("right", -rightWidth);
+            console.log(heightBlocks)
         }
         else {
             $('#left-scroll img').css("left", "0px")
@@ -84,10 +85,11 @@ jQuery(document).ready(function($) {
         $('.instructions-wrapper  #tabs a:first-child').click(function() {
             $(".tabs-img div").removeClass('up');
             $('.img-left').addClass('up');
+            $('header .mobile-tabs a:first-child').removeClass('inactive');
             $('header .mobile-tabs a:last-child').removeClass('active');
             $('header .mobile-tabs a:last-child').addClass('inactive');
             $('header .mobile-tabs a:first-child').addClass('active');
-            $('header .mobile-tabs a:first-child').removeClass('inactive');
+           
         })
         $('.instructions-wrapper #tabs a:last-child').click(function() {
             $(".tabs-img div").removeClass('up');
