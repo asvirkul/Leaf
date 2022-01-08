@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
             $(t).fadeIn('slow');
             return false;
         })
-        
+        $('header .mobile-tabs a:not(:first)').addClass('inactive');
         $('.instructions-wrapper .hide-tabs').hide();
         $('.instructions-wrapper .hide-tabs:first').show();
         $('header .mobile-tabs a').click(function(){
@@ -85,7 +85,7 @@ jQuery(document).ready(function($) {
         $('.instructions-wrapper  #tabs a:first-child').click(function() {
             $(".tabs-img div").removeClass('up');
             $('.img-left').addClass('up');
-            $('header .mobile-tabs a:first-child').removeClass('inactive');
+             $('header .mobile-tabs a:first-child').removeClass('inactive');
             $('header .mobile-tabs a:last-child').removeClass('active');
             $('header .mobile-tabs a:last-child').addClass('inactive');
             $('header .mobile-tabs a:first-child').addClass('active');
@@ -120,6 +120,65 @@ jQuery(document).ready(function($) {
             $(".instructions-wrapper #tabs a:last-child").addClass('inactive');
     
         })
+            /* Slick SLider Start */
+    $('.slick-wrapper').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        variableWidth: true,
+        dots: true,
+        arrows: false,
+        responsive: [
+            {
+            breakpoint: 1000,
+            settings: {
+                arrows: false,
+                centerMode: false,
+                centerPadding: '40px',
+                slidesToShow: 3,
+                variableWidth: false,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            },
+            {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: false,
+                centerPadding: '40px',
+                slidesToShow: 3,
+                variableWidth: false,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerMode: false,
+                centerPadding: '20px',
+                slidesToShow: 3,
+                variableWidth: false,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            }
+        ]
+      });
+      $('.eco-wrapper').slick({
+        dots: true,
+        arrows: false,
+        dots: true,
+        fade: true,
+        speed: 400,
+        infinite: true,
+        cssEase: 'ease-in-out'
+      });
+    /* Slick End */
+
     /* Razors Up End */
         /* Animation Header Start */
         var hHeader = $('.main').height();
@@ -230,64 +289,6 @@ jQuery(document).ready(function($) {
         ) 
     /* Video End */
 
-    /* Slick SLider Start */
-    $('.slick-wrapper').slick({
-        centerMode: true,
-        centerPadding: '60px',
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        variableWidth: true,
-        dots: true,
-        arrows: false,
-        responsive: [
-            {
-            breakpoint: 1000,
-            settings: {
-                arrows: false,
-                centerMode: false,
-                centerPadding: '40px',
-                slidesToShow: 3,
-                variableWidth: false,
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-            },
-            {
-            breakpoint: 768,
-            settings: {
-                arrows: false,
-                centerMode: false,
-                centerPadding: '40px',
-                slidesToShow: 3,
-                variableWidth: false,
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-            },
-            {
-            breakpoint: 480,
-            settings: {
-                arrows: false,
-                centerMode: false,
-                centerPadding: '20px',
-                slidesToShow: 3,
-                variableWidth: false,
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-            }
-        ]
-      });
-      $('.eco-wrapper').slick({
-        dots: true,
-        arrows: false,
-        dots: true,
-        fade: true,
-        speed: 400,
-        infinite: true,
-        cssEase: 'ease-in-out'
-      });
-    /* Slick End */
 
 
 
