@@ -1554,6 +1554,9 @@ body > section.all-shop-wrapper > div > div.razors-shop-wrapper > .sale-product-
     max-width: 600px;
     margin: 0 auto;
 }
+.img-mobile {
+    display: none;
+}
 .instructions-title {
     margin: 50px auto;
     margin-top: 100px;
@@ -1590,7 +1593,7 @@ div.instructions-title.center-align > p {
 }
 .instructions-wrapper .tabs-img {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     overflow: hidden;
 }
@@ -2466,6 +2469,12 @@ body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initiali
 
     }
     @media all and (max-width: 700px) {
+        .slider-instruct-title h3 {
+            font-size: 25px !important;
+        }
+        .slider-instruct-title p {
+            font-size: 23px;
+        }
         .slider-instructions-wrapper article h4 {
             display: block;
         }
@@ -2473,8 +2482,9 @@ body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initiali
             margin-bottom: 50px;
         }
         .slick-instr-wrapper.slick-initialized.slick-slider img {
-            width: auto;
+            width: 100%;
         }
+
         .slick-instr-wrapper.slick-initialized.slick-slider img.prev {
             position: absolute;
             left: 50%;
@@ -2499,6 +2509,28 @@ body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initiali
         }
         .imagesnew_dotted {
             bottom: 70px;
+        }
+        .instruct-text {
+            padding: 40px !important;
+            box-sizing: border-box;
+        }
+        .instruct-text h2 {
+            font-size: 26px !important;
+        }
+        .instruct-text h2 span {
+            font-size: 26px !important;
+        }
+        .instruct-text ul li {
+            font-size: 15px !important;
+        }
+        .img-left img:first-child {
+            display: none;
+        }
+        .img-right img:first-child {
+            display: none;
+        }
+        .img-mobile {
+            display: block;
         }
     }
     @media all and (max-width: 675px) {
@@ -2598,6 +2630,12 @@ body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initiali
         .insta-photos.row .material-placeholder > div {
             padding: 0;
         }
+        .instructions-wrapper #tabs a {
+            padding: 5px 30px;
+        }
+        .instructions-wrapper #tabs {
+            width: fit-content;
+        }
     }
     @media all and (max-width: 500px) {
         #three-razor {
@@ -2605,6 +2643,9 @@ body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initiali
         }
         .shop-text .title {
             font-size: 30px !important;
+        }
+        .instructions-title h1 {
+            font-size: 30px;
         }
         body > section.all-shop-wrapper > div > div.scrollspy-shop-wrapper.row.section.table-of-contents.center > a {
             font-size: 16px;
@@ -2621,7 +2662,9 @@ body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initiali
         .instruction-text a {
             padding: 20px 0;
         }
-        
+        .imagesnew_dotted {
+            bottom: 80px;
+        }
         .eco-text h4 {
             line-height: 23px;
             margin-bottom: 10px;
@@ -2664,6 +2707,15 @@ body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initiali
     @media all and (max-width: 410px) {
         .background-mobile {
             top: 250px;
+        }
+        .tabs-all-links-wrapper div[id^="tabs"] article {
+            width: 100%;
+        }
+        .instructions-wrapper #tabs a {
+            padding: 5px 15px;
+        }
+        .mobile-tabs a {
+            padding: 5px 8px !important;
         }
         .us-title h1 {
             padding: 0 10px;
@@ -2717,6 +2769,18 @@ body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initiali
         }
         .review-author, .review-company {
             text-align: center;
+        }
+        body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initialized.slick-slider > div > div {
+            margin-bottom: 20px;
+        }
+        .imagesnew_dotted {
+            bottom: 90px;
+        }
+        .slider-instruct-title h3 {
+            font-size: 23px !important;
+        }
+        .slider-instruct-title p {
+            font-size: 20px;
         }
     }
  /* Media End */
