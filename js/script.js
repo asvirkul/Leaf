@@ -42,12 +42,12 @@ jQuery(document).ready(function($) {
         $(window).scroll(function() {
         if ($(window).scrollTop() >= 600){  
             $('.shave-us').fadeIn();
-            $('.instruction-header .logo, .instruction-header .menu-left li:not(.shave-us), .instruction-header .menu-right .menu').fadeOut();
+            $('.instruction-header .logo, .instruction-header .menu-left li:not(.shave-us), .instruction-header .menu-right .menu, .mobile-bag .menu').fadeOut();
             $('.mobile-tabs').fadeIn();
           }
         else {
             $('.shave-us').fadeOut();
-            $('.instruction-header .logo, .instruction-header .menu-left li:not(.shave-us), .instruction-header .menu-right .menu').fadeIn();
+            $('.instruction-header .logo, .instruction-header .menu-left li:not(.shave-us), .instruction-header .menu-right .menu, .mobile-bag .menu').fadeIn();
             $('.mobile-tabs').fadeOut();
         } 
         });
@@ -179,14 +179,13 @@ jQuery(document).ready(function($) {
             draggable: false,
             slidesToScroll: 1,
             infinite: false,
-            arrows: true 
+            arrows: true
         });
         $('.imagesnew_dotted').slick({ // настройка навигации
             slidesToShow: 3, // указываем что нужно показывать 3 навигационных изображения
             asNavFor: '.slick-instr-wrapper', // указываем что это навигация для блока выше
             focusOnSelect: true // указываем что бы слайделось по клику
         });
-        
     /* Slick Instruction End */
     /* Scrollspy  */
         $('.scrollspy-shop-wrapper a:first-child').addClass('active')
@@ -208,7 +207,7 @@ jQuery(document).ready(function($) {
     
         $('.scrollspy').scrollSpy();
 
-
+    /* Scrollspy */
     /* Video Start */
         var myVideo = document.getElementById("video-main"); 
         $('.video-wrapper .play-vid').hide();

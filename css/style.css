@@ -1789,6 +1789,17 @@ body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initiali
 }
 /* Animation Img End */
 
+.slider-instructions-wrapper article h4 {
+    font-size: 20px;
+    font-family: 'Druk Wide Medium';
+    display: none;
+}
+body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initialized.slick-slider > div > div {
+    transform: translate3d(0, 0px, 0px) !important;
+}
+.mobile-active {
+    display: none;
+}
 /* Header Animation Instruction Start */
 .instruction-header .shave-us {
     font-family: 'Druk Wide Bold';
@@ -2453,6 +2464,42 @@ body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initiali
             margin: 30px auto;
         }
 
+    }
+    @media all and (max-width: 700px) {
+        .slider-instructions-wrapper article h4 {
+            display: block;
+        }
+        .instr-slider-img {
+            margin-bottom: 50px;
+        }
+        .slick-instr-wrapper.slick-initialized.slick-slider img {
+            width: auto;
+        }
+        .slick-instr-wrapper.slick-initialized.slick-slider img.prev {
+            position: absolute;
+            left: 50%;
+            bottom: -50px;
+            z-index: 100;
+            transform: translate(-50%, -50%);
+        }
+        body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initialized.slick-slider > div > div > p {
+            color: transparent !important;
+            font-size: 1px;
+            border-bottom: 2px solid #dedede;
+        }
+        body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initialized.slick-slider > div > div > p.slick-current {
+            border-bottom: 2px solid #737D2F;
+        }
+        .slick-instr-wrapper.slick-initialized.slick-slider img.next {
+            position: absolute;
+            right: 50%;
+            bottom: -50px;
+            z-index: 100;
+            transform: translate(-50%, -50%);
+        }
+        .imagesnew_dotted {
+            bottom: 70px;
+        }
     }
     @media all and (max-width: 675px) {
         .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
