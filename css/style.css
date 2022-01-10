@@ -1833,6 +1833,30 @@ body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initiali
 
 /* Instructions Page End */
 
+/* Bag Sidenav Start */
+.bag-sidenav-wrapper {
+    max-width: 30vw;
+    position: fixed;
+    background-color: #fff;
+    z-index: 100102303;
+    top: 0;
+    right: -30vw;
+    bottom: 0;
+    height: 100vh;
+    transition: all;
+    transition-duration: 0.5;
+}
+.bag-sidenav-wrapper img {
+    width: 100%;
+}
+.bag-top-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+/* Bag Sidenav End */
+
  /* Media Start */
     @media all and (max-width: 1450px) {
         .product-main-line article {

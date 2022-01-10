@@ -39,7 +39,7 @@
             <div class="menu-right">
                 <ul class="menu">
                     <li><a href="#">Account</a></li>
-                    <li><a href="#">Bag (0)</a></li>
+                    <li><a class="bag-header" href="#">Bag (0)</a></li>
                 </ul>
             </div>
             <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -271,6 +271,36 @@
         <a href="#" class="mobile-account">Account</a>
     </ul>
     <!-- Mobile -->
+
+    <!-- Bag Start -->
+        <section class="bag-sidenav-wrapper">
+            <div class="bag-top-menu">
+                <h6>Bag</h6>
+                <p class="close-bag">CLose</p>
+            </div>
+            <div class="bag-added">
+                <article>
+                    <div class="added-img">
+                       <img src="images/saleleaf1.jpg" alt=""> 
+                    </div>
+                    <div class="added-name-wrapper">
+                        <h6>Leaf Super Bundle, Barryblue</h6>
+                        <span class="price">$417</span>
+                        <p class="added-color">Berryblue</p>
+                        <div class="added-quantity">
+                            <span class="added-delete"></span>
+                            <div class="added-qty">
+                                <button type="button" id="sub" class="sub">-</button>
+                                <input type="number" id="1" value="1" min="1" max="3" />
+                                <button type="button" id="add" class="add">+</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    <!-- Bag End -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
