@@ -1845,15 +1845,204 @@ body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initiali
     height: 100vh;
     transition: all;
     transition-duration: 0.5;
+    padding: 0 30px;
 }
 .bag-sidenav-wrapper img {
     width: 100%;
+}
+.bag-sidenav-wrapper h6 {
+    margin: unset;
 }
 .bag-top-menu {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+}
+.bag-top-menu h6 {
+    font-size: 25px;
+    font-family: 'Druk Wide Bold';
+    color: #000;
+    padding: 20px 0;
+}
+.bag-top-menu .close-bag {
+    font-family: 'Plain Baltica';
+    font-size: 16px;
+    cursor: pointer;
+}
+.added-img img {
+    width: 100%;
+    border-radius: 18px;
+}
+.bag-added {
+    border-top: 1px solid #dedede;
+    overflow-y: scroll;
+    height: 65vh;
+}
+.bag-added article {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.added-name-wrapper h6.left {
+    width: 80%;
+    display: block;
+    margin-bottom: 5px;
+}
+.added-name-wrapper h6 a {
+    color: #000;
+    font-family: 'Druk Wide Medium';
+    font-size: 15px;
+}
+.added-name-wrapper .price {
+    width: 20%;
+    color: #000;
+    font-size: 15px;
+    font-family: 'Druk Wide Medium';
+    text-align: right;
+}
+.bag-added .added-qty {
+    display: flex;
+    justify-content: start;
+}
+.added-color {
+    clear: both;
+    font-family: 'Plain Baltica';
+    font-style: italic;
+    font-size: 16px;
+    display: block;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.bag-added .added-quantity {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.added-img {
+    width: 20%;
+}
+.added-delete i {
+    font-size: 17px;
+    border: 1px solid #737D2F;
+    padding: 4px;
+    border-radius: 5px;
+    color: #737D2F;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.added-name-wrapper {
+    width: 80%;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+.added-name-wrapper button:focus {
+    background-color: unset;
+}
+.added-name-wrapper input {
+    height: unset !important;
+    border-bottom: unset !important;
+    width: 30%;
+    text-align: center;
+    margin: 0 !important;
+    font-family: 'Plain Baltica';
+    color: #737D2F !important;
+}
+.added-name-wrapper .added-quantity button {
+    border: none;
+    cursor: pointer;
+    background-color: unset;
+    color: #737D2F;
+    font-family: 'Plain Baltica';
+    font-size: 16px;
+}
+.added-name-wrapper .added-qty {
+    border: 1.5px solid #606B13;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    border-radius: 5px;
+}
+.else-added {
+    margin-top: 50px;
+}
+.else-added > h6 {
+    font-family: 'Druk Wide Bold';
+    font-size: 22px;
+    color: #000;
+}
+.else-item {
+    border: 1px solid #737D2F;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    font-family: 'Druk Wide Bold';
+    color: #737D2F;
+    padding: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.5;
+}
+.else-item:hover p, .else-item:hover h6 {
+    color: #fff;
+}
+.else-item:hover {
+    background-color: #737D2F;
+}
+.else-item p {
+    width: 13%;
+    text-align: center;
+    transition: all;
+    transition-duration: 1s;
+}
+.else-item h6 {
+    width: 60%;
+    text-align: center;
+    font-size: 14px;
+    transition: all;
+    transition-duration: 1s;
+}
+.else-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+.else-item div {
+    width: 13%;
+    text-align: right;
+}
+.checkout {
+    background-color: #F8F7F3;
+    height: 100%;
+    padding: 50px 20px 20px 20px;
+}
+.checkout a {
+    width: 100%;
+    background-color: #737D2F;
+    font-family: 'Plain Baltica';
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 15px;
+    display: block;
+    text-align: center;
+    color: #fff;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: 1px solid #737D2F;
+    transition: all;
+    transition-duration: 1s;
+}
+.checkout a:hover {
+    color: #737D2F;
+    background-color: transparent;
+}
+.dark {
+    background-color: #000;
+    opacity: 0.5;
 }
 /* Bag Sidenav End */
 

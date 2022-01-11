@@ -105,7 +105,7 @@ else {
     });
     $('.close-bag').click(function () { 
         $('.bag-sidenav-wrapper').animate({
-            right: -bagWidth
+            right: '-30vw'
         }, 300)
      });
     /* Bag */
