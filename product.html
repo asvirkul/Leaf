@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Reset -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- Materrialize Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize -->
+    <link rel="stylesheet" href="css/materialize.css">
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <!-- Style-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Start -->
+    <header>
+        <nav class="header-content">
+            <div class="menu-left">
+                <ul class="menu">
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Learn</a></li>
+                </ul>
+            </div>
+            <div class="mobile-bag hide-on-med-and-up">
+                <ul class="menu">
+                    <li><a href="#">Bag (0)</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <p id="logo"><a href="index.html"><img id="logo-pic" src="images/razor.png" alt="razor logo"><i class="line-logo"></i><i>LEAF</i></a></p>
+            </div>
+            <div class="menu-right">
+                <ul class="menu">
+                    <li><a href="#">Account</a></li>
+                    <li><a class="bag-header" href="#">Bag (0)</a></li>
+                </ul>
+            </div>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </nav><!-- header-content -->
+    </header>
+    <!-- Header End -->
+
+    <!-- Product Info Start -->
+    <section class="product-info-wrapper row">
+        <div class="img-wrapper row col s12 l7">
+            <div class="product-img col l6">
+                <img class="responsive-img"src="images/product.jpg" alt="">
+            </div>
+            <div class="product-img col l6">
+                <img class="responsive-img"src="images/product.jpg" alt="">
+            </div>
+            <div class="product-img col l6">
+                <img class="responsive-img"src="images/product.jpg" alt="">
+            </div>
+        </div>
+        <div class="product-right-info-wrapper col s12 l5">
+            <div class="product-title">
+                <h1 class="title">The Leaf Kit</h1>
+                <p class="price">$113.00</p>
+            </div>
+            <div class="product-info-text">
+                <p class="product-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam possimus architecto eum, similique commodi, numquam vero dolorum at eius ab ducimus, cumque aut consequatur magnam corrupti amet dignissimos ipsum nobis culpa! Vel quam cum expedita reprehenderit laboriosam dolore sequi quos.</p>
+            </div>
+            <div class="color-wrapper">
+                <div class="product-color-name">
+                    <p>The Leaf Razor</p>
+                    <p class="color">Color: Chrome</p>
+                </div>
+                <div class="product-color">
+                    <p>
+                        <label>
+                        <input type="checkbox" class="filled-in" checked="checked" />
+                        <span></span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                        <input type="checkbox" class="filled-in" checked="checked" />
+                        <span></span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                        <input type="checkbox" class="filled-in" checked="checked" />
+                        <span></span>
+                        </label>
+                    </p>
+                </div>
+                <div class="product-special-color">
+                    <h3>Special Edition</h3>
+                    <div class="product-color">
+                        <p>
+                            <label>
+                            <input type="checkbox" class="filled-in" checked="checked" />
+                            <span></span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                            <input type="checkbox" class="filled-in" checked="checked" />
+                            <span></span>
+                            </label>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-add-qty">
+                <div class="added-qty">
+                    <button type="button" id="sub" class="sub"><i class="fas fa-minus"></i></button>
+                    <input id="1" value="1" min="1" max="3" disabled />
+                    <button type="button" id="add" class="add"><i class="fas fa-plus"></i></button>
+                </div>
+                <a href="#" class="product-add">Add To Bag</a>
+            </div>
+            <div class="shipping-info">
+                <p>Lifetime Warranty • 30-Day Returns • Free US Shipping (over $25)</p>
+            </div>
+            <div class="product-accordion" id="accordion">
+                <h3>Description <span><i class="fas fa-plus"></i></span></h3>
+                <div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio fugit veniam autem dolorum odio quae. Soluta nihil ex iure architecto dolores. Velit reiciendis facere non rem aliquam ad ipsam sint corrupti vitae, rerum placeat veritatis expedita? Corrupti explicabo molestias fuga.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur perspiciatis fuga vero laudantium iste libero optio impedit odio eveniet velit saepe atque natus sint excepturi earum, nam, deserunt illum doloribus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed architecto qui quaerat, sapiente unde dicta?</p> 
+                </div>
+                <h3>Description</h3>
+                <div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio fugit veniam autem dolorum odio quae. Soluta nihil ex iure architecto dolores. Velit reiciendis facere non rem aliquam ad ipsam sint corrupti vitae, rerum placeat veritatis expedita? Corrupti explicabo molestias fuga.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur perspiciatis fuga vero laudantium iste libero optio impedit odio eveniet velit saepe atque natus sint excepturi earum, nam, deserunt illum doloribus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed architecto qui quaerat, sapiente unde dicta?</p> 
+                </div>
+                <h3>Description</h3>
+                <div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio fugit veniam autem dolorum odio quae. Soluta nihil ex iure architecto dolores. Velit reiciendis facere non rem aliquam ad ipsam sint corrupti vitae, rerum placeat veritatis expedita? Corrupti explicabo molestias fuga.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur perspiciatis fuga vero laudantium iste libero optio impedit odio eveniet velit saepe atque natus sint excepturi earum, nam, deserunt illum doloribus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed architecto qui quaerat, sapiente unde dicta?</p> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Info End -->
+
+    <!-- Footer Start -->
+        <footer>
+            <div class="footer-content container row">
+                <div class="email-footer col s12 l6">
+                    <h6 class="title">Our emails are <br> plastic-free too... <br> <span>unsubscribe any time.</span></h6>
+                    <form>
+                        <input placeholder="email" type="email" class="input-footer">
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="footer-menu col s6 xl3">
+                    <ul class="menu">
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="instructions.html">Our Story</a></li>
+                        <li><a href="about.html">About Our Razors</a></li>
+                        <li><a href="#">Instructions, Tips & Cleaning</a></li>
+                        <li><a href="#">Blade Recycling</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu col s6 xl3">
+                    <ul class="menu">
+                        <li><a href="#">Get In Touch</a></li>
+                        <li><a href="#">Wholesale Ordering</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">Patents</a></li>
+                    </ul>
+                </div>
+                <div class="copy">
+                    <p>&copy; 2021 Leaf Shave Company, LLC.</p>
+                </div>
+            </div><!-- footer-content -->
+        </footer>
+        <!-- Footer End -->
+
+        <!-- Mobile -->
+        <ul id="slide-out" class="sidenav">
+            <div class="logo">
+                <div id="closenav">
+                    <a href="#"><i class="material-icons">close</i></a>
+                </div>
+                <p id="logo">
+                    <a href="index.html">
+                        </i><i>LEAF</i>
+                    </a>
+                </p>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">About Our Razors</a></li>
+                <li><a href="#">Instructions & Cleaning</a></li>
+            </ul>
+            <a href="#" class="mobile-account">Account</a>
+        </ul>
+        <!-- Mobile -->
+    
+        <!-- Bag Start -->
+            <section class="bag-sidenav-wrapper">
+                <div class="bag-top-menu">
+                    <h6>Bag</h6>
+                    <p class="close-bag">Close</p>
+                </div>
+                <div class="bag-added">
+                    <article>
+                        <div class="added-img">
+                           <img src="images/saleleaf1.jpg" alt=""> 
+                        </div>
+                        <div class="added-name-wrapper">
+                            <h6 class="left"><a href="#">Leaf Super Bundle, Barryblue</a></h6>
+                            <span class="price right">$417</span>
+                            <p class="added-color">Berryblue</p>
+                            <div class="added-quantity">
+                                <span class="added-delete"><i class="fas fa-trash-alt"></i></span>
+                                <div class="added-qty">
+                                    <button type="button" id="sub" class="sub"><i class="fas fa-minus"></i></button>
+                                    <input id="1" value="1" min="1" max="3" disabled />
+                                    <button type="button" id="add" class="add"><i class="fas fa-plus"></i></button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="added-img">
+                           <img src="images/saleleaf1.jpg" alt=""> 
+                        </div>
+                        <div class="added-name-wrapper">
+                            <h6 class="left"><a href="#">Leaf Super Bundle, Barryblue</a></h6>
+                            <span class="price right">$417</span>
+                            <p class="added-color">Berryblue</p>
+                            <div class="added-quantity">
+                                <span class="added-delete"><i class="fas fa-trash-alt"></i></span>
+                                <div class="added-qty">
+                                    <button type="button" id="sub" class="sub"><i class="fas fa-minus"></i></button>
+                                    <input id="1" value="1" min="1" max="3" disabled />
+                                    <button type="button" id="add" class="add"><i class="fas fa-plus"></i></button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    <div class="else-added">
+                        <h6>Need Anything Else?</h6>
+                        <div class="else-items">
+                            <a href="#" class="else-item">
+                                <p class="else-price">$9</p>
+                                <h6>Add a Shave Soap Bar</h6>
+                                <div class="else-img">
+                                    <img src="images/else.jpg" alt="">
+                                </div>
+                                
+                            </a>
+                            <a href="#" class="else-item">
+                                <p class="else-price">$9</p>
+                                <h6>Add a Shave Soap Bar</h6>
+                                <div class="else-img">
+                                    <img src="images/else.jpg" alt="">
+                                </div>
+                                
+                            </a>
+                            <a href="#" class="else-item">
+                                <p class="else-price">$9</p>
+                                <h6>Add a Shave Soap Bar</h6>
+                                <div class="else-img">
+                                    <img src="images/else.jpg" alt="">
+                                </div>
+                                
+                            </a>
+                            <a href="#" class="else-item">
+                                <p class="else-price">$9</p>
+                                <h6>Add a Shave Soap Bar</h6>
+                                <div class="else-img">
+                                    <img src="images/else.jpg" alt="">
+                                </div>
+                                
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout">
+                    <a href="#">Go To Checkout</a>
+                </div>
+            </section>
+        <!-- Bag End -->
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <script src="js/swiper.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+    </html>

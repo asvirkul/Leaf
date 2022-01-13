@@ -66,8 +66,11 @@ else {
         function getCurrentScroll() {
             return window.pageYOffset || document.documentElement.scrollTop;
         } 
-        /* Animation Header End */
-/* Header instruction Animation End */
+        /* Animation Header End */  
+        $( "#accordion" ).accordion({
+            active: false,
+            collapsible: true
+        });
         /* Video Start */
         var myVideo = document.getElementById("video-main"); 
         $('.video-wrapper .play-vid').hide();
@@ -99,16 +102,37 @@ else {
     var bagWidth = $('.bag-sidenav-wrapper').width();
     $('header .menu-right .bag-header').click(function(e) {
         e.preventDefault();
+        $('.dark').fadeIn();
         $('.bag-sidenav-wrapper').animate({
             right: 0
         }, 300)
     });
     $('.close-bag').click(function () { 
+        $('.dark').fadeOut();
         $('.bag-sidenav-wrapper').animate({
             right: '-30vw'
         }, 300)
      });
     /* Bag */
+
+    /* Animation Line */
+    $('.tabs-all-links-wrapper #tabs a').click(function(e){
+        e.preventDefault();
+          $('.anim-line').removeAttr('style');
+          $('.anim-line').css('left', 'unset');
+         $('.anim-line').animate({
+            
+             'width': '100%'
+  
+         }, 400).animate({
+  
+             'right': '-100%'
+  
+         }, 400);
+  
+      }); // click
+  
+    /* Animation Line */
 
     /* Mobile Sidenav Start */
         $('.sidenav').sidenav();

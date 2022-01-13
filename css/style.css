@@ -1614,6 +1614,8 @@ div.instructions-title.center-align > p {
     height: 0.5px;
     background-color: #dedede;
     margin: auto;
+    position: relative;
+    overflow-x: hidden;
 }
 .tabs-all-links-wrapper {
     background-color: #fff;
@@ -2043,8 +2045,172 @@ body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initiali
 .dark {
     background-color: #000;
     opacity: 0.5;
+    width: 100vw;
+    height:100vh;
+    z-index: 100000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.anim-line {
+    background-color: #747E31;
+    width: 100px;
+    height: 4px;
+    position: absolute;
+    top: 0;
+    left: -100px;
 }
 /* Bag Sidenav End */
+
+/* Product Page Start */
+
+/* Product Info Start */
+.product-info-wrapper {
+    margin-top: 100px;
+}
+.product-info-wrapper .product-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+.product-info-wrapper .product-text {
+    clear: both;
+    font-family: 'Plain Baltica';
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 26px;
+}
+.product-info-wrapper .product-title h1 {
+    font-size: 20px;
+    margin: 0;
+}
+.product-info-wrapper .product-info-text {
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 20px;
+}
+.product-info-wrapper .price {
+    font-family: 'Druk Wide Medium';
+    font-size: 18px;
+}
+.product-info-wrapper .product-color-name {
+    font-size: 14px;
+    color: #000;
+    margin-top: 20px;
+    font-family: 'Plain Baltica';
+}
+.product-info-wrapper .product-color {
+    margin: 10px 0 30px 0;
+    display: flex;
+    justify-content: start;
+}
+.product-special-color h3 {
+    font-size: 14px;
+    font-family: 'Plain Baltica';
+}
+.product-info-wrapper .product-color span {
+    padding-left: 35px;
+}
+.product-info-wrapper [type="checkbox"].filled-in:checked + span:not(.lever):after {
+    width: 25px;
+    height: 25px;
+}
+.product-special-color [type="checkbox"].filled-in:checked + span:not(.lever):after{
+    width: 25px;
+    height: 25px;
+}
+.product-info-wrapper {
+    padding: 0 40px;
+}
+.product-special-color .product-color {
+    margin-top: 5px;
+}
+.product-info-wrapper .product-add-qty .added-qty {
+    display: flex;
+    justify-content: start;
+    width: 30%;
+    border: 1px solid #747E31;
+    border-radius: 5px;
+}
+.product-info-wrapper .product-add-qty .added-qty button {
+    background-color: unset;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 30%;
+    font-size: 20px;
+}
+.product-info-wrapper .product-add-qty .added-qty button i {
+    color: #737D2F;
+    
+}
+.product-info-wrapper .product-add-qty {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-info-wrapper .product-add-qty input {
+    height: 35px;
+    border-bottom: unset;
+    text-align: center;
+    color: #737D2F;
+    width: 40%;
+    font-size: 20px;
+}
+.product-info-wrapper .product-add-qty .product-add {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    border: 1px solid #747E31;
+    padding: 13px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #747E31;
+    color: #fff;
+    font-family: 'Plain Baltica';
+    transition: all;
+    transition-duration: 0.5s;
+}
+.product-info-wrapper .product-add-qty .product-add:hover {
+    background-color: transparent;
+    color: #737D2F;
+}
+.product-info-wrapper .shipping-info {
+    font-family: 'Plain Baltica';
+    font-size: 14px;
+    padding: 10px 0;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.product-info-wrapper .product-accordion h3 {
+    font-family: 'Plain Baltica';
+    font-style: italic;
+    font-size: 25px;
+    border-top: 1px solid #dedede;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.product-info-wrapper .product-accordion h3 span i {
+    font-size: 18px;
+}
+.product-info-wrapper .product-accordion h3:last-of-type {
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 5px;
+}
+.product-info-wrapper .product-accordion p {
+    font-family: 'Plain Baltica';
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.product-info-wrapper .product-accordion p:last-of-type {
+    margin-bottom: 10px;
+}
+/* Product Info End */
+
+/* Product Page End */
 
  /* Media Start */
     @media all and (max-width: 1450px) {
