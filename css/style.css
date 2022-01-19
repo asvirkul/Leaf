@@ -80,7 +80,7 @@ header .menu li a {
 header .menu li a:hover {
     color: #000;
 }
-header #logo a, .sidenav #logo a {
+header #logo a, .sidenav .logo a {
     font-family: 'Druk Wide Bold';
     color: #000;
     font-size: 25px;
@@ -89,13 +89,13 @@ header #logo a, .sidenav #logo a {
     justify-content: center;
     flex-direction: row;
 }
-header #logo a img, .sidenav #logo a img {
+header #logo a img, .sidenav .logo a img {
     display: block;
     margin-right: 5px;
     transition: all;
     transition-duration: 0.3s;
 }
-header #logo a i.line-logo, .sidenav #logo a i.line-logo {
+header #logo a i.line-logo, .sidenav .logo a i.line-logo {
     height: 30px;
     width: 1px;
     background-color: #000;
@@ -1665,17 +1665,17 @@ div.instructions-title.center-align > p {
     margin: 20px auto 20px auto;
     border-radius: 15px;
 }
-#tabs a {
+#tabs a, header .tabs a {
     padding: 15px 80px;
     color: #fff;
     border-radius: 10px;
     font-size: 16px;
 }
 
-#tabs a:not(.inactive) {
+#tabs a:not(.inactive), .tabs a:not(.inactive) {
     background-color: #626E21;
 }
-#tabs a.inactive {
+#tabs a.inactive, .tabs a.inactive {
     color: #626E21;;
 }
 /* Instructions Tabs End */
@@ -1817,14 +1817,14 @@ body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initiali
     top: 15px;
 }
 .mobile-tabs a {
-    padding: 5px 20px !important;
+    padding: 9px !important;
     font-size: 15px;
 }
 .mobile-tabs {
     margin : auto !important; 
     position: absolute;
     right: 15px;
-    top: 7px;
+    top: 3px;
     width: unset !important;
     padding: 5px 5px !important;
     display: flex;
@@ -2051,6 +2051,7 @@ body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initiali
     position: fixed;
     top: 0;
     left: 0;
+    display: none;
 }
 .anim-line {
     background-color: #747E31;
@@ -2185,6 +2186,9 @@ body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initiali
     text-align: center;
     margin-bottom: 40px;
 }
+.show {
+    display: block !important;
+}
 .product-info-wrapper .product-accordion h3 {
     font-family: 'Plain Baltica';
     font-style: italic;
@@ -2192,6 +2196,10 @@ body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initiali
     border-top: 1px solid #dedede;
     margin-bottom: 10px;
     margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
 }
 .product-info-wrapper .product-accordion h3 span i {
     font-size: 18px;
@@ -2200,6 +2208,9 @@ body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initiali
     border-bottom: 1px solid #dedede;
     padding-bottom: 5px;
 }
+.product-info-wrapper .minus {
+    display: none;
+}
 .product-info-wrapper .product-accordion p {
     font-family: 'Plain Baltica';
     line-height: 25px;
@@ -2207,6 +2218,9 @@ body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initiali
 }
 .product-info-wrapper .product-accordion p:last-of-type {
     margin-bottom: 10px;
+}
+.product-info-wrapper .ui-accordion-header-icon.ui-icon {
+    position: absolute;
 }
 /* Product Info End */
 
@@ -3095,9 +3109,6 @@ body > section.slider-instructions-wrapper > div.imagesnew_dotted.slick-initiali
         }
         .instructions-wrapper #tabs a {
             padding: 5px 15px;
-        }
-        .mobile-tabs a {
-            padding: 5px 8px !important;
         }
         .us-title h1 {
             padding: 0 10px;

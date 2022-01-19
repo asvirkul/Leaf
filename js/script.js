@@ -17,6 +17,25 @@ else {
     $('.mobile-tabs').fadeOut();
 } 
 });
+        /* Video Start */
+        var myVideo = document.getElementById("video-main"); 
+        $('.video-wrapper .play-vid').hide();
+        $('.video-control').click(function () {
+        if ( $('.video-wrapper .play-vid').is(':hidden') ) {
+            $('.video-wrapper .pause-vid').hide();
+            $('.video-wrapper .play-vid').show();
+        }
+        else {
+            $('.video-wrapper .play-vid').hide();
+            $('.video-wrapper .pause-vid').show();
+        }
+            if (myVideo.paused) 
+                myVideo.play(); 
+            else 
+                myVideo.pause(); 
+        } 
+        ) 
+    /* Video End */
         /* Animation Header Start */
         var hHeader = $('.main').height();
         $(window).scroll(function () {
@@ -67,29 +86,17 @@ else {
             return window.pageYOffset || document.documentElement.scrollTop;
         } 
         /* Animation Header End */  
-        $( "#accordion" ).accordion({
-            active: false,
-            collapsible: true
-        });
-        /* Video Start */
-        var myVideo = document.getElementById("video-main"); 
-        $('.video-wrapper .play-vid').hide();
-        $('.video-control').click(function () {
-        if ( $('.video-wrapper .play-vid').is(':hidden') ) {
-            $('.video-wrapper .pause-vid').hide();
-            $('.video-wrapper .play-vid').show();
-        }
-        else {
-            $('.video-wrapper .play-vid').hide();
-            $('.video-wrapper .pause-vid').show();
-        }
-            if (myVideo.paused) 
-                myVideo.play(); 
-            else 
-                myVideo.pause(); 
-        } 
-        ) 
-    /* Video End */
+        /* Accordion */
+            $('.product-info-wrapper .product-accordion h3').click(function() {
+                $('.plus').toggleClass('hide');
+                $('.minus').toggleClass('show');
+            });
+            $( "#accordion" ).accordion({
+                active: false,
+                collapsible: true
+            });
+        /* Accordion */
+
 
     $('.add').click(function () {
     	$(this).prev().val(+$(this).prev().val() + 1);
@@ -116,7 +123,7 @@ else {
     /* Bag */
 
     /* Animation Line */
-    $('.tabs-all-links-wrapper #tabs a').click(function(e){
+    $('.tabs-all-links-wrapper .tabs a').click(function(e){
         e.preventDefault();
           $('.anim-line').removeAttr('style');
           $('.anim-line').css('left', 'unset');
