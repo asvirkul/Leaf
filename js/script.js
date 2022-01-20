@@ -88,10 +88,20 @@ else {
         /* Animation Header End */  
         /* Accordion */
             $('.product-info-wrapper .product-accordion h3').click(function() {
-                $('.plus').toggleClass('hide');
-                $('.minus').toggleClass('show');
+                $(this).addClass('iconActive');
+                $('.iconActive .plus').toggleClass('hide');
+                $('.iconActive .minus').toggleClass('show');
             });
-            $( "#accordion" ).accordion({
+            $('.product-kits h3').click(function() {
+                $(this).addClass('iconActive');
+                $('.iconActive .plus').toggleClass('hide');
+                $('.iconActive .minus').toggleClass('show');
+            });
+            $( ".accordion" ).accordion({
+                active: false,
+                collapsible: true
+            });
+            $( ".kit-accordion" ).accordion({
                 active: false,
                 collapsible: true
             });
@@ -154,6 +164,10 @@ else {
             $(".activeAnim .kit-descript, .activeItem .kit-descript").html( "red");
             $(".activeAnim .kit-img img, .activeItem .kit-img img").attr('src', 'images/kit2.jpg');
           });
+          $('.color-wrapper input[type="checkbox"]').click(function() {
+            $(this).addClass('box');
+          });
+          $('div.product-right-info-wrapper.col.s12.l5 > form > div.color-wrapper > div.product-color > p:nth-child(1) input').attr('checked', 'true');
         /* Checkbox */
         /* Scrollspy  */
         $('.scrollspy-shop-wrapper a:first-child').addClass('active')

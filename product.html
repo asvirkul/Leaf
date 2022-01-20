@@ -51,13 +51,13 @@
     <section class="product-info-wrapper row">
         <div class="img-wrapper row col s12 l7">
             <div class="product-img col l6">
-                <img class="responsive-img"src="images/product.jpg" alt="">
+                <img class="responsive-img" src="images/product.jpg" alt="">
             </div>
             <div class="product-img col l6">
-                <img class="responsive-img"src="images/product.jpg" alt="">
+                <img class="responsive-img" src="images/product.jpg" alt="">
             </div>
             <div class="product-img col l6">
-                <img class="responsive-img"src="images/product.jpg" alt="">
+                <img class="responsive-img" src="images/product.jpg" alt="">
             </div>
         </div>
         <div class="product-right-info-wrapper col s12 l5">
@@ -68,84 +68,128 @@
             <div class="product-info-text">
                 <p class="product-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam possimus architecto eum, similique commodi, numquam vero dolorum at eius ab ducimus, cumque aut consequatur magnam corrupti amet dignissimos ipsum nobis culpa! Vel quam cum expedita reprehenderit laboriosam dolore sequi quos.</p>
             </div>
-            <div class="color-wrapper">
-                <div class="product-color-name">
-                    <p>The Leaf Razor</p>
-                    <p class="color">Color: Chrome</p>
-                </div>
-                <div class="product-color">
-                    <p>
-                        <label>
-                        <input type="checkbox" class="filled-in" checked="checked" />
-                        <span></span>
-                        </label>
-                    </p>
-                    <p>
-                        <label>
-                        <input type="checkbox" class="filled-in" checked="checked" />
-                        <span></span>
-                        </label>
-                    </p>
-                    <p>
-                        <label>
-                        <input type="checkbox" class="filled-in" checked="checked" />
-                        <span></span>
-                        </label>
-                    </p>
-                </div>
-                <div class="product-special-color">
-                    <h3>Special Edition</h3>
+            <form action="#" class="color-button-wrapper">
+                <div class="color-wrapper">
+                    <div class="product-color-name">
+                        <p>The Leaf Razor</p>
+                        <p class="color">Color: Chrome</p>
+                    </div>
                     <div class="product-color">
                         <p>
                             <label>
-                            <input type="checkbox" class="filled-in" checked="checked" />
+                            <input type="radio" name="group1" class="with-grap" />
                             <span></span>
                             </label>
                         </p>
                         <p>
                             <label>
-                            <input type="checkbox" class="filled-in" checked="checked" />
+                            <input type="radio" name="group1" class="with-grap" />
+                            <span></span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                            <input type="radio" name="group1" class="with-grap" />
                             <span></span>
                             </label>
                         </p>
                     </div>
+                    <div class="product-special-color">
+                        <h3>Special Edition</h3>
+                        <div class="product-color">
+                            <p>
+                                <label>
+                                <input type="radio" name="group1" class="with-grap" />
+                                <span></span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                <input type="radio" name="group1" class="with-grap" />
+                                <span></span>
+                                </label>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="product-add-qty">
-                <div class="added-qty">
-                    <button type="button" id="sub" class="sub"><i class="fas fa-minus"></i></button>
-                    <input id="1" value="1" min="1" max="3" disabled />
-                    <button type="button" id="add" class="add"><i class="fas fa-plus"></i></button>
+                <div class="product-add-qty">
+                    <div class="added-qty">
+                        <button type="button"  class="sub"><i class="fas fa-minus"></i></button>
+                        <input  type="text" value="1" min="1" max="3" disabled />
+                        <button type="button" class="add"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <a href="#" class="product-add">Add To Bag</a>
                 </div>
-                <a href="#" class="product-add">Add To Bag</a>
-            </div>
+            </form>
             <div class="shipping-info">
                 <p>Lifetime Warranty • 30-Day Returns • Free US Shipping (over $25)</p>
             </div>
-            <div class="product-accordion" id="accordion">
+            <div class="product-accordion accordion">
                 <h3>Description <span ><i class="fas fa-plus plus"></i><i class="fas fa-minus minus"></i></span></h3>
                 <div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio fugit veniam autem dolorum odio quae. Soluta nihil ex iure architecto dolores. Velit reiciendis facere non rem aliquam ad ipsam sint corrupti vitae, rerum placeat veritatis expedita? Corrupti explicabo molestias fuga.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur perspiciatis fuga vero laudantium iste libero optio impedit odio eveniet velit saepe atque natus sint excepturi earum, nam, deserunt illum doloribus.</p>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed architecto qui quaerat, sapiente unde dicta?</p> 
                 </div>
-                <h3>Description</h3>
+                <h3>Description <span><i class="fas fa-plus plus"></i><i class="fas fa-minus minus"></i></span></h3>
                 <div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio fugit veniam autem dolorum odio quae. Soluta nihil ex iure architecto dolores. Velit reiciendis facere non rem aliquam ad ipsam sint corrupti vitae, rerum placeat veritatis expedita? Corrupti explicabo molestias fuga.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur perspiciatis fuga vero laudantium iste libero optio impedit odio eveniet velit saepe atque natus sint excepturi earum, nam, deserunt illum doloribus.</p>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed architecto qui quaerat, sapiente unde dicta?</p> 
                 </div>
-                <h3>Description</h3>
+                <h3>Description <span ><i class="fas fa-plus plus"></i><i class="fas fa-minus minus"></i></span></h3>
                 <div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio fugit veniam autem dolorum odio quae. Soluta nihil ex iure architecto dolores. Velit reiciendis facere non rem aliquam ad ipsam sint corrupti vitae, rerum placeat veritatis expedita? Corrupti explicabo molestias fuga.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur perspiciatis fuga vero laudantium iste libero optio impedit odio eveniet velit saepe atque natus sint excepturi earum, nam, deserunt illum doloribus.</p>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed architecto qui quaerat, sapiente unde dicta?</p> 
                 </div>
-            </div>
-        </div>
+            </div><!-- product-accordion -->
+
+            <div class="product-kits-wrapper">
+                <div class="product-kits-title">
+                    <h3>Kits and Accessories</h3>
+                </div>
+                <div class="product-kits kit-accordion">
+                    <h3>1 Available <span class="right"><i class="fas fa-plus plus"></i><i class="fas fa-minus minus"></i></span></h3>
+                    <div class="kit-product-accordion">
+                        <div>
+                            <div class="left-product-kit">
+                                <h4>Shave Soap Bar</h4>
+                                <p class="price">$9</p>
+                                <a href="#">Add to Bag</a>
+                            </div>
+                            <div class="right-product-kit">
+                                <img class="responsive-img" src="images/saleleaf1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="left-product-kit">
+                                <h4>Shave Soap Bar</h4>
+                                <p class="price">$9</p>
+                                <a href="#">Add to Bag</a>
+                            </div>
+                            <div class="right-product-kit">
+                                <img class="responsive-img" src="images/saleleaf1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="left-product-kit">
+                                <h4>Shave Soap Bar</h4>
+                                <p class="price">$9</p>
+                                <a href="#">Add to Bag</a>
+                            </div>
+                            <div class="right-product-kit">
+                                <img class="responsive-img" src="images/saleleaf1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div><!-- Product Kits End -->
+        </div><!-- product-right -->
     </section>
     <!-- Product Info End -->
-
+    <div style="height: 1000px"></div>
     <!-- Footer Start -->
         <footer>
             <div class="footer-content container row">
@@ -186,14 +230,14 @@
         <!-- Footer End -->
 
         <!-- Mobile -->
-        <ul id="slide-out" class="sidenav">
+        <div id="slide-out" class="sidenav">
             <div class="logo">
                 <div id="closenav">
                     <a href="#"><i class="material-icons">close</i></a>
                 </div>
-                <p id="logo">
+                <p class="logo">
                     <a href="index.html">
-                        </i><i>LEAF</i>
+                        <i>LEAF</i>
                     </a>
                 </p>
             </div>
@@ -204,7 +248,7 @@
                 <li><a href="#">Instructions & Cleaning</a></li>
             </ul>
             <a href="#" class="mobile-account">Account</a>
-        </ul>
+        </div>
         <!-- Mobile -->
     
         <!-- Bag Start -->
@@ -225,9 +269,9 @@
                             <div class="added-quantity">
                                 <span class="added-delete"><i class="fas fa-trash-alt"></i></span>
                                 <div class="added-qty">
-                                    <button type="button" id="sub" class="sub"><i class="fas fa-minus"></i></button>
-                                    <input id="1" value="1" min="1" max="3" disabled />
-                                    <button type="button" id="add" class="add"><i class="fas fa-plus"></i></button>
+                                    <button type="button" class="sub"><i class="fas fa-minus"></i></button>
+                                    <input  type="text" value="1" min="1" max="3" disabled />
+                                    <button type="button"  class="add"><i class="fas fa-plus"></i></button>
                                 </div>
                                 
                             </div>
@@ -244,9 +288,9 @@
                             <div class="added-quantity">
                                 <span class="added-delete"><i class="fas fa-trash-alt"></i></span>
                                 <div class="added-qty">
-                                    <button type="button" id="sub" class="sub"><i class="fas fa-minus"></i></button>
-                                    <input id="1" value="1" min="1" max="3" disabled />
-                                    <button type="button" id="add" class="add"><i class="fas fa-plus"></i></button>
+                                    <button type="button" class="sub"><i class="fas fa-minus"></i></button>
+                                    <input  type="text" value="1" min="1" max="3" disabled />
+                                    <button type="button" class="add"><i class="fas fa-plus"></i></button>
                                 </div>
                                 
                             </div>
