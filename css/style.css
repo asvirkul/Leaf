@@ -2309,6 +2309,31 @@ input[type=text]:not(.browser-default):disabled {
     font-size: 16px;
     margin-bottom: 20px;
 }
+.product-upgrade-wrapper {
+    background-color: #64702B;
+    color: #fff;
+    padding: 30px 0;
+    margin-bottom: 50px;
+}
+.product-upgrade {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.product-upgrade article:first-child {
+    width: 30%;
+}
+.product-upgrade article:first-child h5 {
+    font-family: 'Druk Wide Bold';
+    font-size: 25px;
+}
+.product-upgrade article:first-child h5 span {
+    font-family: 'Plain Baltica';
+}
+.product-upgrade article {
+    width: 20%;
+}
 /* Product Info End */
 
 /* Product Page End */
