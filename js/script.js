@@ -91,11 +91,13 @@ else {
                 $(this).addClass('iconActive');
                 $('.iconActive .plus').toggleClass('hide');
                 $('.iconActive .minus').toggleClass('show');
+                $(this).removeClass('iconActive');
             });
             $('.product-kits h3').click(function() {
                 $(this).addClass('iconActive');
                 $('.iconActive .plus').toggleClass('hide');
                 $('.iconActive .minus').toggleClass('show');
+                $(this).removeClass('iconActive');
             });
             $( ".accordion" ).accordion({
                 active: false,

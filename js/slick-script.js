@@ -75,5 +75,17 @@ jQuery(document).ready(function() {
         focusOnSelect: true // указываем что бы слайделось по клику
     });
 /* Slick Instruction End */
+/* Product Slider */
+$('.product-slider-content').slick({
+    arrows: false,
+    speed: 400,
+    infinite: true,
+    cssEase: 'ease-in-out',
+    draggable: true,
+    slidesToScroll: 1,
+    infinite: false,
+    arrows: true
+});
+/* Product Slider */
 //ready
 });
