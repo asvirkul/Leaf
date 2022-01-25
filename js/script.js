@@ -178,7 +178,7 @@ else {
             $(".scrollspy-shop-wrapper a").removeClass('active');
             $(this).addClass('active');
         });
-        var posTabs = $('.scrollspy-shop-wrapper').offset().top;
+        var posTabs = $('.scrollspy-shop-wrapper').offset().top();
         $(window).scroll(function() {
             var scrollWindow = $(window).scrollTop();
             if (scrollWindow > posTabs) {

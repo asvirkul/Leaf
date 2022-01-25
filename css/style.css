@@ -2367,6 +2367,19 @@ input[type=text]:not(.browser-default):disabled {
 .product-slider-wrapper video {
     width: 100%;
 }
+.product-slider-wrapper {
+    overflow: hidden;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.product-slider-title h5.col.s6 {
+    padding: 0; 
+    margin: 0;
+}
+.product-slider-title {
+    align-items: flex-end;
+    display: flex;
+}
 /* Product Slider End */
 
 /* Product Page End */
