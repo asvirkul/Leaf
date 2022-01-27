@@ -2366,19 +2366,56 @@ input[type=text]:not(.browser-default):disabled {
 /* Product Slider Start */
 .product-slider-wrapper video {
     width: 100%;
+    border-radius: 30px;
 }
 .product-slider-wrapper {
     overflow: hidden;
     max-width: 900px;
     margin: 0 auto;
+    margin-bottom: 100px;
 }
 .product-slider-title h5.col.s6 {
     padding: 0; 
     margin: 0;
+    font-family: 'Druk Wide Bold';
+    font-size: 28px;
+    line-height: 35px;
+}
+.product-slider-title h5 span {
+    font-family: 'Plain Baltica';
+    font-style: italic;
 }
 .product-slider-title {
     align-items: flex-end;
     display: flex;
+}
+
+.dotted-product .slick-track {
+    padding: 5px 5px !important;
+    border: 1px solid #DEDEDE;
+    border-radius: 15px;
+    display: flex !important;
+    justify-content: space-between !important;
+    box-sizing: border-box;
+    width: unset !important;
+    align-items: center;
+}
+.dotted-product p {
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    color: #626E21;
+    text-transform: capitalize;
+    font-family: 'Plain Baltica';
+}
+.dotted-product .slick-current {
+    background-color: #626E21;
+    padding: 6px 7px;
+    color: #fff;
+    border-radius: 7px;
+}
+.product-slider-dotted {
+    padding: 0 !important;
 }
 /* Product Slider End */
 
