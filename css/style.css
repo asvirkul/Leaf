@@ -2419,6 +2419,130 @@ input[type=text]:not(.browser-default):disabled {
 }
 /* Product Slider End */
 
+/* Product Reviews Start */
+.product-reviews-wrapper {
+    max-width: 750px;
+    margin: 0 auto;
+}
+.product-reviews-title {
+    margin-bottom: 20px;
+}
+.product-reviews-title h6 {
+    font-family: 'Druk Wide Bold';
+    font-size: 35px;
+    margin: 0;
+}
+.product-reviews-title h6:last-of-type {
+    font-family: 'Plain Baltica';
+    font-style: italic;
+    font-size: 33px;
+    letter-spacing: -2px;
+
+}
+.product-reviews-stats .stars-left .number p {
+    font-family: 'Plain Baltica';
+    font-weight: bold;
+    font-size: 45px;
+    color: #000;
+}
+.product-reviews-stats .stars-left {
+    width: 30%;
+}
+
+.product-reviews-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.stats-right {
+    width: 30%;
+}
+.stars-left .stars i {
+    color: #D76540;
+    font-size: 21px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.count-reviews p {
+    font-family: 'Plain Baltica';
+    font-size: 15px;
+    color: #000;
+}
+.line-review {
+    width: 100%;
+    height: 12px;
+    border: 1px solid #dedede;
+    background-color: #FAFAFA;
+    border-radius: 3px;
+    position: relative;
+}
+
+.fill {
+    width: 60%;
+    background-color: #626E21;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.stat-line p {
+    font-size: 16px;
+    font-family: 'Plain Baltica';
+    margin-right: 10px;
+}
+.stat-line {
+    display: flex;
+    align-items: center;
+    padding: 2px 0;
+}
+.product-reviews-wrapper .horizontal-line {
+    width: 90%;
+    margin: auto;
+    height: 1px;
+    background-color: #E5E5E5;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.product-write {
+    margin-top: 20px;
+}
+.product-write div > label {
+    font-family: 'Plain Baltica';
+    font-size: 16px;
+    font-style: italic;
+    color: #000;
+}
+.product-write div input {
+    border: 1px solid #dedede !important;
+    border-radius: 5px !important;
+    height: unset !important; 
+    padding: 5px 0 40px 0px !important;
+    font-family: 'Plain Baltica';
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.product-write div textarea {
+    border: 1px solid #dedede !important;
+    border-radius: 5px !important;
+    padding: 5px 0 40px 0px !important;
+    font-family: 'Plain Baltica';
+    font-size: 14px;
+    width: 100% !important;
+    min-height: 100px;
+    resize: vertical;
+}
+.product-write div input::placeholder, .product-write div textarea::placeholder {
+    font-family: 'Plain Baltica';
+    font-size: 14px;
+    color: #818181;
+    padding-left: 15px;
+}
+.product-write input[type=text]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: unset;
+    box-shadow: unset;
+}
+/* Product Reviews End */
+
 /* Product Page End */
 
  /* Media Start */
