@@ -2516,30 +2516,58 @@ input[type=text]:not(.browser-default):disabled {
     border: 1px solid #dedede !important;
     border-radius: 5px !important;
     height: unset !important; 
-    padding: 5px 0 40px 0px !important;
+    padding: 5px 0 40px 15px !important;
     font-family: 'Plain Baltica';
     font-size: 14px;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 .product-write div textarea {
     border: 1px solid #dedede !important;
     border-radius: 5px !important;
-    padding: 5px 0 40px 0px !important;
+    padding: 5px 0 40px 15px !important;
     font-family: 'Plain Baltica';
     font-size: 14px;
     width: 100% !important;
     min-height: 100px;
     resize: vertical;
+    outline: none;
 }
 .product-write div input::placeholder, .product-write div textarea::placeholder {
     font-family: 'Plain Baltica';
     font-size: 14px;
     color: #818181;
-    padding-left: 15px;
+
+}
+.product-write input[type="submit"] {
+    background-color: #626E21;
+    border: 1px solid #626E21;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px 15px;
+    font-family: 'Plain Baltica';
+    border-radius: 5px;
+    margin: 10px 0 20px 0;
+    transition: all;
+    transition-duration: 0.5s;
+}
+.product-write input[type="submit"]:hover {
+    background-color: transparent;
+    color: #626E21;
 }
 .product-write input[type=text]:not(.browser-default):focus:not([readonly]) {
     border-bottom: unset;
     box-shadow: unset;
+}
+.star-select {
+    background-image: url(../images/star.png);
+    height: 24px;
+    width: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.stars-select {
+    display: flex;
 }
 /* Product Reviews End */
 

@@ -17,7 +17,7 @@ else {
     $('.mobile-tabs').fadeOut();
 } 
 });
-        /* Video Start */
+    /* Video Start */
         var myVideo = document.getElementById("video-main"); 
         $('.video-wrapper .play-vid').hide();
         $('.video-control').click(function () {
@@ -36,7 +36,21 @@ else {
         } 
         ) 
     /* Video End */
-        /* Animation Header Start */
+
+    /* Reviews Stars */
+    $('.star-select').hover(
+        
+        function() {
+            $(this).prevAll().andSelf().css('background-image', '../images/star-fill.png');
+            $(this).nextAll().css('background-image', '../images/star.png');
+        },
+        function () {
+            $(this).prevAll().andSelf().css('background-image', '../images/star.png');
+        }
+    )
+    /* Reviews Stars */
+
+    /* Animation Header Start */
         var hHeader = $('.main').height();
         $(window).scroll(function () {
             var scroll = getCurrentScroll();
