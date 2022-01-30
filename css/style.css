@@ -2373,6 +2373,7 @@ input[type=text]:not(.browser-default):disabled {
     max-width: 900px;
     margin: 0 auto;
     margin-bottom: 100px;
+    padding: 0 30px;
 }
 .product-slider-title h5.col.s6 {
     padding: 0; 
@@ -2413,6 +2414,9 @@ input[type=text]:not(.browser-default):disabled {
     padding: 6px 7px;
     color: #fff;
     border-radius: 7px;
+}
+body > section.product-slider-wrapper > div.product-slider-title.row > div > div > div > div {
+    transform: translate3d(0, 0px, 0px) !important;
 }
 .product-slider-dotted {
     padding: 0 !important;
@@ -2583,12 +2587,64 @@ input[type=text]:not(.browser-default):disabled {
     display: flex;
     margin-top: 10px;
 }
+.added-reviews-wrapper  {
+    padding-top: 50px;
+}
 .added-reviews-wrapper article {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+.author-title-text h6 {
+    font-family: 'Plain Baltica';
+    font-weight: bold;
+    font-size: 18px;
+    font-style: italic;
+}
+.author-title-text p {
+    font-family: 'Plain Baltica';
+    font-size: 15px;
+    line-height: 24px;
+}
+.author-stars i {
+    color: #D76540;
+    font-size: 20px;
+
 }
 .author-name {
     width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.author-review {
+    width: 65%;
+}
+.author-circle {
+    background-color: #838C8D;
+    padding: 20px 15px;
+    border-radius: 50%;
+    color: #fff;
+    font-family: 'Druk Wide Medium';
+    display: inline-block;
+}
+.author-name-left h6 {
+    font-family: 'Plain Baltica';
+    font-weight: bold;
+    margin: 0 0 0 5px;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+.author-name-left p {
+    display: flex;
+    align-items: center;
+    font-family: 'Plain Baltica';
+    text-transform: capitalize;
+    font-size: 13px;
+}
+.author-name-left p i {
+    color: #626E21;
 }
 /* Product Reviews End */
 
@@ -2936,6 +2992,63 @@ input[type=text]:not(.browser-default):disabled {
         }
     }
     @media all and (max-width: 900px) {
+        .product-upgrade {
+            display: flex;
+            flex-direction: column;
+        }
+        .product-reviews-wrapper {
+            padding: 0 40px;
+        }
+        .product-slider-title h5.col.s6 {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        .product-upgrade > article:first-child {
+            width: 70%;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .product-reviews-title h6, .product-reviews-title h6:last-of-type {
+            font-size: 25px;
+        }
+        .stats-right {
+            width: 50%;
+        }
+        .added-reviews-wrapper article {
+            display: flex;
+            flex-direction: column;
+        }
+        .author-circle {
+            margin-right: 20px;
+        }
+        .author-name {
+            width: 100%;
+            justify-content: start;
+            margin-bottom: 20px;
+        }
+        .author-review {
+            width: 100%;
+        }
+        .product-upgrade > article:first-child br {
+            display: none;
+        }
+        .product-upgrade-left article {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            width: 70%;
+            margin: auto;
+            justify-content: space-around;
+        }
+        .product-upgrade-left article h5,  .product-upgrade-left article p {
+            margin: 0;
+            display: block;
+        }
+        .product-upgrade-left {
+            display: flex;
+            flex-direction: column;
+        }
         .tabs-all-links-wrapper div[id^="tabs"] article {
             display: flex;
             flex-direction: column;
@@ -3297,6 +3410,32 @@ input[type=text]:not(.browser-default):disabled {
         }
     }
     @media all and (max-width: 675px) {
+        .product-slider-title {
+            flex-direction: column;
+        }
+        .product-slider-dotted {
+            width: 100% !important;
+        }
+        .product-slider-title h5.col {
+            width: 100% !important;
+            margin-bottom: 20px !important;
+        }
+        .product-info-wrapper .product-add-qty {
+            flex-direction: column;
+        }
+        .product-upgrade-left article {
+            width: 100%;
+        }
+        .product-info-wrapper .product-add-qty .added-qty {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .product-info-wrapper > .col {
+            padding: 0;
+        }
+        .product-info-wrapper .product-add-qty .product-add {
+            width: 100%;
+        }
         .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
             position: static;
         }
@@ -3401,6 +3540,47 @@ input[type=text]:not(.browser-default):disabled {
         }
     }
     @media all and (max-width: 500px) {
+        .product-reviews-stats {
+            display: flex;
+            flex-direction: column;
+        }
+        .product-info-wrapper .product-title {
+            flex-direction: column;
+        }
+        .product-upgrade article i {
+            margin-right: 10px;
+        }
+        .product-info-wrapper .product-text {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .product-info-wrapper .product-title h1 {
+            margin-bottom: 10px;
+        }
+        .left-product-kit a {
+            margin-bottom: 20px;
+        }
+        .img-wrapper .product-img.col {
+            padding: 0 !important;
+        }
+        .right-product-kit {
+            width: 50%;
+        }
+        .kit-product-accordion > div {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .left-product-kit {
+            width: 100%;
+        }
+        .product-reviews-stats .stars-left {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .stats-right {
+            width: 100%;
+        }
         #three-razor {
             left: -300px !important;
         }
