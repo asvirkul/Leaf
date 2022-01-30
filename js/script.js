@@ -1,22 +1,25 @@
 jQuery(document).ready(function($) {
+
     /* Materialize Gallery Start */
     $('.materialboxed').materialbox();
     /* Materialize Gallery End */
-/* Header instruction Animation Start */
-$('.mobile-tabs').hide();
-$('.shave-us').hide();
-$(window).scroll(function() {
-if ($(window).scrollTop() >= 600){  
-    $('.shave-us').fadeIn();
-    $('.instruction-header .logo, .instruction-header .menu-left li:not(.shave-us), .instruction-header .menu-right .menu, .mobile-bag .menu').fadeOut();
-    $('.mobile-tabs').fadeIn();
-  }
-else {
-    $('.shave-us').fadeOut();
-    $('.instruction-header .logo, .instruction-header .menu-left li:not(.shave-us), .instruction-header .menu-right .menu, .mobile-bag .menu').fadeIn();
-    $('.mobile-tabs').fadeOut();
-} 
-});
+
+    /* Header instruction Animation Start */
+        $('.mobile-tabs').hide();
+        $('.shave-us').hide();
+        $(window).scroll(function() {
+        if ($(window).scrollTop() >= 600){  
+            $('.shave-us').fadeIn();
+            $('.instruction-header .logo, .instruction-header .menu-left li:not(.shave-us), .instruction-header .menu-right .menu, .mobile-bag .menu').fadeOut();
+            $('.mobile-tabs').fadeIn();
+        }
+        else {
+            $('.shave-us').fadeOut();
+            $('.instruction-header .logo, .instruction-header .menu-left li:not(.shave-us), .instruction-header .menu-right .menu, .mobile-bag .menu').fadeIn();
+            $('.mobile-tabs').fadeOut();
+        } 
+        });
+    /* Header instruction Animation Start */
     /* Video Start */
         var myVideo = document.getElementById("video-main"); 
         $('.video-wrapper .play-vid').hide();
@@ -37,18 +40,16 @@ else {
         ) 
     /* Video End */
 
-    /* Reviews Stars */
-    $('.star-select').hover(
-        
-        function() {
-            $(this).prevAll().andSelf().css('background-image', '../images/star-fill.png');
-            $(this).nextAll().css('background-image', '../images/star.png');
-        },
-        function () {
-            $(this).prevAll().andSelf().css('background-image', '../images/star.png');
-        }
-    )
-    /* Reviews Stars */
+    /* Stars Hover  */
+    $('.star-select').hover(function () {
+        var prev = $(this).prevAll().addBack().addClass('star-fill');
+        $(this).nextAll().removeClass('star-fill'); 
+    },
+    function () {
+        $(this).prevAll().addBack().removeClass('star-fill');
+    }
+    );
+    /* Stars Hover  */
 
     /* Animation Header Start */
         var hHeader = $('.main').height();

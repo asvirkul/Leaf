@@ -2558,7 +2558,20 @@ input[type=text]:not(.browser-default):disabled {
     border-bottom: unset;
     box-shadow: unset;
 }
+.star-select.star-fill {
+    transition: all;
+    transition-duration: 0.5s;
+    background-image: url(../images/star-fill.png);
+    height: 24px;
+    width: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
 .star-select {
+    transition: all;
+    transition-duration: 0.5s;
     background-image: url(../images/star.png);
     height: 24px;
     width: 24px;
@@ -2568,6 +2581,14 @@ input[type=text]:not(.browser-default):disabled {
 }
 .stars-select {
     display: flex;
+    margin-top: 10px;
+}
+.added-reviews-wrapper article {
+    display: flex;
+    justify-content: space-between;
+}
+.author-name {
+    width: 30%;
 }
 /* Product Reviews End */
 
