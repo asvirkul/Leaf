@@ -3,7 +3,28 @@ jQuery(document).ready(function($) {
     /* Materialize Gallery Start */
     $('.materialboxed').materialbox();
     /* Materialize Gallery End */
+/* Scrollspy  */
+$('.scrollspy-shop-wrapper a:first-child').addClass('active')
+$('.scrollspy-shop-wrapper a').click(function(e) {
+    e.preventDefault();
+    $(".scrollspy-shop-wrapper a").removeClass('active');
+    $(this).addClass('active');
+});
+var posTabs = $('.scrollspy-shop-wrapper').offset();
 
+
+$(window).scroll(function() {
+    var scrollWindow = $(window).scrollTop();
+    if (scrollWindow > posTabs) {
+        $('.scrollspy-shop-wrapper').addClass('fixed')
+    }
+    else {
+        $('.scrollspy-shop-wrapper').removeClass('fixed')
+    }
+});
+$('.scrollspy').scrollSpy();
+console.log($('.scrollspy-shop-wrapper').offsetTop())
+/* Scrollspy */
     /* Header instruction Animation Start */
         $('.mobile-tabs').hide();
         $('.shave-us').hide();
@@ -19,7 +40,14 @@ jQuery(document).ready(function($) {
             $('.mobile-tabs').fadeOut();
         } 
         });
-    /* Header instruction Animation Start */
+        var hideText = $('.options-hidden').innerHeight();
+        $('.options-hidden', this).css("margin-bottom", - + hideText);
+        $('.options-hidden').css('margin-bottom', '-' + hideText + 'px');
+        $('.razors-shop-wrapper .row-kit-items .kit-item').hover(function() {
+            $('.options-hidden', this).css('margin-bottom', "0px")
+        }, function() {
+            $('.options-hidden', this).css("margin-bottom", - + hideText);
+        });  
     /* Video Start */
         var myVideo = document.getElementById("video-main"); 
         $('.video-wrapper .play-vid').hide();
@@ -186,35 +214,6 @@ jQuery(document).ready(function($) {
           });
           $('div.product-right-info-wrapper.col.s12.l5 > form > div.color-wrapper > div.product-color > p:nth-child(1) input').attr('checked', 'true');
         /* Checkbox */
-        /* Scrollspy  */
-        $('.scrollspy-shop-wrapper a:first-child').addClass('active')
-        $('.scrollspy-shop-wrapper a').click(function(e) {
-            e.preventDefault();
-            $(".scrollspy-shop-wrapper a").removeClass('active');
-            $(this).addClass('active');
-        });
-        var posTabs = $('.scrollspy-shop-wrapper').offset().top();
-        $(window).scroll(function() {
-            var scrollWindow = $(window).scrollTop();
-            if (scrollWindow > posTabs) {
-                $('.scrollspy-shop-wrapper').addClass('fixed')
-            }
-            else {
-                $('.scrollspy-shop-wrapper').removeClass('fixed')
-            }
-        });
-    
-        $('.scrollspy').scrollSpy();
-
-    /* Scrollspy */
-    var hideText = $('.options-hidden').innerHeight();
-        $('.options-hidden', this).css("margin-bottom", - + hideText);
-        $('.options-hidden').css('margin-bottom', '-' + hideText + 'px');
-        $('.razors-shop-wrapper .row-kit-items .kit-item').hover(function() {
-            $('.options-hidden', this).css('margin-bottom', "0px")
-        }, function() {
-            $('.options-hidden', this).css("margin-bottom", - + hideText);
-        });  
-        /* Instruction Animation Start */
+        
 
 }); //ready

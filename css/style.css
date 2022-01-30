@@ -2650,6 +2650,198 @@ body > section.product-slider-wrapper > div.product-slider-title.row > div > div
 
 /* Product Page End */
 
+/* Log In  Page Start */
+.login-wrapper-background-image {
+    background-image: url(../images/login.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.login-wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 60px;
+    box-sizing: border-box;
+}
+.login-wrapper h1 {
+    font-family: 'Druk Wide Bold';
+    font-size: 30px;
+}
+.login-wrapper-background-color {
+    background-color: rgb(249,245,240);
+    padding: 150px 0;
+}
+.login-wrapper div > input {
+    width: 100%;
+    border: 1px solid #dedede !important; 
+    box-sizing: border-box !important;
+    height: 66px !important;
+    outline: none;
+    border-radius: 10px !important;
+    padding: 0 20px !important;
+    font-family: 'Plain Baltica';
+    color: #000;
+    margin-bottom: 20px !important;
+}
+.login-wrapper form input[type="button"] {
+    cursor: pointer;
+    width: 100%;
+    background-color: rgb(96,107,19);
+    color: #fff;
+    border: 1px solid rgb(96,107,19);
+    font-family: 'Druk Wide Medium';
+    padding: 20px 0;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: 300;
+    transition: all;
+    transition-duration: 0.5s;
+}
+.login-wrapper a {
+    display: block;
+}
+.login-wrapper a.forgot-password {
+    font-family: 'Plain Baltica';
+    color: rgb(96,107,19);
+    border-bottom: 1px solid rgb(96,107,19);
+    font-size: 16px;
+    margin: 20px 0;
+    display: inline-block;
+}
+.login-wrapper a.create-account {
+    display: inline-block;
+    margin-top: 60px;
+    text-align: center;
+    border: 1px solid rgb(96,107,19);
+    font-family: 'Plain Baltica';
+    background: transparent;
+    color: rgb(96,107,19);
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 10px;
+    transition: all;
+    transition-duration: 0.5s;
+}
+.login-wrapper a.create-account:hover {
+    background-color: rgb(96, 107, 19) ;
+    color: #fff;
+}
+.login-wrapper form input[type="button"]:hover {
+    background-color: transparent;
+    color: rgb(96,107,19);
+}
+.login-wrapper input:focus {
+    border: 1px solid #dedede !important; 
+    box-shadow: none !important;
+}
+.login-wrapper div > input::placeholder {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-family: 'Plain Baltica';
+    font-size: 14px;
+    color: #676767;
+}
+/* Log In Page End */
+
+/* Registration Start */
+.register-wrapper-background-image {
+    background-image: url(../images/register.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.register-wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 60px;
+    box-sizing: border-box;
+}
+.register-wrapper h1 {
+    font-family: 'Druk Wide Bold';
+    font-size: 30px;
+}
+.register-wrapper-background-color {
+    background-color: rgb(249,245,240);
+    padding: 150px 0;
+}
+.register-wrapper div > input {
+    width: 100%;
+    border: 1px solid #dedede !important; 
+    box-sizing: border-box !important;
+    height: 66px !important;
+    outline: none;
+    border-radius: 10px !important;
+    padding: 0 20px !important;
+    font-family: 'Plain Baltica';
+    color: #000;
+    margin-bottom: 20px !important;
+}
+.register-wrapper form input[type="button"] {
+    cursor: pointer;
+    width: 100%;
+    background-color: rgb(96,107,19);
+    color: #fff;
+    border: 1px solid rgb(96,107,19);
+    font-family: 'Druk Wide Medium';
+    padding: 20px 0;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: 300;
+    transition: all;
+    transition-duration: 0.5s;
+}
+.register-wrapper a {
+    display: block;
+}
+.register-wrapper a.have-account {
+    font-family: 'Plain Baltica';
+    color: rgb(96,107,19);
+    border-bottom: 1px solid rgb(96,107,19);
+    font-size: 16px;
+    margin: 20px 0;
+    display: inline-block;
+}
+.register-wrapper a.create-account {
+    display: inline-block;
+    margin-top: 60px;
+    text-align: center;
+    border: 1px solid rgb(96,107,19);
+    font-family: 'Plain Baltica';
+    background: transparent;
+    color: rgb(96,107,19);
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 10px;
+    transition: all;
+    transition-duration: 0.5s;
+}
+.register-wrapper a.create-account:hover {
+    background-color: rgb(96, 107, 19) ;
+    color: #fff;
+}
+.register-wrapper form input[type="button"]:hover {
+    background-color: transparent;
+    color: rgb(96,107,19);
+}
+.register-wrapper input:focus {
+    border: 1px solid #dedede !important; 
+    box-shadow: none !important;
+}
+.register-wrapper div > input::placeholder {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-family: 'Plain Baltica';
+    font-size: 14px;
+    color: #676767;
+}
+/* Registration End */
+
  /* Media Start */
     @media all and (max-width: 1450px) {
         .product-main-line article {
