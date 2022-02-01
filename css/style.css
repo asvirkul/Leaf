@@ -664,9 +664,6 @@ a.kit-item:hover .kit-img img {
     background-color: #626E21;
     color: #fff;
 }
-.insta-photos.row > .material-placeholder:first-child {
-    background: red;
-}
 /* Instgran End */
 
 /* Mobile Menu */
@@ -2558,9 +2555,9 @@ body > section.product-slider-wrapper > div.product-slider-title.row > div > div
     background-color: transparent;
     color: #626E21;
 }
-.product-write input[type=text]:not(.browser-default):focus:not([readonly]) {
-    border-bottom: unset;
-    box-shadow: unset;
+input:focus{
+    border-bottom: unset !important;
+    box-shadow: unset !important;
 }
 .star-select.star-fill {
     transition: all;
@@ -2842,6 +2839,101 @@ body > section.product-slider-wrapper > div.product-slider-title.row > div > div
 }
 /* Registration End */
 
+/* Contact Start */
+.contact-wrapper-background {
+    background-image: url(../images/contact.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 60px;
+}
+.contact-title h1 {
+    font-family: 'Druk Wide Bold';
+    color: #fff;
+    text-align: center;
+    font-size: 45px;
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+.contact-form-wrapper {
+    background-color: #fff;
+    max-width: 80%;
+    margin: 0 auto;
+    border-radius: 40px;
+    padding: 80px 100px;
+}
+.contact-form-title h2 {
+    font-family: 'Druk Wide Bold';
+    font-size: 30px;
+}
+.contact {
+    margin: 40px;
+}
+.contact-form-title p {
+    font-family: 'Plain Baltica';
+    color: #000;
+    font-size: 16px;
+    margin: 10px 0;
+}
+.contact div > input {
+    width: 100%;
+    border: 1px solid #dedede !important; 
+    box-sizing: border-box !important;
+    height: 66px !important;
+    outline: none;
+    border-radius: 10px !important;
+    padding: 0 20px !important;
+    font-family: 'Plain Baltica';
+    color: #000;
+    margin-bottom: 20px !important;
+}
+.contact div > textarea {
+    border: 1px solid #dedede !important;
+    border-radius: 5px !important;
+    padding: 5px 0 40px 15px !important;
+    font-family: 'Plain Baltica';
+    font-size: 14px;
+    width: 100% !important;
+    min-height: 200px;
+    resize: vertical;
+    outline: none;
+}
+.contact div.col.first {
+    padding: 0 10px 0 0 !important; 
+}
+.contact div.col.last {
+    padding: 0 0 0 10px !important;
+}
+.contact div > input::placeholder, .contact div textarea::placeholder {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-family: 'Plain Baltica';
+    font-size: 14px;
+    color: #676767;
+}
+.contact input[type="submit"] {
+    text-align: center;
+    margin: 20px 0;
+    display: block;
+    background-color: #626E21;
+    width: 100%;
+    border: 1px solid #626E21;
+    color: #fff;
+    font-family: "Plain Baltica";
+    padding: 20px 0;
+    border-radius: 10px;
+    transition: all;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.contact input[type="submit"]:hover {
+    background-color: transparent;
+    color:#626E21;
+}
+/* Contact End */
+
  /* Media Start */
     @media all and (max-width: 1450px) {
         .product-main-line article {
@@ -2930,6 +3022,9 @@ body > section.product-slider-wrapper > div.product-slider-title.row > div > div
         .slider-instructions-wrapper .slick-slider {
             width: 90%;
             margin: 0 auto;
+        }
+        .contact-form-wrapper {
+            padding: 80px 20px;
         }
         .all-shop-content.container #tabs .kit-text .title,  .all-shop-content.container #tabs .kit-text p.right {
             font-size: 15px !important;
@@ -3289,6 +3384,9 @@ body > section.product-slider-wrapper > div.product-slider-title.row > div > div
             justify-content: center;
             flex-direction: column;
             align-items: center;
+        }
+        .contact-form-wrapper {
+            padding: 50px 10px;
         }
         .instructions-title h1 {
             font-size: 42px;
@@ -3665,6 +3763,9 @@ body > section.product-slider-wrapper > div.product-slider-title.row > div > div
             padding: 20px 0;
             font-size: 15px;
         }
+        .contact-title h1 {
+            font-size: 35px;
+        }
         .kit-wrapper article p {
             font-size: 15px;
         }
@@ -3691,6 +3792,18 @@ body > section.product-slider-wrapper > div.product-slider-title.row > div > div
         }
         #three-razor {
             left: -200px;
+        }
+        .contact div.col.last {
+            padding: 0 !important;
+        }
+        .contact {
+            margin: 20px 10px 10px 10px;
+        }
+        .contact-form-wrapper {
+            max-width: 90%;
+        }
+        .contact-form-title h2 {
+            font-size: 25px;
         }
         .slider-title {
             margin: 40px 0;

@@ -37,10 +37,10 @@
                 <ul class="menu">
                     <li><a href="#">Bag (0)</a></li>
                 </ul>
-                <ul class="mobile-tabs tabs">
-                    <li><a href="#tabs-1" class="active">The Leaf Razor</a></li>
-                    <li><a href="#tabs-2" class="inactive">The Twig Razor</a></li>
-                </ul>
+                <div class="mobile-tabs tabs">
+                    <a href="#tabs-1" class="active">The Leaf Razor</a>
+                    <a href="#tabs-2" class="inactive">The Twig Razor</a>
+                </div>
             </div>
             <div class="logo">
                 <p id="logo"><a href="index.html"><img id="logo-pic" src="images/razor.png" alt="razor logo"><i class="line-logo"></i><i>LEAF</i></a></p>
@@ -48,7 +48,7 @@
             <div class="menu-right">
                 <ul class="menu">
                     <li><a href="#">Account</a></li>
-                    <li><a href="#">Bag (0)</a></li>
+                    <li><a href="#" class="bag-header">Bag (0)</a></li>
                 </ul>
                 <ul class="tabs mobile-tabs">
                     <a href="#tabs-1" class="active">The Leaf Razor</a>
@@ -298,6 +298,96 @@
     <a href="#" class="mobile-account">Account</a>
 </div>
 <!-- Mobile -->
+
+    <!-- Bag Start -->
+    <div class="dark"></div>
+        <section class="bag-sidenav-wrapper">
+            <div class="bag-top-menu">
+                <h6>Bag</h6>
+                <p class="close-bag">Close</p>
+            </div>
+            <div class="bag-added">
+                <article>
+                    <div class="added-img">
+                       <img src="images/saleleaf1.jpg" alt=""> 
+                    </div>
+                    <div class="added-name-wrapper">
+                        <h6 class="left"><a href="#">Leaf Super Bundle, Barryblue</a></h6>
+                        <span class="price right">$417</span>
+                        <p class="added-color">Berryblue</p>
+                        <div class="added-quantity">
+                            <span class="added-delete"><i class="fas fa-trash-alt"></i></span>
+                            <div class="added-qty">
+                                <button type="button" id="sub" class="sub"><i class="fas fa-minus"></i></button>
+                                <input type="text" id="1" value="1" min="1" max="3" disabled />
+                                <button type="button" id="add" class="add"><i class="fas fa-plus"></i></button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="added-img">
+                       <img src="images/saleleaf1.jpg" alt=""> 
+                    </div>
+                    <div class="added-name-wrapper">
+                        <h6 class="left"><a href="#">Leaf Super Bundle, Barryblue</a></h6>
+                        <span class="price right">$417</span>
+                        <p class="added-color">Berryblue</p>
+                        <div class="added-quantity">
+                            <span class="added-delete"><i class="fas fa-trash-alt"></i></span>
+                            <div class="added-qty">
+                                <button type="button" id="sub" class="sub"><i class="fas fa-minus"></i></button>
+                                <input type="text" id="1" value="1" min="1" max="3" disabled />
+                                <button type="button" id="add" class="add"><i class="fas fa-plus"></i></button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </article>
+                <div class="else-added">
+                    <h6>Need Anything Else?</h6>
+                    <div class="else-items">
+                        <a href="#" class="else-item">
+                            <p class="else-price">$9</p>
+                            <h6>Add a Shave Soap Bar</h6>
+                            <div class="else-img">
+                                <img src="images/else.jpg" alt="">
+                            </div>
+                            
+                        </a>
+                        <a href="#" class="else-item">
+                            <p class="else-price">$9</p>
+                            <h6>Add a Shave Soap Bar</h6>
+                            <div class="else-img">
+                                <img src="images/else.jpg" alt="">
+                            </div>
+                            
+                        </a>
+                        <a href="#" class="else-item">
+                            <p class="else-price">$9</p>
+                            <h6>Add a Shave Soap Bar</h6>
+                            <div class="else-img">
+                                <img src="images/else.jpg" alt="">
+                            </div>
+                            
+                        </a>
+                        <a href="#" class="else-item">
+                            <p class="else-price">$9</p>
+                            <h6>Add a Shave Soap Bar</h6>
+                            <div class="else-img">
+                                <img src="images/else.jpg" alt="">
+                            </div>
+                            
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout">
+                <a href="#">Go To Checkout</a>
+            </div>
+        </section>
+    <!-- Bag End -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>

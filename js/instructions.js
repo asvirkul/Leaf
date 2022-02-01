@@ -1,4 +1,17 @@
 jQuery(document).ready(function() {
+    $('.shave-us').hide();
+    $(window).scroll(function() {
+    if ($(window).scrollTop() >= 600){  
+        $('.shave-us').fadeIn();
+        $('.instruction-header .logo, .instruction-header .menu-left li:not(.shave-us), .instruction-header .menu-right .menu, .mobile-bag .menu').fadeOut();
+        $('.mobile-tabs').fadeIn();
+    }
+    else {
+        $('.shave-us').fadeOut();
+        $('.instruction-header .logo, .instruction-header .menu-left li:not(.shave-us), .instruction-header .menu-right .menu, .mobile-bag .menu').fadeIn();
+        $('.mobile-tabs').fadeOut();
+    } 
+    });
     /* Tabs */
     $('.instructions-wrapper #tabs li a:not(:first)').addClass('inactive');
     $('.instructions-wrapper .hide-tabs').hide();
