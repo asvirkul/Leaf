@@ -25,7 +25,7 @@ jQuery(document).ready(function($) {
                     'background': '#fff',
                     'border-bottom': '1px solid #DEDEDE'
                 })
-                $('.main #logo-pic').attr('src', 'images/razor.png')
+                $('.main #logo-pic').attr('src', 'http://leaf.loc/view/images/razor.png')
                 $('.main .menu li a').css({
                     'color': '#797979'
                 })
@@ -41,7 +41,7 @@ jQuery(document).ready(function($) {
             }
             else {
                 $('.main').removeClass('bg-scroll');
-                $('.main #logo-pic').attr('src', 'images/razor-white.png')
+                $('.main #logo-pic').attr('src', 'http://leaf.loc/view/images/razor-white.png')
                 $('.main .menu li a').css({
                     'color': '#fff'
                 })
